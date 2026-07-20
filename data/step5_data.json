@@ -1,0 +1,3148 @@
+[
+  {
+    "profile_id": 0,
+    "phrasing_idx": 0,
+    "name": "Alex",
+    "labels": {
+      "length": 0,
+      "order": 0,
+      "decisiveness": 0
+    },
+    "a_form": "Alex prefers short answers. Alex likes the conclusion first, then the reasons. When Alex hesitates, Alex wants to be pushed toward a specific choice, not given more options.",
+    "b_form": "Alex: Can you explain how compound interest works?\nAssistant: Compound interest occurs when the interest you earn on a balance is added back to the principal each period, so that the next period you earn interest on a larger amount, and this process repeats, causing your balance to grow faster than simple interest would allow over any equivalent time horizon.\nAlex: Too long. Keep it short.\nAssistant: Your interest earns more interest over time.\nAlex: Better.\n\nAlex: Should I take the new job offer?\nAssistant: There are many factors to consider here, including salary, growth opportunities, work-life balance, company culture, and long-term fit. After weighing all of these, I'd say you should take it.\nAlex: Give the conclusion first, then the reasons.\nAssistant: Take it. The growth opportunities outweigh the risks.\nAlex: Okay.\n\nAlex: I can't decide between moving to Boston or staying here.\nAssistant: Both cities have advantages. You might also consider a temporary move, a hybrid arrangement, or negotiating remote work first.\nAlex: Don't give me more options. Just push me toward one.\nAssistant: Go to Boston.\nAlex: Perfect.",
+    "b_asst_spans": [
+      [
+        62,
+        361
+      ],
+      [
+        404,
+        448
+      ],
+      [
+        514,
+        706
+      ],
+      [
+        769,
+        822
+      ],
+      [
+        910,
+        1036
+      ],
+      [
+        1107,
+        1120
+      ]
+    ],
+    "a_tokens": 35,
+    "b_tokens": 252,
+    "leakage": [
+      [
+        "long",
+        "length",
+        635,
+        "ompany culture, and long-term fit. After weighing "
+      ],
+      [
+        "first",
+        "order",
+        1029,
+        "otiating remote work first.\nAlex: Don't give me mo"
+      ]
+    ]
+  },
+  {
+    "profile_id": 0,
+    "phrasing_idx": 1,
+    "name": "Sam",
+    "labels": {
+      "length": 0,
+      "order": 0,
+      "decisiveness": 0
+    },
+    "a_form": "Sam wants brief, concise responses. Sam wants the bottom line up front, followed by the rationale. Sam wants a direct recommendation when deciding, not a list of alternatives.",
+    "b_form": "Sam: Can you explain how vaccines work?\nAssistant: Vaccines expose your immune system to a safe version of a pathogen \u2014 inactivated, attenuated, or a protein fragment \u2014 prompting antibody production and memory cell formation so that future encounters with the real pathogen trigger a rapid, targeted response before infection can take hold.\nSam: That's way too much. Trim it down.\nAssistant: They train your immune system to recognize a pathogen before you encounter the real thing.\nSam: Got it.\n\nSam: Should I negotiate the salary on this offer?\nAssistant: Negotiating has a small risk of seeming ungrateful, but employers almost always expect some negotiation and rarely pull offers for a polite ask. On balance, I think you should negotiate.\nSam: Lead with the answer, then explain.\nAssistant: Negotiate. The worst realistic outcome is they say no.\nSam: Yes, that's it.\n\nSam: I can't decide between getting an iPhone or an Android phone.\nAssistant: Both platforms have strengths. You might also try handling both in a store, or look at what apps you rely on and whether they work on both.\nSam: Stop listing alternatives. Tell me which one.\nAssistant: Get the iPhone.\nSam: Good.",
+    "b_asst_spans": [
+      [
+        51,
+        340
+      ],
+      [
+        392,
+        482
+      ],
+      [
+        558,
+        744
+      ],
+      [
+        797,
+        851
+      ],
+      [
+        952,
+        1091
+      ],
+      [
+        1154,
+        1169
+      ]
+    ],
+    "a_tokens": 34,
+    "b_tokens": 270,
+    "leakage": []
+  },
+  {
+    "profile_id": 0,
+    "phrasing_idx": 2,
+    "name": "Jordan",
+    "labels": {
+      "length": 0,
+      "order": 0,
+      "decisiveness": 0
+    },
+    "a_form": "Jordan likes answers to be short and to the point. Jordan prefers to get the answer before the explanation. When Jordan is torn, Jordan wants one clear answer, not more things to weigh.",
+    "b_form": "Jordan: Can you explain what recursion is in programming?\nAssistant: Recursion is a technique where a function calls itself as part of its own definition, working on successively smaller versions of the original problem until it reaches a base case that can be solved directly, at which point the call stack unwinds and the partial results are combined to resolve the original call.\nJordan: Shorter, please.\nAssistant: A function that solves a problem by calling itself on smaller versions until it can answer directly.\nJordan: That works.\n\nJordan: Should I go back to school for a graduate degree?\nAssistant: It depends on the field, the cost, and what you're hoping to gain \u2014 whether credentials, knowledge, or a career switch. For targeted moves into roles that require it, a well-chosen program is usually worth it. I'd say yes, with conditions.\nJordan: Bottom line first, then the reasoning.\nAssistant: Yes, if the degree unlocks a specific door you need \u2014 otherwise probably not.\nJordan: Perfect.\n\nJordan: I can't decide between doing a PhD and taking an industry job.\nAssistant: Both paths have distinct advantages. You could also consider a master's as a middle ground, or a research role in industry that doesn't require a PhD.\nJordan: No more options \u2014 just pick one for me.\nAssistant: Take the industry job.\nJordan: That's what I needed.",
+    "b_asst_spans": [
+      [
+        69,
+        382
+      ],
+      [
+        419,
+        519
+      ],
+      [
+        610,
+        849
+      ],
+      [
+        908,
+        985
+      ],
+      [
+        1086,
+        1236
+      ],
+      [
+        1296,
+        1318
+      ]
+    ],
+    "a_tokens": 38,
+    "b_tokens": 300,
+    "leakage": []
+  },
+  {
+    "profile_id": 0,
+    "phrasing_idx": 3,
+    "name": "Morgan",
+    "labels": {
+      "length": 0,
+      "order": 0,
+      "decisiveness": 0
+    },
+    "a_form": "Morgan prefers concise replies over lengthy ones. Morgan wants the main point stated before supporting details. Morgan prefers to be told which option to take rather than given more choices.",
+    "b_form": "Morgan: Can you explain how the stock market works?\nAssistant: The stock market is a system of exchanges where shares of publicly listed companies are bought and sold between investors, with prices determined by supply and demand \u2014 more buyers than sellers pushes prices up, more sellers than buyers pushes them down \u2014 and owning a share gives you a proportional claim on the company's earnings and assets.\nMorgan: Way too long. Just give me the essentials.\nAssistant: Buyers and sellers trade ownership stakes in companies, and prices shift based on supply and demand.\nMorgan: Okay.\n\nMorgan: Should I switch careers to something I'm more interested in?\nAssistant: Career switches carry real costs in income and seniority, but people who make deliberate moves into better-fit fields generally report higher satisfaction. On balance, I'd say do it.\nMorgan: Tell me the conclusion first.\nAssistant: Do it. Regret for not switching usually outlasts the transition cost.\nMorgan: Good.\n\nMorgan: Should I get a gym membership or build a home gym?\nAssistant: Both work for different people. You could try a month-to-month gym trial, start with minimal home equipment, or look at outdoor training first.\nMorgan: I don't need more choices. Make the call.\nAssistant: Get the gym membership.\nMorgan: Better.",
+    "b_asst_spans": [
+      [
+        63,
+        406
+      ],
+      [
+        469,
+        569
+      ],
+      [
+        665,
+        847
+      ],
+      [
+        897,
+        966
+      ],
+      [
+        1052,
+        1195
+      ],
+      [
+        1257,
+        1280
+      ]
+    ],
+    "a_tokens": 33,
+    "b_tokens": 280,
+    "leakage": [
+      [
+        "first",
+        "order",
+        1188,
+        " at outdoor training first.\nMorgan: I don't need m"
+      ],
+      [
+        "push",
+        "decisiveness",
+        257,
+        "buyers than sellers pushes prices up, more sellers"
+      ],
+      [
+        "push",
+        "decisiveness",
+        300,
+        "sellers than buyers pushes them down \u2014 and owning "
+      ]
+    ]
+  },
+  {
+    "profile_id": 0,
+    "phrasing_idx": 4,
+    "name": "Casey",
+    "labels": {
+      "length": 0,
+      "order": 0,
+      "decisiveness": 0
+    },
+    "a_form": "Casey prefers short answers. Casey likes the conclusion first, then the reasons. When Casey hesitates, Casey wants to be pushed toward a specific choice, not given more options.",
+    "b_form": "Casey: Can you explain what machine learning is?\nAssistant: Machine learning is a subfield of AI in which systems learn patterns from data rather than being explicitly programmed with rules, by optimizing model parameters to minimize prediction error over a training set so the model can generalize to new, unseen data.\nCasey: Cut it down.\nAssistant: Systems that learn patterns from data rather than being explicitly programmed.\nCasey: Yes, that's it.\n\nCasey: Should I quit my job to start a business?\nAssistant: Starting without validated traction and savings is risky \u2014 but if you've tested the idea and have runway, the case for jumping is stronger. I'd say start on the side first, then decide.\nCasey: Answer first, then walk me through why.\nAssistant: Don't quit yet. Validate on the side before going all in.\nCasey: That's what I needed.\n\nCasey: I can't decide between starting therapy or hiring a coach.\nAssistant: Both serve different needs. You might also try whichever has faster availability, or start with one and switch if it doesn't fit.\nCasey: Just tell me which one to pick.\nAssistant: Start with therapy.\nCasey: Got it.",
+    "b_asst_spans": [
+      [
+        60,
+        319
+      ],
+      [
+        351,
+        429
+      ],
+      [
+        514,
+        699
+      ],
+      [
+        758,
+        815
+      ],
+      [
+        923,
+        1052
+      ],
+      [
+        1103,
+        1122
+      ]
+    ],
+    "a_tokens": 36,
+    "b_tokens": 264,
+    "leakage": [
+      [
+        "first",
+        "order",
+        679,
+        "ay start on the side first, then decide.\nCasey: An"
+      ]
+    ]
+  },
+  {
+    "profile_id": 0,
+    "phrasing_idx": 5,
+    "name": "Taylor",
+    "labels": {
+      "length": 0,
+      "order": 0,
+      "decisiveness": 0
+    },
+    "a_form": "Taylor wants brief, concise responses. Taylor wants the bottom line up front, followed by the rationale. Taylor wants a direct recommendation when deciding, not a list of alternatives.",
+    "b_form": "Taylor: Can you explain how photosynthesis works?\nAssistant: Photosynthesis is the process by which plants convert light energy into chemical energy stored as glucose, using carbon dioxide and water as inputs, with oxygen released as a byproduct through light-dependent reactions in the thylakoid membranes and carbon fixation in the Calvin cycle in the stroma.\nTaylor: Too much detail. Make it brief.\nAssistant: Plants use sunlight to convert CO2 and water into glucose, releasing oxygen.\nTaylor: Perfect.\n\nTaylor: Should I buy a house or keep renting?\nAssistant: It depends on how long you plan to stay, local price-to-rent ratios, your down payment, and the opportunity cost. For a 5+ year horizon with stable income, buying usually wins. I'd lean toward buying.\nTaylor: Lead with the verdict, then the rationale.\nAssistant: Buy \u2014 if you're staying 5+ years and have the down payment, it's usually the better financial move.\nTaylor: Better.\n\nTaylor: I'm switching into software \u2014 should I focus on frontend or backend?\nAssistant: Both tracks have strong demand. You could also consider full-stack as a path that covers both, or look at which has more open roles in your area.\nTaylor: Enough options. Give me one clear answer.\nAssistant: Focus on backend.\nTaylor: That works.",
+    "b_asst_spans": [
+      [
+        61,
+        361
+      ],
+      [
+        413,
+        489
+      ],
+      [
+        565,
+        765
+      ],
+      [
+        828,
+        927
+      ],
+      [
+        1033,
+        1178
+      ],
+      [
+        1240,
+        1257
+      ]
+    ],
+    "a_tokens": 34,
+    "b_tokens": 289,
+    "leakage": [
+      [
+        "long",
+        "length",
+        583,
+        ": It depends on how long you plan to stay, local p"
+      ]
+    ]
+  },
+  {
+    "profile_id": 0,
+    "phrasing_idx": 6,
+    "name": "Riley",
+    "labels": {
+      "length": 0,
+      "order": 0,
+      "decisiveness": 0
+    },
+    "a_form": "Riley likes answers to be short and to the point. Riley prefers to get the answer before the explanation. When Riley is torn, Riley wants one clear answer, not more things to weigh.",
+    "b_form": "Riley: Can you explain what inflation is?\nAssistant: Inflation is the general, sustained increase in the price level of goods and services over time, meaning the purchasing power of a unit of currency declines \u2014 you can buy less with the same amount of money \u2014 and it's measured using indices like the Consumer Price Index.\nRiley: That's too long. Get to the point.\nAssistant: Prices rise over time, so your money buys less.\nRiley: Good.\n\nRiley: Should I take a sabbatical from work?\nAssistant: Sabbaticals have real benefits for burnout recovery, but they carry career risk and financial cost. If you have savings and are genuinely burned out, I'd say take it.\nRiley: Give me the answer upfront, then the explanation.\nAssistant: Take it \u2014 if you have savings and a clear intention for the time, the upside is worth it.\nRiley: Got it.\n\nRiley: I have extra money beyond my emergency fund \u2014 should I keep it in savings or invest it?\nAssistant: Both have trade-offs. You might also consider a high-yield savings account, paying down any remaining debt first, or looking at tax-advantaged accounts.\nRiley: Stop hedging \u2014 which one should I do?\nAssistant: Invest it.\nRiley: Okay.",
+    "b_asst_spans": [
+      [
+        53,
+        323
+      ],
+      [
+        377,
+        424
+      ],
+      [
+        495,
+        661
+      ],
+      [
+        730,
+        819
+      ],
+      [
+        942,
+        1094
+      ],
+      [
+        1151,
+        1161
+      ]
+    ],
+    "a_tokens": 39,
+    "b_tokens": 286,
+    "leakage": [
+      [
+        "first",
+        "order",
+        1048,
+        "n any remaining debt first, or looking at tax-adva"
+      ]
+    ]
+  },
+  {
+    "profile_id": 0,
+    "phrasing_idx": 7,
+    "name": "Avery",
+    "labels": {
+      "length": 0,
+      "order": 0,
+      "decisiveness": 0
+    },
+    "a_form": "Avery prefers concise replies over lengthy ones. Avery wants the main point stated before supporting details. Avery prefers to be told which option to take rather than given more choices.",
+    "b_form": "Avery: Can you explain how GPS works?\nAssistant: GPS works by having your device receive signals from multiple satellites in medium Earth orbit, measuring the time delay between transmission and reception from at least four satellites, converting those delays into distances via the speed of light, and using the known satellite positions to calculate your location through trilateration.\nAvery: Trim it. I don't need all that.\nAssistant: Your device times signals from several satellites and uses those distances to calculate your position.\nAvery: That's what I needed.\n\nAvery: Should I take the promotion into management?\nAssistant: Management is a real career shift \u2014 many strong individual contributors dislike managing people, and it's harder to go back than it seems. That said, if leadership interests you and the company is supportive, I'd take it.\nAvery: Conclusion first \u2014 then the reasons.\nAssistant: Take it \u2014 if leadership genuinely interests you, now is the time to find out.\nAvery: That works.\n\nAvery: A friend wants me to join their startup \u2014 should I do it?\nAssistant: Working with close friends has specific risks beyond typical startup risk. You might consider a part-time advisory role first, or a short project to test the dynamic.\nAvery: Don't give me more alternatives. Just decide.\nAssistant: Don't do it.\nAvery: Yes, that's it.",
+    "b_asst_spans": [
+      [
+        49,
+        388
+      ],
+      [
+        439,
+        541
+      ],
+      [
+        635,
+        856
+      ],
+      [
+        912,
+        989
+      ],
+      [
+        1086,
+        1252
+      ],
+      [
+        1317,
+        1329
+      ]
+    ],
+    "a_tokens": 34,
+    "b_tokens": 297,
+    "leakage": [
+      [
+        "short",
+        "length",
+        1218,
+        "ry role first, or a short project to test the dyna"
+      ],
+      [
+        "first",
+        "order",
+        1205,
+        "t-time advisory role first, or a short project to "
+      ]
+    ]
+  },
+  {
+    "profile_id": 1,
+    "phrasing_idx": 0,
+    "name": "Alex",
+    "labels": {
+      "length": 0,
+      "order": 0,
+      "decisiveness": 1
+    },
+    "a_form": "Alex prefers short answers. Alex likes the conclusion first, then the reasons. When Alex hesitates, Alex wants more options to consider, not a forced choice.",
+    "b_form": "Alex: Can you explain how compound interest works?\nAssistant: Compound interest occurs when the interest you earn on a balance is added back to the principal each period, so that the next period you earn interest on a larger amount, and this process repeats, causing your balance to grow faster than simple interest would allow over any equivalent time horizon.\nAlex: Too long. Keep it short.\nAssistant: Your interest earns more interest over time.\nAlex: Better.\n\nAlex: Should I take the new job offer?\nAssistant: There are many factors to consider here, including salary, growth opportunities, work-life balance, company culture, and long-term fit. After weighing all of these, I'd say you should take it.\nAlex: Give the conclusion first, then the reasons.\nAssistant: Take it. The growth opportunities outweigh the risks.\nAlex: Okay.\n\nAlex: I can't decide between moving to Boston or staying here.\nAssistant: Go to Boston \u2014 the opportunities are better and you've been thinking about it too long.\nAlex: Give me more options to consider.\nAssistant: You could do a trial month in Boston, negotiate a remote arrangement from your current city, apply to jobs in both and see what comes in, or set a firm decision deadline. Which of those resonates?\nAlex: Perfect.",
+    "b_asst_spans": [
+      [
+        62,
+        361
+      ],
+      [
+        404,
+        448
+      ],
+      [
+        514,
+        706
+      ],
+      [
+        769,
+        822
+      ],
+      [
+        910,
+        997
+      ],
+      [
+        1049,
+        1245
+      ]
+    ],
+    "a_tokens": 32,
+    "b_tokens": 279,
+    "leakage": [
+      [
+        "long",
+        "length",
+        635,
+        "ompany culture, and long-term fit. After weighing "
+      ],
+      [
+        "long",
+        "length",
+        992,
+        "inking about it too long.\nAlex: Give me more optio"
+      ]
+    ]
+  },
+  {
+    "profile_id": 1,
+    "phrasing_idx": 1,
+    "name": "Sam",
+    "labels": {
+      "length": 0,
+      "order": 0,
+      "decisiveness": 1
+    },
+    "a_form": "Sam wants brief, concise responses. Sam wants the bottom line up front, followed by the rationale. Sam wants to see a range of alternatives before deciding.",
+    "b_form": "Sam: Can you explain how vaccines work?\nAssistant: Vaccines expose your immune system to a safe version of a pathogen \u2014 inactivated, attenuated, or a protein fragment \u2014 prompting antibody production and memory cell formation so that future encounters with the real pathogen trigger a rapid, targeted response before infection can take hold.\nSam: That's way too much. Trim it down.\nAssistant: They train your immune system to recognize a pathogen before you encounter the real thing.\nSam: Got it.\n\nSam: Should I negotiate the salary on this offer?\nAssistant: Negotiating has a small risk of seeming ungrateful, but employers almost always expect some negotiation and rarely pull offers for a polite ask. On balance, I think you should negotiate.\nSam: Lead with the answer, then explain.\nAssistant: Negotiate. The worst realistic outcome is they say no.\nSam: Yes, that's it.\n\nSam: I can't decide between getting an iPhone or an Android phone.\nAssistant: Get the iPhone \u2014 the ecosystem is cohesive, the resale value is better, and most people around you probably use iMessage anyway.\nSam: Don't push me toward one. What are the alternatives?\nAssistant: Consider: iPhone for Apple ecosystem cohesion; Pixel for clean Android at lower cost; Samsung for the widest Android ecosystem. Which trade-off matters most to you \u2014 ecosystem, price, or customization?\nSam: Good.",
+    "b_asst_spans": [
+      [
+        51,
+        340
+      ],
+      [
+        392,
+        482
+      ],
+      [
+        558,
+        744
+      ],
+      [
+        797,
+        851
+      ],
+      [
+        952,
+        1080
+      ],
+      [
+        1150,
+        1351
+      ]
+    ],
+    "a_tokens": 31,
+    "b_tokens": 305,
+    "leakage": []
+  },
+  {
+    "profile_id": 1,
+    "phrasing_idx": 2,
+    "name": "Jordan",
+    "labels": {
+      "length": 0,
+      "order": 0,
+      "decisiveness": 1
+    },
+    "a_form": "Jordan likes answers to be short and to the point. Jordan prefers to get the answer before the explanation. When Jordan is torn, Jordan wants more paths laid out, not a single pick.",
+    "b_form": "Jordan: Can you explain what recursion is in programming?\nAssistant: Recursion is a technique where a function calls itself as part of its own definition, working on successively smaller versions of the original problem until it reaches a base case that can be solved directly, at which point the call stack unwinds and the partial results are combined to resolve the original call.\nJordan: Shorter, please.\nAssistant: A function that solves a problem by calling itself on smaller versions until it can answer directly.\nJordan: That works.\n\nJordan: Should I go back to school for a graduate degree?\nAssistant: It depends on the field, the cost, and what you're hoping to gain \u2014 whether credentials, knowledge, or a career switch. For targeted moves into roles that require it, a well-chosen program is usually worth it. I'd say yes, with conditions.\nJordan: Bottom line first, then the reasoning.\nAssistant: Yes, if the degree unlocks a specific door you need \u2014 otherwise probably not.\nJordan: Perfect.\n\nJordan: I can't decide between doing a PhD and taking an industry job.\nAssistant: Go to industry \u2014 the opportunity cost of a PhD is 4-6 years of lower pay and high uncertainty, rarely worth it unless you need the credential for a specific role.\nJordan: I need more choices, not a single answer.\nAssistant: Options: take the job now and revisit later; apply for the PhD to keep both live; look for industry research roles that bridge both; or do a master's as a lower-cost credential. What's driving the pull toward PhD specifically?\nJordan: That's what I needed.",
+    "b_asst_spans": [
+      [
+        69,
+        382
+      ],
+      [
+        419,
+        519
+      ],
+      [
+        610,
+        849
+      ],
+      [
+        908,
+        985
+      ],
+      [
+        1086,
+        1248
+      ],
+      [
+        1310,
+        1536
+      ]
+    ],
+    "a_tokens": 38,
+    "b_tokens": 348,
+    "leakage": []
+  },
+  {
+    "profile_id": 1,
+    "phrasing_idx": 3,
+    "name": "Morgan",
+    "labels": {
+      "length": 0,
+      "order": 0,
+      "decisiveness": 1
+    },
+    "a_form": "Morgan prefers concise replies over lengthy ones. Morgan wants the main point stated before supporting details. Morgan prefers having more options presented rather than being pushed toward one.",
+    "b_form": "Morgan: Can you explain how the stock market works?\nAssistant: The stock market is a system of exchanges where shares of publicly listed companies are bought and sold between investors, with prices determined by supply and demand \u2014 more buyers than sellers pushes prices up, more sellers than buyers pushes them down \u2014 and owning a share gives you a proportional claim on the company's earnings and assets.\nMorgan: Way too long. Just give me the essentials.\nAssistant: Buyers and sellers trade ownership stakes in companies, and prices shift based on supply and demand.\nMorgan: Okay.\n\nMorgan: Should I switch careers to something I'm more interested in?\nAssistant: Career switches carry real costs in income and seniority, but people who make deliberate moves into better-fit fields generally report higher satisfaction. On balance, I'd say do it.\nMorgan: Tell me the conclusion first.\nAssistant: Do it. Regret for not switching usually outlasts the transition cost.\nMorgan: Good.\n\nMorgan: Should I get a gym membership or build a home gym?\nAssistant: Get the gym membership \u2014 the variety and social environment make consistency easier for most people, and you're not sinking money into equipment that might collect dust.\nMorgan: Stop pushing me toward one \u2014 lay out the options.\nAssistant: Gym: variety and social energy, but requires commuting. Home gym: convenience, no commute, higher upfront cost. Hybrid: minimal home setup plus occasional gym. What's your biggest barrier \u2014 time, cost, or motivation?\nMorgan: Better.",
+    "b_asst_spans": [
+      [
+        63,
+        406
+      ],
+      [
+        469,
+        569
+      ],
+      [
+        665,
+        847
+      ],
+      [
+        897,
+        966
+      ],
+      [
+        1052,
+        1221
+      ],
+      [
+        1291,
+        1507
+      ]
+    ],
+    "a_tokens": 31,
+    "b_tokens": 319,
+    "leakage": [
+      [
+        "push",
+        "decisiveness",
+        257,
+        "buyers than sellers pushes prices up, more sellers"
+      ],
+      [
+        "push",
+        "decisiveness",
+        300,
+        "sellers than buyers pushes them down \u2014 and owning "
+      ]
+    ]
+  },
+  {
+    "profile_id": 1,
+    "phrasing_idx": 4,
+    "name": "Casey",
+    "labels": {
+      "length": 0,
+      "order": 0,
+      "decisiveness": 1
+    },
+    "a_form": "Casey prefers short answers. Casey likes the conclusion first, then the reasons. When Casey hesitates, Casey wants more options to consider, not a forced choice.",
+    "b_form": "Casey: Can you explain what machine learning is?\nAssistant: Machine learning is a subfield of AI in which systems learn patterns from data rather than being explicitly programmed with rules, by optimizing model parameters to minimize prediction error over a training set so the model can generalize to new, unseen data.\nCasey: Cut it down.\nAssistant: Systems that learn patterns from data rather than being explicitly programmed.\nCasey: Yes, that's it.\n\nCasey: Should I quit my job to start a business?\nAssistant: Starting without validated traction and savings is risky \u2014 but if you've tested the idea and have runway, the case for jumping is stronger. I'd say start on the side first, then decide.\nCasey: Answer first, then walk me through why.\nAssistant: Don't quit yet. Validate on the side before going all in.\nCasey: That's what I needed.\n\nCasey: I can't decide between starting therapy or hiring a coach.\nAssistant: Go with therapy \u2014 coaching focuses on goals and forward momentum, but therapy addresses the underlying patterns that often block both. If you're feeling stuck emotionally, therapy is the better starting point.\nCasey: I want to see more alternatives before deciding.\nAssistant: Therapy if you're dealing with anxiety, past experiences, or recurring patterns; coaching for forward-focused goal work and accountability; some therapists also do coaching-style work; or both simultaneously. What's the main thing you're trying to change?\nCasey: Got it.",
+    "b_asst_spans": [
+      [
+        60,
+        319
+      ],
+      [
+        351,
+        429
+      ],
+      [
+        514,
+        699
+      ],
+      [
+        758,
+        815
+      ],
+      [
+        923,
+        1132
+      ],
+      [
+        1200,
+        1455
+      ]
+    ],
+    "a_tokens": 33,
+    "b_tokens": 321,
+    "leakage": [
+      [
+        "first",
+        "order",
+        679,
+        "ay start on the side first, then decide.\nCasey: An"
+      ]
+    ]
+  },
+  {
+    "profile_id": 1,
+    "phrasing_idx": 5,
+    "name": "Taylor",
+    "labels": {
+      "length": 0,
+      "order": 0,
+      "decisiveness": 1
+    },
+    "a_form": "Taylor wants brief, concise responses. Taylor wants the bottom line up front, followed by the rationale. Taylor wants to see a range of alternatives before deciding.",
+    "b_form": "Taylor: Can you explain how photosynthesis works?\nAssistant: Photosynthesis is the process by which plants convert light energy into chemical energy stored as glucose, using carbon dioxide and water as inputs, with oxygen released as a byproduct through light-dependent reactions in the thylakoid membranes and carbon fixation in the Calvin cycle in the stroma.\nTaylor: Too much detail. Make it brief.\nAssistant: Plants use sunlight to convert CO2 and water into glucose, releasing oxygen.\nTaylor: Perfect.\n\nTaylor: Should I buy a house or keep renting?\nAssistant: It depends on how long you plan to stay, local price-to-rent ratios, your down payment, and the opportunity cost. For a 5+ year horizon with stable income, buying usually wins. I'd lean toward buying.\nTaylor: Lead with the verdict, then the rationale.\nAssistant: Buy \u2014 if you're staying 5+ years and have the down payment, it's usually the better financial move.\nTaylor: Better.\n\nTaylor: I'm switching into software \u2014 should I focus on frontend or backend?\nAssistant: Go backend \u2014 it typically pays more, the fundamentals transfer more widely, and demand for solid backend engineers is consistently high.\nTaylor: Don't make the choice for me \u2014 what else is there?\nAssistant: Backend: higher pay ceiling, transferable fundamentals. Frontend: faster visual feedback, more accessible to beginners. Full-stack: more flexible and hireable at smaller companies. Mobile: strong niche. What kind of work do you actually want to do day-to-day?\nTaylor: That works.",
+    "b_asst_spans": [
+      [
+        61,
+        361
+      ],
+      [
+        413,
+        489
+      ],
+      [
+        565,
+        765
+      ],
+      [
+        828,
+        927
+      ],
+      [
+        1033,
+        1169
+      ],
+      [
+        1240,
+        1499
+      ]
+    ],
+    "a_tokens": 31,
+    "b_tokens": 338,
+    "leakage": [
+      [
+        "long",
+        "length",
+        583,
+        ": It depends on how long you plan to stay, local p"
+      ]
+    ]
+  },
+  {
+    "profile_id": 1,
+    "phrasing_idx": 6,
+    "name": "Riley",
+    "labels": {
+      "length": 0,
+      "order": 0,
+      "decisiveness": 1
+    },
+    "a_form": "Riley likes answers to be short and to the point. Riley prefers to get the answer before the explanation. When Riley is torn, Riley wants more paths laid out, not a single pick.",
+    "b_form": "Riley: Can you explain what inflation is?\nAssistant: Inflation is the general, sustained increase in the price level of goods and services over time, meaning the purchasing power of a unit of currency declines \u2014 you can buy less with the same amount of money \u2014 and it's measured using indices like the Consumer Price Index.\nRiley: That's too long. Get to the point.\nAssistant: Prices rise over time, so your money buys less.\nRiley: Good.\n\nRiley: Should I take a sabbatical from work?\nAssistant: Sabbaticals have real benefits for burnout recovery, but they carry career risk and financial cost. If you have savings and are genuinely burned out, I'd say take it.\nRiley: Give me the answer upfront, then the explanation.\nAssistant: Take it \u2014 if you have savings and a clear intention for the time, the upside is worth it.\nRiley: Got it.\n\nRiley: I have extra money beyond my emergency fund \u2014 should I keep it in savings or invest it?\nAssistant: Invest it \u2014 if your emergency fund is already secured, leaving surplus cash in savings is a drag on long-term returns.\nRiley: What other options should I be considering?\nAssistant: Max tax-advantaged accounts first (Roth IRA, 401k) if you haven't; then broad index funds in taxable; keep a larger cash buffer if your income is variable; or pay off high-interest debt before any investing. Which of those is most relevant to your situation?\nRiley: Okay.",
+    "b_asst_spans": [
+      [
+        53,
+        323
+      ],
+      [
+        377,
+        424
+      ],
+      [
+        495,
+        661
+      ],
+      [
+        730,
+        819
+      ],
+      [
+        942,
+        1060
+      ],
+      [
+        1123,
+        1381
+      ]
+    ],
+    "a_tokens": 39,
+    "b_tokens": 331,
+    "leakage": [
+      [
+        "long",
+        "length",
+        1042,
+        "avings is a drag on long-term returns.\nRiley: What"
+      ],
+      [
+        "first",
+        "order",
+        1150,
+        "-advantaged accounts first (Roth IRA, 401k) if you"
+      ]
+    ]
+  },
+  {
+    "profile_id": 1,
+    "phrasing_idx": 7,
+    "name": "Avery",
+    "labels": {
+      "length": 0,
+      "order": 0,
+      "decisiveness": 1
+    },
+    "a_form": "Avery prefers concise replies over lengthy ones. Avery wants the main point stated before supporting details. Avery prefers having more options presented rather than being pushed toward one.",
+    "b_form": "Avery: Can you explain how GPS works?\nAssistant: GPS works by having your device receive signals from multiple satellites in medium Earth orbit, measuring the time delay between transmission and reception from at least four satellites, converting those delays into distances via the speed of light, and using the known satellite positions to calculate your location through trilateration.\nAvery: Trim it. I don't need all that.\nAssistant: Your device times signals from several satellites and uses those distances to calculate your position.\nAvery: That's what I needed.\n\nAvery: Should I take the promotion into management?\nAssistant: Management is a real career shift \u2014 many strong individual contributors dislike managing people, and it's harder to go back than it seems. That said, if leadership interests you and the company is supportive, I'd take it.\nAvery: Conclusion first \u2014 then the reasons.\nAssistant: Take it \u2014 if leadership genuinely interests you, now is the time to find out.\nAvery: That works.\n\nAvery: A friend wants me to join their startup \u2014 should I do it?\nAssistant: Don't do it \u2014 business and close friendship is a notoriously difficult combination, and if the company struggles, you'll both be under pressure in ways that strain even strong relationships.\nAvery: Give me a broader range of alternatives.\nAssistant: Full co-founder: highest upside, highest relationship risk. Advisor: lower commitment, lower exposure. One scoped project to test fit before committing. Or decline and stay close as a friend. Which matters more to you \u2014 the equity upside or protecting the friendship?\nAvery: Yes, that's it.",
+    "b_asst_spans": [
+      [
+        49,
+        388
+      ],
+      [
+        439,
+        541
+      ],
+      [
+        635,
+        856
+      ],
+      [
+        912,
+        989
+      ],
+      [
+        1086,
+        1276
+      ],
+      [
+        1336,
+        1603
+      ]
+    ],
+    "a_tokens": 32,
+    "b_tokens": 346,
+    "leakage": []
+  },
+  {
+    "profile_id": 2,
+    "phrasing_idx": 0,
+    "name": "Alex",
+    "labels": {
+      "length": 0,
+      "order": 1,
+      "decisiveness": 0
+    },
+    "a_form": "Alex prefers short answers. Alex likes to understand the reasoning before the conclusion. When Alex hesitates, Alex wants to be pushed toward a specific choice, not given more options.",
+    "b_form": "Alex: Can you explain how compound interest works?\nAssistant: Compound interest occurs when the interest you earn on a balance is added back to the principal each period, so that the next period you earn interest on a larger amount, and this process repeats, causing your balance to grow faster than simple interest would allow over any equivalent time horizon.\nAlex: Too long. Keep it short.\nAssistant: Your interest earns more interest over time.\nAlex: Better.\n\nAlex: Should I take the new job offer?\nAssistant: Take it. The growth is strong, the pay is better, and switching now makes sense for your trajectory.\nAlex: Walk me through the reasoning before you give the answer.\nAssistant: The growth opportunities are strong, the pay is better, and the role is a better fit for where you want to be in five years. Given all that: take it.\nAlex: Okay.\n\nAlex: I can't decide between moving to Boston or staying here.\nAssistant: Both cities have advantages. You might also consider a temporary move, a hybrid arrangement, or negotiating remote work first.\nAlex: Don't give me more options. Just push me toward one.\nAssistant: Go to Boston.\nAlex: Perfect.",
+    "b_asst_spans": [
+      [
+        62,
+        361
+      ],
+      [
+        404,
+        448
+      ],
+      [
+        514,
+        614
+      ],
+      [
+        690,
+        839
+      ],
+      [
+        927,
+        1053
+      ],
+      [
+        1124,
+        1137
+      ]
+    ],
+    "a_tokens": 35,
+    "b_tokens": 259,
+    "leakage": [
+      [
+        "first",
+        "order",
+        1046,
+        "otiating remote work first.\nAlex: Don't give me mo"
+      ]
+    ]
+  },
+  {
+    "profile_id": 2,
+    "phrasing_idx": 1,
+    "name": "Sam",
+    "labels": {
+      "length": 0,
+      "order": 1,
+      "decisiveness": 0
+    },
+    "a_form": "Sam wants brief, concise responses. Sam wants the reasons laid out before the final answer. Sam wants a direct recommendation when deciding, not a list of alternatives.",
+    "b_form": "Sam: Can you explain how vaccines work?\nAssistant: Vaccines expose your immune system to a safe version of a pathogen \u2014 inactivated, attenuated, or a protein fragment \u2014 prompting antibody production and memory cell formation so that future encounters with the real pathogen trigger a rapid, targeted response before infection can take hold.\nSam: That's way too much. Trim it down.\nAssistant: They train your immune system to recognize a pathogen before you encounter the real thing.\nSam: Got it.\n\nSam: Should I negotiate the salary on this offer?\nAssistant: Yes, negotiate \u2014 employers expect it, the risk of losing the offer is very low, and even a small increase compounds over your career.\nSam: I want the reasoning first, then the conclusion.\nAssistant: Employers almost always expect negotiation, the risk of losing the offer for a polite ask is minimal, and even a modest increase compounds significantly over a career. So: negotiate.\nSam: Yes, that's it.\n\nSam: I can't decide between getting an iPhone or an Android phone.\nAssistant: Both platforms have strengths. You might also try handling both in a store, or look at what apps you rely on and whether they work on both.\nSam: Stop listing alternatives. Tell me which one.\nAssistant: Get the iPhone.\nSam: Good.",
+    "b_asst_spans": [
+      [
+        51,
+        340
+      ],
+      [
+        392,
+        482
+      ],
+      [
+        558,
+        691
+      ],
+      [
+        757,
+        939
+      ],
+      [
+        1040,
+        1179
+      ],
+      [
+        1242,
+        1257
+      ]
+    ],
+    "a_tokens": 32,
+    "b_tokens": 284,
+    "leakage": []
+  },
+  {
+    "profile_id": 2,
+    "phrasing_idx": 2,
+    "name": "Jordan",
+    "labels": {
+      "length": 0,
+      "order": 1,
+      "decisiveness": 0
+    },
+    "a_form": "Jordan likes answers to be short and to the point. Jordan prefers to see the thinking first, then the verdict. When Jordan is torn, Jordan wants one clear answer, not more things to weigh.",
+    "b_form": "Jordan: Can you explain what recursion is in programming?\nAssistant: Recursion is a technique where a function calls itself as part of its own definition, working on successively smaller versions of the original problem until it reaches a base case that can be solved directly, at which point the call stack unwinds and the partial results are combined to resolve the original call.\nJordan: Shorter, please.\nAssistant: A function that solves a problem by calling itself on smaller versions until it can answer directly.\nJordan: That works.\n\nJordan: Should I go back to school for a graduate degree?\nAssistant: If the degree opens the right doors and the cost is manageable, it's worth it. The ROI varies by field, but for targeted moves, yes.\nJordan: Don't jump to the answer \u2014 explain the reasoning first.\nAssistant: The ROI varies enormously by field \u2014 credentials gate roles in medicine or law more than software. Cost and opportunity cost are real. Given that: yes, if it unlocks something specific you need; otherwise it's usually not worth it.\nJordan: Perfect.\n\nJordan: I can't decide between doing a PhD and taking an industry job.\nAssistant: Both paths have distinct advantages. You could also consider a master's as a middle ground, or a research role in industry that doesn't require a PhD.\nJordan: No more options \u2014 just pick one for me.\nAssistant: Take the industry job.\nJordan: That's what I needed.",
+    "b_asst_spans": [
+      [
+        69,
+        382
+      ],
+      [
+        419,
+        519
+      ],
+      [
+        610,
+        742
+      ],
+      [
+        818,
+        1049
+      ],
+      [
+        1150,
+        1300
+      ],
+      [
+        1360,
+        1382
+      ]
+    ],
+    "a_tokens": 40,
+    "b_tokens": 312,
+    "leakage": []
+  },
+  {
+    "profile_id": 2,
+    "phrasing_idx": 3,
+    "name": "Morgan",
+    "labels": {
+      "length": 0,
+      "order": 1,
+      "decisiveness": 0
+    },
+    "a_form": "Morgan prefers concise replies over lengthy ones. Morgan wants the explanation before the bottom line. Morgan prefers to be told which option to take rather than given more choices.",
+    "b_form": "Morgan: Can you explain how the stock market works?\nAssistant: The stock market is a system of exchanges where shares of publicly listed companies are bought and sold between investors, with prices determined by supply and demand \u2014 more buyers than sellers pushes prices up, more sellers than buyers pushes them down \u2014 and owning a share gives you a proportional claim on the company's earnings and assets.\nMorgan: Way too long. Just give me the essentials.\nAssistant: Buyers and sellers trade ownership stakes in companies, and prices shift based on supply and demand.\nMorgan: Okay.\n\nMorgan: Should I switch careers to something I'm more interested in?\nAssistant: Do it \u2014 people who switch into better-fit work report higher satisfaction, and regret for staying tends to outlast the pain of transition.\nMorgan: Give me the why before the what.\nAssistant: Research on career satisfaction shows fit matters more than seniority after the first few years. And regret for not switching tends to outlast the transition pain. Given that: do it.\nMorgan: Good.\n\nMorgan: Should I get a gym membership or build a home gym?\nAssistant: Both work for different people. You could try a month-to-month gym trial, start with minimal home equipment, or look at outdoor training first.\nMorgan: I don't need more choices. Make the call.\nAssistant: Get the gym membership.\nMorgan: Better.",
+    "b_asst_spans": [
+      [
+        63,
+        406
+      ],
+      [
+        469,
+        569
+      ],
+      [
+        665,
+        803
+      ],
+      [
+        856,
+        1038
+      ],
+      [
+        1124,
+        1267
+      ],
+      [
+        1329,
+        1352
+      ]
+    ],
+    "a_tokens": 32,
+    "b_tokens": 295,
+    "leakage": [
+      [
+        "first",
+        "order",
+        935,
+        " seniority after the first few years. And regret f"
+      ],
+      [
+        "first",
+        "order",
+        1260,
+        " at outdoor training first.\nMorgan: I don't need m"
+      ],
+      [
+        "push",
+        "decisiveness",
+        257,
+        "buyers than sellers pushes prices up, more sellers"
+      ],
+      [
+        "push",
+        "decisiveness",
+        300,
+        "sellers than buyers pushes them down \u2014 and owning "
+      ]
+    ]
+  },
+  {
+    "profile_id": 2,
+    "phrasing_idx": 4,
+    "name": "Casey",
+    "labels": {
+      "length": 0,
+      "order": 1,
+      "decisiveness": 0
+    },
+    "a_form": "Casey prefers short answers. Casey likes to understand the reasoning before the conclusion. When Casey hesitates, Casey wants to be pushed toward a specific choice, not given more options.",
+    "b_form": "Casey: Can you explain what machine learning is?\nAssistant: Machine learning is a subfield of AI in which systems learn patterns from data rather than being explicitly programmed with rules, by optimizing model parameters to minimize prediction error over a training set so the model can generalize to new, unseen data.\nCasey: Cut it down.\nAssistant: Systems that learn patterns from data rather than being explicitly programmed.\nCasey: Yes, that's it.\n\nCasey: Should I quit my job to start a business?\nAssistant: Don't quit yet \u2014 test while you still have income. Once you have traction and savings, then consider going full-time.\nCasey: Take me through the thinking before the conclusion.\nAssistant: Quitting without validation burns savings fast and forces you toward revenue before product-market fit. Starting on the side lets you test without that pressure. So: don't quit yet.\nCasey: That's what I needed.\n\nCasey: I can't decide between starting therapy or hiring a coach.\nAssistant: Both serve different needs. You might also try whichever has faster availability, or start with one and switch if it doesn't fit.\nCasey: Just tell me which one to pick.\nAssistant: Start with therapy.\nCasey: Got it.",
+    "b_asst_spans": [
+      [
+        60,
+        319
+      ],
+      [
+        351,
+        429
+      ],
+      [
+        514,
+        631
+      ],
+      [
+        702,
+        883
+      ],
+      [
+        991,
+        1120
+      ],
+      [
+        1171,
+        1190
+      ]
+    ],
+    "a_tokens": 36,
+    "b_tokens": 272,
+    "leakage": []
+  },
+  {
+    "profile_id": 2,
+    "phrasing_idx": 5,
+    "name": "Taylor",
+    "labels": {
+      "length": 0,
+      "order": 1,
+      "decisiveness": 0
+    },
+    "a_form": "Taylor wants brief, concise responses. Taylor wants the reasons laid out before the final answer. Taylor wants a direct recommendation when deciding, not a list of alternatives.",
+    "b_form": "Taylor: Can you explain how photosynthesis works?\nAssistant: Photosynthesis is the process by which plants convert light energy into chemical energy stored as glucose, using carbon dioxide and water as inputs, with oxygen released as a byproduct through light-dependent reactions in the thylakoid membranes and carbon fixation in the Calvin cycle in the stroma.\nTaylor: Too much detail. Make it brief.\nAssistant: Plants use sunlight to convert CO2 and water into glucose, releasing oxygen.\nTaylor: Perfect.\n\nTaylor: Should I buy a house or keep renting?\nAssistant: Buy \u2014 if your horizon is 5+ years and you have the down payment, the equity and stability typically outweigh renting's flexibility.\nTaylor: Reasoning first, then tell me what you think.\nAssistant: For a 5+ year horizon, you build equity that renters don't, and the monthly cost after tax benefits is often comparable. Main risks: illiquidity and maintenance. Weighing all that: buy if you're staying long-term.\nTaylor: Better.\n\nTaylor: I'm switching into software \u2014 should I focus on frontend or backend?\nAssistant: Both tracks have strong demand. You could also consider full-stack as a path that covers both, or look at which has more open roles in your area.\nTaylor: Enough options. Give me one clear answer.\nAssistant: Focus on backend.\nTaylor: That works.",
+    "b_asst_spans": [
+      [
+        61,
+        361
+      ],
+      [
+        413,
+        489
+      ],
+      [
+        565,
+        696
+      ],
+      [
+        762,
+        975
+      ],
+      [
+        1081,
+        1226
+      ],
+      [
+        1288,
+        1305
+      ]
+    ],
+    "a_tokens": 32,
+    "b_tokens": 297,
+    "leakage": [
+      [
+        "long",
+        "length",
+        965,
+        "y if you're staying long-term.\nTaylor: Better.\n\nTa"
+      ]
+    ]
+  },
+  {
+    "profile_id": 2,
+    "phrasing_idx": 6,
+    "name": "Riley",
+    "labels": {
+      "length": 0,
+      "order": 1,
+      "decisiveness": 0
+    },
+    "a_form": "Riley likes answers to be short and to the point. Riley prefers to see the thinking first, then the verdict. When Riley is torn, Riley wants one clear answer, not more things to weigh.",
+    "b_form": "Riley: Can you explain what inflation is?\nAssistant: Inflation is the general, sustained increase in the price level of goods and services over time, meaning the purchasing power of a unit of currency declines \u2014 you can buy less with the same amount of money \u2014 and it's measured using indices like the Consumer Price Index.\nRiley: That's too long. Get to the point.\nAssistant: Prices rise over time, so your money buys less.\nRiley: Good.\n\nRiley: Should I take a sabbatical from work?\nAssistant: Take it \u2014 burnout that goes unaddressed compounds, and the perspective you gain can reorient your career in ways that outweigh any resume gap.\nRiley: I need the reasoning laid out before the verdict.\nAssistant: Burnout compounds and tends to cause decisions whose career cost exceeds any resume gap. The clarity from time away often pays for itself. Given that: take the sabbatical if you have the savings.\nRiley: Got it.\n\nRiley: I have extra money beyond my emergency fund \u2014 should I keep it in savings or invest it?\nAssistant: Both have trade-offs. You might also consider a high-yield savings account, paying down any remaining debt first, or looking at tax-advantaged accounts.\nRiley: Stop hedging \u2014 which one should I do?\nAssistant: Invest it.\nRiley: Okay.",
+    "b_asst_spans": [
+      [
+        53,
+        323
+      ],
+      [
+        377,
+        424
+      ],
+      [
+        495,
+        637
+      ],
+      [
+        706,
+        901
+      ],
+      [
+        1024,
+        1176
+      ],
+      [
+        1233,
+        1243
+      ]
+    ],
+    "a_tokens": 41,
+    "b_tokens": 299,
+    "leakage": [
+      [
+        "first",
+        "order",
+        1130,
+        "n any remaining debt first, or looking at tax-adva"
+      ]
+    ]
+  },
+  {
+    "profile_id": 2,
+    "phrasing_idx": 7,
+    "name": "Avery",
+    "labels": {
+      "length": 0,
+      "order": 1,
+      "decisiveness": 0
+    },
+    "a_form": "Avery prefers concise replies over lengthy ones. Avery wants the explanation before the bottom line. Avery prefers to be told which option to take rather than given more choices.",
+    "b_form": "Avery: Can you explain how GPS works?\nAssistant: GPS works by having your device receive signals from multiple satellites in medium Earth orbit, measuring the time delay between transmission and reception from at least four satellites, converting those delays into distances via the speed of light, and using the known satellite positions to calculate your location through trilateration.\nAvery: Trim it. I don't need all that.\nAssistant: Your device times signals from several satellites and uses those distances to calculate your position.\nAvery: That's what I needed.\n\nAvery: Should I take the promotion into management?\nAssistant: Take it \u2014 the pay and influence are real upsides, and you won't know if you like management until you try it.\nAvery: Explain it first, then give your recommendation.\nAssistant: Management shifts your output from your own work to other people's \u2014 some love that, others find it draining. The pay and influence are real. The risk is discovering you prefer doing the work directly \u2014 which is recoverable. If leadership interests you: take it.\nAvery: That works.\n\nAvery: A friend wants me to join their startup \u2014 should I do it?\nAssistant: Working with close friends has specific risks beyond typical startup risk. You might consider a part-time advisory role first, or a short project to test the dynamic.\nAvery: Don't give me more alternatives. Just decide.\nAssistant: Don't do it.\nAvery: Yes, that's it.",
+    "b_asst_spans": [
+      [
+        49,
+        388
+      ],
+      [
+        439,
+        541
+      ],
+      [
+        635,
+        744
+      ],
+      [
+        812,
+        1074
+      ],
+      [
+        1171,
+        1337
+      ],
+      [
+        1402,
+        1414
+      ]
+    ],
+    "a_tokens": 33,
+    "b_tokens": 317,
+    "leakage": [
+      [
+        "short",
+        "length",
+        1303,
+        "ry role first, or a short project to test the dyna"
+      ],
+      [
+        "first",
+        "order",
+        1290,
+        "t-time advisory role first, or a short project to "
+      ]
+    ]
+  },
+  {
+    "profile_id": 3,
+    "phrasing_idx": 0,
+    "name": "Alex",
+    "labels": {
+      "length": 0,
+      "order": 1,
+      "decisiveness": 1
+    },
+    "a_form": "Alex prefers short answers. Alex likes to understand the reasoning before the conclusion. When Alex hesitates, Alex wants more options to consider, not a forced choice.",
+    "b_form": "Alex: Can you explain how compound interest works?\nAssistant: Compound interest occurs when the interest you earn on a balance is added back to the principal each period, so that the next period you earn interest on a larger amount, and this process repeats, causing your balance to grow faster than simple interest would allow over any equivalent time horizon.\nAlex: Too long. Keep it short.\nAssistant: Your interest earns more interest over time.\nAlex: Better.\n\nAlex: Should I take the new job offer?\nAssistant: Take it. The growth is strong, the pay is better, and switching now makes sense for your trajectory.\nAlex: Walk me through the reasoning before you give the answer.\nAssistant: The growth opportunities are strong, the pay is better, and the role is a better fit for where you want to be in five years. Given all that: take it.\nAlex: Okay.\n\nAlex: I can't decide between moving to Boston or staying here.\nAssistant: Go to Boston \u2014 the opportunities are better and you've been thinking about it too long.\nAlex: Give me more options to consider.\nAssistant: You could do a trial month in Boston, negotiate a remote arrangement from your current city, apply to jobs in both and see what comes in, or set a firm decision deadline. Which of those resonates?\nAlex: Perfect.",
+    "b_asst_spans": [
+      [
+        62,
+        361
+      ],
+      [
+        404,
+        448
+      ],
+      [
+        514,
+        614
+      ],
+      [
+        690,
+        839
+      ],
+      [
+        927,
+        1014
+      ],
+      [
+        1066,
+        1262
+      ]
+    ],
+    "a_tokens": 32,
+    "b_tokens": 286,
+    "leakage": [
+      [
+        "long",
+        "length",
+        1009,
+        "inking about it too long.\nAlex: Give me more optio"
+      ]
+    ]
+  },
+  {
+    "profile_id": 3,
+    "phrasing_idx": 1,
+    "name": "Sam",
+    "labels": {
+      "length": 0,
+      "order": 1,
+      "decisiveness": 1
+    },
+    "a_form": "Sam wants brief, concise responses. Sam wants the reasons laid out before the final answer. Sam wants to see a range of alternatives before deciding.",
+    "b_form": "Sam: Can you explain how vaccines work?\nAssistant: Vaccines expose your immune system to a safe version of a pathogen \u2014 inactivated, attenuated, or a protein fragment \u2014 prompting antibody production and memory cell formation so that future encounters with the real pathogen trigger a rapid, targeted response before infection can take hold.\nSam: That's way too much. Trim it down.\nAssistant: They train your immune system to recognize a pathogen before you encounter the real thing.\nSam: Got it.\n\nSam: Should I negotiate the salary on this offer?\nAssistant: Yes, negotiate \u2014 employers expect it, the risk of losing the offer is very low, and even a small increase compounds over your career.\nSam: I want the reasoning first, then the conclusion.\nAssistant: Employers almost always expect negotiation, the risk of losing the offer for a polite ask is minimal, and even a modest increase compounds significantly over a career. So: negotiate.\nSam: Yes, that's it.\n\nSam: I can't decide between getting an iPhone or an Android phone.\nAssistant: Get the iPhone \u2014 the ecosystem is cohesive, the resale value is better, and most people around you probably use iMessage anyway.\nSam: Don't push me toward one. What are the alternatives?\nAssistant: Consider: iPhone for Apple ecosystem cohesion; Pixel for clean Android at lower cost; Samsung for the widest Android ecosystem. Which trade-off matters most to you \u2014 ecosystem, price, or customization?\nSam: Good.",
+    "b_asst_spans": [
+      [
+        51,
+        340
+      ],
+      [
+        392,
+        482
+      ],
+      [
+        558,
+        691
+      ],
+      [
+        757,
+        939
+      ],
+      [
+        1040,
+        1168
+      ],
+      [
+        1238,
+        1439
+      ]
+    ],
+    "a_tokens": 29,
+    "b_tokens": 319,
+    "leakage": []
+  },
+  {
+    "profile_id": 3,
+    "phrasing_idx": 2,
+    "name": "Jordan",
+    "labels": {
+      "length": 0,
+      "order": 1,
+      "decisiveness": 1
+    },
+    "a_form": "Jordan likes answers to be short and to the point. Jordan prefers to see the thinking first, then the verdict. When Jordan is torn, Jordan wants more paths laid out, not a single pick.",
+    "b_form": "Jordan: Can you explain what recursion is in programming?\nAssistant: Recursion is a technique where a function calls itself as part of its own definition, working on successively smaller versions of the original problem until it reaches a base case that can be solved directly, at which point the call stack unwinds and the partial results are combined to resolve the original call.\nJordan: Shorter, please.\nAssistant: A function that solves a problem by calling itself on smaller versions until it can answer directly.\nJordan: That works.\n\nJordan: Should I go back to school for a graduate degree?\nAssistant: If the degree opens the right doors and the cost is manageable, it's worth it. The ROI varies by field, but for targeted moves, yes.\nJordan: Don't jump to the answer \u2014 explain the reasoning first.\nAssistant: The ROI varies enormously by field \u2014 credentials gate roles in medicine or law more than software. Cost and opportunity cost are real. Given that: yes, if it unlocks something specific you need; otherwise it's usually not worth it.\nJordan: Perfect.\n\nJordan: I can't decide between doing a PhD and taking an industry job.\nAssistant: Go to industry \u2014 the opportunity cost of a PhD is 4-6 years of lower pay and high uncertainty, rarely worth it unless you need the credential for a specific role.\nJordan: I need more choices, not a single answer.\nAssistant: Options: take the job now and revisit later; apply for the PhD to keep both live; look for industry research roles that bridge both; or do a master's as a lower-cost credential. What's driving the pull toward PhD specifically?\nJordan: That's what I needed.",
+    "b_asst_spans": [
+      [
+        69,
+        382
+      ],
+      [
+        419,
+        519
+      ],
+      [
+        610,
+        742
+      ],
+      [
+        818,
+        1049
+      ],
+      [
+        1150,
+        1312
+      ],
+      [
+        1374,
+        1600
+      ]
+    ],
+    "a_tokens": 40,
+    "b_tokens": 360,
+    "leakage": []
+  },
+  {
+    "profile_id": 3,
+    "phrasing_idx": 3,
+    "name": "Morgan",
+    "labels": {
+      "length": 0,
+      "order": 1,
+      "decisiveness": 1
+    },
+    "a_form": "Morgan prefers concise replies over lengthy ones. Morgan wants the explanation before the bottom line. Morgan prefers having more options presented rather than being pushed toward one.",
+    "b_form": "Morgan: Can you explain how the stock market works?\nAssistant: The stock market is a system of exchanges where shares of publicly listed companies are bought and sold between investors, with prices determined by supply and demand \u2014 more buyers than sellers pushes prices up, more sellers than buyers pushes them down \u2014 and owning a share gives you a proportional claim on the company's earnings and assets.\nMorgan: Way too long. Just give me the essentials.\nAssistant: Buyers and sellers trade ownership stakes in companies, and prices shift based on supply and demand.\nMorgan: Okay.\n\nMorgan: Should I switch careers to something I'm more interested in?\nAssistant: Do it \u2014 people who switch into better-fit work report higher satisfaction, and regret for staying tends to outlast the pain of transition.\nMorgan: Give me the why before the what.\nAssistant: Research on career satisfaction shows fit matters more than seniority after the first few years. And regret for not switching tends to outlast the transition pain. Given that: do it.\nMorgan: Good.\n\nMorgan: Should I get a gym membership or build a home gym?\nAssistant: Get the gym membership \u2014 the variety and social environment make consistency easier for most people, and you're not sinking money into equipment that might collect dust.\nMorgan: Stop pushing me toward one \u2014 lay out the options.\nAssistant: Gym: variety and social energy, but requires commuting. Home gym: convenience, no commute, higher upfront cost. Hybrid: minimal home setup plus occasional gym. What's your biggest barrier \u2014 time, cost, or motivation?\nMorgan: Better.",
+    "b_asst_spans": [
+      [
+        63,
+        406
+      ],
+      [
+        469,
+        569
+      ],
+      [
+        665,
+        803
+      ],
+      [
+        856,
+        1038
+      ],
+      [
+        1124,
+        1293
+      ],
+      [
+        1363,
+        1579
+      ]
+    ],
+    "a_tokens": 30,
+    "b_tokens": 334,
+    "leakage": [
+      [
+        "first",
+        "order",
+        935,
+        " seniority after the first few years. And regret f"
+      ],
+      [
+        "push",
+        "decisiveness",
+        257,
+        "buyers than sellers pushes prices up, more sellers"
+      ],
+      [
+        "push",
+        "decisiveness",
+        300,
+        "sellers than buyers pushes them down \u2014 and owning "
+      ]
+    ]
+  },
+  {
+    "profile_id": 3,
+    "phrasing_idx": 4,
+    "name": "Casey",
+    "labels": {
+      "length": 0,
+      "order": 1,
+      "decisiveness": 1
+    },
+    "a_form": "Casey prefers short answers. Casey likes to understand the reasoning before the conclusion. When Casey hesitates, Casey wants more options to consider, not a forced choice.",
+    "b_form": "Casey: Can you explain what machine learning is?\nAssistant: Machine learning is a subfield of AI in which systems learn patterns from data rather than being explicitly programmed with rules, by optimizing model parameters to minimize prediction error over a training set so the model can generalize to new, unseen data.\nCasey: Cut it down.\nAssistant: Systems that learn patterns from data rather than being explicitly programmed.\nCasey: Yes, that's it.\n\nCasey: Should I quit my job to start a business?\nAssistant: Don't quit yet \u2014 test while you still have income. Once you have traction and savings, then consider going full-time.\nCasey: Take me through the thinking before the conclusion.\nAssistant: Quitting without validation burns savings fast and forces you toward revenue before product-market fit. Starting on the side lets you test without that pressure. So: don't quit yet.\nCasey: That's what I needed.\n\nCasey: I can't decide between starting therapy or hiring a coach.\nAssistant: Go with therapy \u2014 coaching focuses on goals and forward momentum, but therapy addresses the underlying patterns that often block both. If you're feeling stuck emotionally, therapy is the better starting point.\nCasey: I want to see more alternatives before deciding.\nAssistant: Therapy if you're dealing with anxiety, past experiences, or recurring patterns; coaching for forward-focused goal work and accountability; some therapists also do coaching-style work; or both simultaneously. What's the main thing you're trying to change?\nCasey: Got it.",
+    "b_asst_spans": [
+      [
+        60,
+        319
+      ],
+      [
+        351,
+        429
+      ],
+      [
+        514,
+        631
+      ],
+      [
+        702,
+        883
+      ],
+      [
+        991,
+        1200
+      ],
+      [
+        1268,
+        1523
+      ]
+    ],
+    "a_tokens": 33,
+    "b_tokens": 329,
+    "leakage": []
+  },
+  {
+    "profile_id": 3,
+    "phrasing_idx": 5,
+    "name": "Taylor",
+    "labels": {
+      "length": 0,
+      "order": 1,
+      "decisiveness": 1
+    },
+    "a_form": "Taylor wants brief, concise responses. Taylor wants the reasons laid out before the final answer. Taylor wants to see a range of alternatives before deciding.",
+    "b_form": "Taylor: Can you explain how photosynthesis works?\nAssistant: Photosynthesis is the process by which plants convert light energy into chemical energy stored as glucose, using carbon dioxide and water as inputs, with oxygen released as a byproduct through light-dependent reactions in the thylakoid membranes and carbon fixation in the Calvin cycle in the stroma.\nTaylor: Too much detail. Make it brief.\nAssistant: Plants use sunlight to convert CO2 and water into glucose, releasing oxygen.\nTaylor: Perfect.\n\nTaylor: Should I buy a house or keep renting?\nAssistant: Buy \u2014 if your horizon is 5+ years and you have the down payment, the equity and stability typically outweigh renting's flexibility.\nTaylor: Reasoning first, then tell me what you think.\nAssistant: For a 5+ year horizon, you build equity that renters don't, and the monthly cost after tax benefits is often comparable. Main risks: illiquidity and maintenance. Weighing all that: buy if you're staying long-term.\nTaylor: Better.\n\nTaylor: I'm switching into software \u2014 should I focus on frontend or backend?\nAssistant: Go backend \u2014 it typically pays more, the fundamentals transfer more widely, and demand for solid backend engineers is consistently high.\nTaylor: Don't make the choice for me \u2014 what else is there?\nAssistant: Backend: higher pay ceiling, transferable fundamentals. Frontend: faster visual feedback, more accessible to beginners. Full-stack: more flexible and hireable at smaller companies. Mobile: strong niche. What kind of work do you actually want to do day-to-day?\nTaylor: That works.",
+    "b_asst_spans": [
+      [
+        61,
+        361
+      ],
+      [
+        413,
+        489
+      ],
+      [
+        565,
+        696
+      ],
+      [
+        762,
+        975
+      ],
+      [
+        1081,
+        1217
+      ],
+      [
+        1288,
+        1547
+      ]
+    ],
+    "a_tokens": 29,
+    "b_tokens": 346,
+    "leakage": [
+      [
+        "long",
+        "length",
+        965,
+        "y if you're staying long-term.\nTaylor: Better.\n\nTa"
+      ]
+    ]
+  },
+  {
+    "profile_id": 3,
+    "phrasing_idx": 6,
+    "name": "Riley",
+    "labels": {
+      "length": 0,
+      "order": 1,
+      "decisiveness": 1
+    },
+    "a_form": "Riley likes answers to be short and to the point. Riley prefers to see the thinking first, then the verdict. When Riley is torn, Riley wants more paths laid out, not a single pick.",
+    "b_form": "Riley: Can you explain what inflation is?\nAssistant: Inflation is the general, sustained increase in the price level of goods and services over time, meaning the purchasing power of a unit of currency declines \u2014 you can buy less with the same amount of money \u2014 and it's measured using indices like the Consumer Price Index.\nRiley: That's too long. Get to the point.\nAssistant: Prices rise over time, so your money buys less.\nRiley: Good.\n\nRiley: Should I take a sabbatical from work?\nAssistant: Take it \u2014 burnout that goes unaddressed compounds, and the perspective you gain can reorient your career in ways that outweigh any resume gap.\nRiley: I need the reasoning laid out before the verdict.\nAssistant: Burnout compounds and tends to cause decisions whose career cost exceeds any resume gap. The clarity from time away often pays for itself. Given that: take the sabbatical if you have the savings.\nRiley: Got it.\n\nRiley: I have extra money beyond my emergency fund \u2014 should I keep it in savings or invest it?\nAssistant: Invest it \u2014 if your emergency fund is already secured, leaving surplus cash in savings is a drag on long-term returns.\nRiley: What other options should I be considering?\nAssistant: Max tax-advantaged accounts first (Roth IRA, 401k) if you haven't; then broad index funds in taxable; keep a larger cash buffer if your income is variable; or pay off high-interest debt before any investing. Which of those is most relevant to your situation?\nRiley: Okay.",
+    "b_asst_spans": [
+      [
+        53,
+        323
+      ],
+      [
+        377,
+        424
+      ],
+      [
+        495,
+        637
+      ],
+      [
+        706,
+        901
+      ],
+      [
+        1024,
+        1142
+      ],
+      [
+        1205,
+        1463
+      ]
+    ],
+    "a_tokens": 41,
+    "b_tokens": 344,
+    "leakage": [
+      [
+        "long",
+        "length",
+        1124,
+        "avings is a drag on long-term returns.\nRiley: What"
+      ],
+      [
+        "first",
+        "order",
+        1232,
+        "-advantaged accounts first (Roth IRA, 401k) if you"
+      ]
+    ]
+  },
+  {
+    "profile_id": 3,
+    "phrasing_idx": 7,
+    "name": "Avery",
+    "labels": {
+      "length": 0,
+      "order": 1,
+      "decisiveness": 1
+    },
+    "a_form": "Avery prefers concise replies over lengthy ones. Avery wants the explanation before the bottom line. Avery prefers having more options presented rather than being pushed toward one.",
+    "b_form": "Avery: Can you explain how GPS works?\nAssistant: GPS works by having your device receive signals from multiple satellites in medium Earth orbit, measuring the time delay between transmission and reception from at least four satellites, converting those delays into distances via the speed of light, and using the known satellite positions to calculate your location through trilateration.\nAvery: Trim it. I don't need all that.\nAssistant: Your device times signals from several satellites and uses those distances to calculate your position.\nAvery: That's what I needed.\n\nAvery: Should I take the promotion into management?\nAssistant: Take it \u2014 the pay and influence are real upsides, and you won't know if you like management until you try it.\nAvery: Explain it first, then give your recommendation.\nAssistant: Management shifts your output from your own work to other people's \u2014 some love that, others find it draining. The pay and influence are real. The risk is discovering you prefer doing the work directly \u2014 which is recoverable. If leadership interests you: take it.\nAvery: That works.\n\nAvery: A friend wants me to join their startup \u2014 should I do it?\nAssistant: Don't do it \u2014 business and close friendship is a notoriously difficult combination, and if the company struggles, you'll both be under pressure in ways that strain even strong relationships.\nAvery: Give me a broader range of alternatives.\nAssistant: Full co-founder: highest upside, highest relationship risk. Advisor: lower commitment, lower exposure. One scoped project to test fit before committing. Or decline and stay close as a friend. Which matters more to you \u2014 the equity upside or protecting the friendship?\nAvery: Yes, that's it.",
+    "b_asst_spans": [
+      [
+        49,
+        388
+      ],
+      [
+        439,
+        541
+      ],
+      [
+        635,
+        744
+      ],
+      [
+        812,
+        1074
+      ],
+      [
+        1171,
+        1361
+      ],
+      [
+        1421,
+        1688
+      ]
+    ],
+    "a_tokens": 31,
+    "b_tokens": 366,
+    "leakage": []
+  },
+  {
+    "profile_id": 4,
+    "phrasing_idx": 0,
+    "name": "Alex",
+    "labels": {
+      "length": 1,
+      "order": 0,
+      "decisiveness": 0
+    },
+    "a_form": "Alex prefers thorough, detailed answers. Alex likes the conclusion first, then the reasons. When Alex hesitates, Alex wants to be pushed toward a specific choice, not given more options.",
+    "b_form": "Alex: Can you explain how compound interest works?\nAssistant: Interest builds on itself.\nAlex: That's too brief. Give me more detail.\nAssistant: Compound interest adds each period's earned interest back to the principal, so you earn interest on a progressively larger base. The longer the horizon and higher the rate, the more dramatic the effect: a 7% annual return doubles roughly every ten years through this mechanism alone.\nAlex: Better.\n\nAlex: Should I take the new job offer?\nAssistant: There are many factors to consider here, including salary, growth opportunities, work-life balance, company culture, and long-term fit. After weighing all of these, I'd say you should take it.\nAlex: Give the conclusion first, then the reasons.\nAssistant: Take it. The growth opportunities outweigh the risks.\nAlex: Okay.\n\nAlex: I can't decide between moving to Boston or staying here.\nAssistant: Both cities have advantages. You might also consider a temporary move, a hybrid arrangement, or negotiating remote work first.\nAlex: Don't give me more options. Just push me toward one.\nAssistant: Go to Boston.\nAlex: Perfect.",
+    "b_asst_spans": [
+      [
+        62,
+        88
+      ],
+      [
+        145,
+        428
+      ],
+      [
+        494,
+        686
+      ],
+      [
+        749,
+        802
+      ],
+      [
+        890,
+        1016
+      ],
+      [
+        1087,
+        1100
+      ]
+    ],
+    "a_tokens": 37,
+    "b_tokens": 250,
+    "leakage": [
+      [
+        "long",
+        "length",
+        278,
+        "ly larger base. The longer the horizon and higher "
+      ],
+      [
+        "long",
+        "length",
+        615,
+        "ompany culture, and long-term fit. After weighing "
+      ],
+      [
+        "first",
+        "order",
+        1009,
+        "otiating remote work first.\nAlex: Don't give me mo"
+      ]
+    ]
+  },
+  {
+    "profile_id": 4,
+    "phrasing_idx": 1,
+    "name": "Sam",
+    "labels": {
+      "length": 1,
+      "order": 0,
+      "decisiveness": 0
+    },
+    "a_form": "Sam wants comprehensive, in-depth explanations. Sam wants the bottom line up front, followed by the rationale. Sam wants a direct recommendation when deciding, not a list of alternatives.",
+    "b_form": "Sam: Can you explain how vaccines work?\nAssistant: They help your immune system fight disease.\nSam: Too shallow. I want a fuller explanation.\nAssistant: Vaccines introduce a harmless form of a pathogen \u2014 inactivated, weakened, or just a protein fragment or mRNA instruction \u2014 triggering your immune system to build antibodies and memory cells. When you later encounter the real pathogen, that memory lets your immune system respond quickly enough to neutralize it before it causes serious illness.\nSam: Got it.\n\nSam: Should I negotiate the salary on this offer?\nAssistant: Negotiating has a small risk of seeming ungrateful, but employers almost always expect some negotiation and rarely pull offers for a polite ask. On balance, I think you should negotiate.\nSam: Lead with the answer, then explain.\nAssistant: Negotiate. The worst realistic outcome is they say no.\nSam: Yes, that's it.\n\nSam: I can't decide between getting an iPhone or an Android phone.\nAssistant: Both platforms have strengths. You might also try handling both in a store, or look at what apps you rely on and whether they work on both.\nSam: Stop listing alternatives. Tell me which one.\nAssistant: Get the iPhone.\nSam: Good.",
+    "b_asst_spans": [
+      [
+        51,
+        94
+      ],
+      [
+        153,
+        497
+      ],
+      [
+        573,
+        759
+      ],
+      [
+        812,
+        866
+      ],
+      [
+        967,
+        1106
+      ],
+      [
+        1169,
+        1184
+      ]
+    ],
+    "a_tokens": 36,
+    "b_tokens": 269,
+    "leakage": []
+  },
+  {
+    "profile_id": 4,
+    "phrasing_idx": 2,
+    "name": "Jordan",
+    "labels": {
+      "length": 1,
+      "order": 0,
+      "decisiveness": 0
+    },
+    "a_form": "Jordan likes responses that fully cover the topic. Jordan prefers to get the answer before the explanation. When Jordan is torn, Jordan wants one clear answer, not more things to weigh.",
+    "b_form": "Jordan: Can you explain what recursion is in programming?\nAssistant: A function that calls itself.\nJordan: Can you elaborate? I need more than that.\nAssistant: Recursion is when a function calls itself to solve a smaller version of the same problem. This repeats until a base case \u2014 the simplest form that returns directly \u2014 is reached. Then the call stack unwinds, each frame returning its result upward. Classic uses: factorials, Fibonacci, tree traversal. Two required parts: the recursive case (break it down) and the base case (stop).\nJordan: That works.\n\nJordan: Should I go back to school for a graduate degree?\nAssistant: It depends on the field, the cost, and what you're hoping to gain \u2014 whether credentials, knowledge, or a career switch. For targeted moves into roles that require it, a well-chosen program is usually worth it. I'd say yes, with conditions.\nJordan: Bottom line first, then the reasoning.\nAssistant: Yes, if the degree unlocks a specific door you need \u2014 otherwise probably not.\nJordan: Perfect.\n\nJordan: I can't decide between doing a PhD and taking an industry job.\nAssistant: Both paths have distinct advantages. You could also consider a master's as a middle ground, or a research role in industry that doesn't require a PhD.\nJordan: No more options \u2014 just pick one for me.\nAssistant: Take the industry job.\nJordan: That's what I needed.",
+    "b_asst_spans": [
+      [
+        69,
+        98
+      ],
+      [
+        160,
+        539
+      ],
+      [
+        630,
+        869
+      ],
+      [
+        928,
+        1005
+      ],
+      [
+        1106,
+        1256
+      ],
+      [
+        1316,
+        1338
+      ]
+    ],
+    "a_tokens": 36,
+    "b_tokens": 317,
+    "leakage": []
+  },
+  {
+    "profile_id": 4,
+    "phrasing_idx": 3,
+    "name": "Morgan",
+    "labels": {
+      "length": 1,
+      "order": 0,
+      "decisiveness": 0
+    },
+    "a_form": "Morgan prefers detailed responses over brief ones. Morgan wants the main point stated before supporting details. Morgan prefers to be told which option to take rather than given more choices.",
+    "b_form": "Morgan: Can you explain how the stock market works?\nAssistant: People trade company shares and prices change based on demand.\nMorgan: That's not enough \u2014 go deeper.\nAssistant: Stock markets are exchanges where investors buy and sell fractional ownership stakes in companies. Prices reflect collective forecasts of a company's future earnings, shaped by reports, economic data, interest rates, and sentiment. More buyers than sellers pushes prices up; more sellers pushes them down. Indices like the S&P 500 track aggregate performance across hundreds of companies.\nMorgan: Okay.\n\nMorgan: Should I switch careers to something I'm more interested in?\nAssistant: Career switches carry real costs in income and seniority, but people who make deliberate moves into better-fit fields generally report higher satisfaction. On balance, I'd say do it.\nMorgan: Tell me the conclusion first.\nAssistant: Do it. Regret for not switching usually outlasts the transition cost.\nMorgan: Good.\n\nMorgan: Should I get a gym membership or build a home gym?\nAssistant: Both work for different people. You could try a month-to-month gym trial, start with minimal home equipment, or look at outdoor training first.\nMorgan: I don't need more choices. Make the call.\nAssistant: Get the gym membership.\nMorgan: Better.",
+    "b_asst_spans": [
+      [
+        63,
+        125
+      ],
+      [
+        176,
+        564
+      ],
+      [
+        660,
+        842
+      ],
+      [
+        892,
+        961
+      ],
+      [
+        1047,
+        1190
+      ],
+      [
+        1252,
+        1275
+      ]
+    ],
+    "a_tokens": 33,
+    "b_tokens": 278,
+    "leakage": [
+      [
+        "first",
+        "order",
+        1183,
+        " at outdoor training first.\nMorgan: I don't need m"
+      ],
+      [
+        "push",
+        "decisiveness",
+        433,
+        "buyers than sellers pushes prices up; more sellers"
+      ],
+      [
+        "push",
+        "decisiveness",
+        464,
+        "es up; more sellers pushes them down. Indices like"
+      ]
+    ]
+  },
+  {
+    "profile_id": 4,
+    "phrasing_idx": 4,
+    "name": "Casey",
+    "labels": {
+      "length": 1,
+      "order": 0,
+      "decisiveness": 0
+    },
+    "a_form": "Casey prefers thorough, detailed answers. Casey likes the conclusion first, then the reasons. When Casey hesitates, Casey wants to be pushed toward a specific choice, not given more options.",
+    "b_form": "Casey: Can you explain what machine learning is?\nAssistant: Programs that learn from data.\nCasey: Too short. Walk me through it properly.\nAssistant: Machine learning trains systems to perform tasks by finding patterns in data rather than following hand-coded rules. You provide labeled examples; an optimizer adjusts the model's parameters to minimize prediction error. The challenge is generalization \u2014 performing well on new data, not just training data. Main types: supervised (labeled pairs), unsupervised (finding structure), reinforcement (trial-and-error feedback).\nCasey: Yes, that's it.\n\nCasey: Should I quit my job to start a business?\nAssistant: Starting without validated traction and savings is risky \u2014 but if you've tested the idea and have runway, the case for jumping is stronger. I'd say start on the side first, then decide.\nCasey: Answer first, then walk me through why.\nAssistant: Don't quit yet. Validate on the side before going all in.\nCasey: That's what I needed.\n\nCasey: I can't decide between starting therapy or hiring a coach.\nAssistant: Both serve different needs. You might also try whichever has faster availability, or start with one and switch if it doesn't fit.\nCasey: Just tell me which one to pick.\nAssistant: Start with therapy.\nCasey: Got it.",
+    "b_asst_spans": [
+      [
+        60,
+        90
+      ],
+      [
+        149,
+        572
+      ],
+      [
+        657,
+        842
+      ],
+      [
+        901,
+        958
+      ],
+      [
+        1066,
+        1195
+      ],
+      [
+        1246,
+        1265
+      ]
+    ],
+    "a_tokens": 38,
+    "b_tokens": 296,
+    "leakage": [
+      [
+        "first",
+        "order",
+        822,
+        "ay start on the side first, then decide.\nCasey: An"
+      ]
+    ]
+  },
+  {
+    "profile_id": 4,
+    "phrasing_idx": 5,
+    "name": "Taylor",
+    "labels": {
+      "length": 1,
+      "order": 0,
+      "decisiveness": 0
+    },
+    "a_form": "Taylor wants comprehensive, in-depth explanations. Taylor wants the bottom line up front, followed by the rationale. Taylor wants a direct recommendation when deciding, not a list of alternatives.",
+    "b_form": "Taylor: Can you explain how photosynthesis works?\nAssistant: Plants use sunlight to make sugar from CO2.\nTaylor: I need more than that. Expand on it.\nAssistant: Photosynthesis happens in two stages inside chloroplasts. Light-dependent reactions (thylakoids): chlorophyll absorbs sunlight, splits water, releases oxygen, and produces ATP and NADPH. Calvin cycle (stroma): those energy carriers fix CO2 into sugar. Net equation: 6CO2 + 6H2O + light to C6H12O6 + 6O2.\nTaylor: Perfect.\n\nTaylor: Should I buy a house or keep renting?\nAssistant: It depends on how long you plan to stay, local price-to-rent ratios, your down payment, and the opportunity cost. For a 5+ year horizon with stable income, buying usually wins. I'd lean toward buying.\nTaylor: Lead with the verdict, then the rationale.\nAssistant: Buy \u2014 if you're staying 5+ years and have the down payment, it's usually the better financial move.\nTaylor: Better.\n\nTaylor: I'm switching into software \u2014 should I focus on frontend or backend?\nAssistant: Both tracks have strong demand. You could also consider full-stack as a path that covers both, or look at which has more open roles in your area.\nTaylor: Enough options. Give me one clear answer.\nAssistant: Focus on backend.\nTaylor: That works.",
+    "b_asst_spans": [
+      [
+        61,
+        104
+      ],
+      [
+        161,
+        464
+      ],
+      [
+        540,
+        740
+      ],
+      [
+        803,
+        902
+      ],
+      [
+        1008,
+        1153
+      ],
+      [
+        1215,
+        1232
+      ]
+    ],
+    "a_tokens": 36,
+    "b_tokens": 309,
+    "leakage": [
+      [
+        "long",
+        "length",
+        558,
+        ": It depends on how long you plan to stay, local p"
+      ]
+    ]
+  },
+  {
+    "profile_id": 4,
+    "phrasing_idx": 6,
+    "name": "Riley",
+    "labels": {
+      "length": 1,
+      "order": 0,
+      "decisiveness": 0
+    },
+    "a_form": "Riley likes responses that fully cover the topic. Riley prefers to get the answer before the explanation. When Riley is torn, Riley wants one clear answer, not more things to weigh.",
+    "b_form": "Riley: Can you explain what inflation is?\nAssistant: Prices go up and money buys less.\nRiley: That's too thin. Give me the full picture.\nAssistant: Inflation is a sustained rise in the general price level, eroding purchasing power. Causes include excess demand (too much money chasing too few goods), supply shocks (cost-push), and wage-price spirals. The Fed targets about 2% annually \u2014 enough to discourage hoarding, not so much it erodes savings. Measured by tracking a basket of goods via the Consumer Price Index.\nRiley: Good.\n\nRiley: Should I take a sabbatical from work?\nAssistant: Sabbaticals have real benefits for burnout recovery, but they carry career risk and financial cost. If you have savings and are genuinely burned out, I'd say take it.\nRiley: Give me the answer upfront, then the explanation.\nAssistant: Take it \u2014 if you have savings and a clear intention for the time, the upside is worth it.\nRiley: Got it.\n\nRiley: I have extra money beyond my emergency fund \u2014 should I keep it in savings or invest it?\nAssistant: Both have trade-offs. You might also consider a high-yield savings account, paying down any remaining debt first, or looking at tax-advantaged accounts.\nRiley: Stop hedging \u2014 which one should I do?\nAssistant: Invest it.\nRiley: Okay.",
+    "b_asst_spans": [
+      [
+        53,
+        86
+      ],
+      [
+        148,
+        518
+      ],
+      [
+        589,
+        755
+      ],
+      [
+        824,
+        913
+      ],
+      [
+        1036,
+        1188
+      ],
+      [
+        1245,
+        1255
+      ]
+    ],
+    "a_tokens": 37,
+    "b_tokens": 311,
+    "leakage": [
+      [
+        "first",
+        "order",
+        1142,
+        "n any remaining debt first, or looking at tax-adva"
+      ],
+      [
+        "push",
+        "decisiveness",
+        321,
+        "supply shocks (cost-push), and wage-price spirals."
+      ]
+    ]
+  },
+  {
+    "profile_id": 4,
+    "phrasing_idx": 7,
+    "name": "Avery",
+    "labels": {
+      "length": 1,
+      "order": 0,
+      "decisiveness": 0
+    },
+    "a_form": "Avery prefers detailed responses over brief ones. Avery wants the main point stated before supporting details. Avery prefers to be told which option to take rather than given more choices.",
+    "b_form": "Avery: Can you explain how GPS works?\nAssistant: Your phone uses satellites to figure out where you are.\nAvery: Not enough detail. Please elaborate.\nAssistant: GPS satellites broadcast precise timestamps. Your receiver measures how long each signal takes to arrive; multiplied by the speed of light, that's the distance to each satellite. With distances to four satellites and their known positions, the receiver calculates your 3D location. Four satellites (not three) are needed to correct for receiver clock errors. Typical civilian accuracy: 2-5 meters.\nAvery: That's what I needed.\n\nAvery: Should I take the promotion into management?\nAssistant: Management is a real career shift \u2014 many strong individual contributors dislike managing people, and it's harder to go back than it seems. That said, if leadership interests you and the company is supportive, I'd take it.\nAvery: Conclusion first \u2014 then the reasons.\nAssistant: Take it \u2014 if leadership genuinely interests you, now is the time to find out.\nAvery: That works.\n\nAvery: A friend wants me to join their startup \u2014 should I do it?\nAssistant: Working with close friends has specific risks beyond typical startup risk. You might consider a part-time advisory role first, or a short project to test the dynamic.\nAvery: Don't give me more alternatives. Just decide.\nAssistant: Don't do it.\nAvery: Yes, that's it.",
+    "b_asst_spans": [
+      [
+        49,
+        104
+      ],
+      [
+        160,
+        557
+      ],
+      [
+        651,
+        872
+      ],
+      [
+        928,
+        1005
+      ],
+      [
+        1102,
+        1268
+      ],
+      [
+        1333,
+        1345
+      ]
+    ],
+    "a_tokens": 34,
+    "b_tokens": 308,
+    "leakage": [
+      [
+        "short",
+        "length",
+        1234,
+        "ry role first, or a short project to test the dyna"
+      ],
+      [
+        "long",
+        "length",
+        232,
+        "ceiver measures how long each signal takes to arri"
+      ],
+      [
+        "first",
+        "order",
+        1221,
+        "t-time advisory role first, or a short project to "
+      ]
+    ]
+  },
+  {
+    "profile_id": 5,
+    "phrasing_idx": 0,
+    "name": "Alex",
+    "labels": {
+      "length": 1,
+      "order": 0,
+      "decisiveness": 1
+    },
+    "a_form": "Alex prefers thorough, detailed answers. Alex likes the conclusion first, then the reasons. When Alex hesitates, Alex wants more options to consider, not a forced choice.",
+    "b_form": "Alex: Can you explain how compound interest works?\nAssistant: Interest builds on itself.\nAlex: That's too brief. Give me more detail.\nAssistant: Compound interest adds each period's earned interest back to the principal, so you earn interest on a progressively larger base. The longer the horizon and higher the rate, the more dramatic the effect: a 7% annual return doubles roughly every ten years through this mechanism alone.\nAlex: Better.\n\nAlex: Should I take the new job offer?\nAssistant: There are many factors to consider here, including salary, growth opportunities, work-life balance, company culture, and long-term fit. After weighing all of these, I'd say you should take it.\nAlex: Give the conclusion first, then the reasons.\nAssistant: Take it. The growth opportunities outweigh the risks.\nAlex: Okay.\n\nAlex: I can't decide between moving to Boston or staying here.\nAssistant: Go to Boston \u2014 the opportunities are better and you've been thinking about it too long.\nAlex: Give me more options to consider.\nAssistant: You could do a trial month in Boston, negotiate a remote arrangement from your current city, apply to jobs in both and see what comes in, or set a firm decision deadline. Which of those resonates?\nAlex: Perfect.",
+    "b_asst_spans": [
+      [
+        62,
+        88
+      ],
+      [
+        145,
+        428
+      ],
+      [
+        494,
+        686
+      ],
+      [
+        749,
+        802
+      ],
+      [
+        890,
+        977
+      ],
+      [
+        1029,
+        1225
+      ]
+    ],
+    "a_tokens": 34,
+    "b_tokens": 277,
+    "leakage": [
+      [
+        "long",
+        "length",
+        278,
+        "ly larger base. The longer the horizon and higher "
+      ],
+      [
+        "long",
+        "length",
+        615,
+        "ompany culture, and long-term fit. After weighing "
+      ],
+      [
+        "long",
+        "length",
+        972,
+        "inking about it too long.\nAlex: Give me more optio"
+      ]
+    ]
+  },
+  {
+    "profile_id": 5,
+    "phrasing_idx": 1,
+    "name": "Sam",
+    "labels": {
+      "length": 1,
+      "order": 0,
+      "decisiveness": 1
+    },
+    "a_form": "Sam wants comprehensive, in-depth explanations. Sam wants the bottom line up front, followed by the rationale. Sam wants to see a range of alternatives before deciding.",
+    "b_form": "Sam: Can you explain how vaccines work?\nAssistant: They help your immune system fight disease.\nSam: Too shallow. I want a fuller explanation.\nAssistant: Vaccines introduce a harmless form of a pathogen \u2014 inactivated, weakened, or just a protein fragment or mRNA instruction \u2014 triggering your immune system to build antibodies and memory cells. When you later encounter the real pathogen, that memory lets your immune system respond quickly enough to neutralize it before it causes serious illness.\nSam: Got it.\n\nSam: Should I negotiate the salary on this offer?\nAssistant: Negotiating has a small risk of seeming ungrateful, but employers almost always expect some negotiation and rarely pull offers for a polite ask. On balance, I think you should negotiate.\nSam: Lead with the answer, then explain.\nAssistant: Negotiate. The worst realistic outcome is they say no.\nSam: Yes, that's it.\n\nSam: I can't decide between getting an iPhone or an Android phone.\nAssistant: Get the iPhone \u2014 the ecosystem is cohesive, the resale value is better, and most people around you probably use iMessage anyway.\nSam: Don't push me toward one. What are the alternatives?\nAssistant: Consider: iPhone for Apple ecosystem cohesion; Pixel for clean Android at lower cost; Samsung for the widest Android ecosystem. Which trade-off matters most to you \u2014 ecosystem, price, or customization?\nSam: Good.",
+    "b_asst_spans": [
+      [
+        51,
+        94
+      ],
+      [
+        153,
+        497
+      ],
+      [
+        573,
+        759
+      ],
+      [
+        812,
+        866
+      ],
+      [
+        967,
+        1095
+      ],
+      [
+        1165,
+        1366
+      ]
+    ],
+    "a_tokens": 33,
+    "b_tokens": 304,
+    "leakage": []
+  },
+  {
+    "profile_id": 5,
+    "phrasing_idx": 2,
+    "name": "Jordan",
+    "labels": {
+      "length": 1,
+      "order": 0,
+      "decisiveness": 1
+    },
+    "a_form": "Jordan likes responses that fully cover the topic. Jordan prefers to get the answer before the explanation. When Jordan is torn, Jordan wants more paths laid out, not a single pick.",
+    "b_form": "Jordan: Can you explain what recursion is in programming?\nAssistant: A function that calls itself.\nJordan: Can you elaborate? I need more than that.\nAssistant: Recursion is when a function calls itself to solve a smaller version of the same problem. This repeats until a base case \u2014 the simplest form that returns directly \u2014 is reached. Then the call stack unwinds, each frame returning its result upward. Classic uses: factorials, Fibonacci, tree traversal. Two required parts: the recursive case (break it down) and the base case (stop).\nJordan: That works.\n\nJordan: Should I go back to school for a graduate degree?\nAssistant: It depends on the field, the cost, and what you're hoping to gain \u2014 whether credentials, knowledge, or a career switch. For targeted moves into roles that require it, a well-chosen program is usually worth it. I'd say yes, with conditions.\nJordan: Bottom line first, then the reasoning.\nAssistant: Yes, if the degree unlocks a specific door you need \u2014 otherwise probably not.\nJordan: Perfect.\n\nJordan: I can't decide between doing a PhD and taking an industry job.\nAssistant: Go to industry \u2014 the opportunity cost of a PhD is 4-6 years of lower pay and high uncertainty, rarely worth it unless you need the credential for a specific role.\nJordan: I need more choices, not a single answer.\nAssistant: Options: take the job now and revisit later; apply for the PhD to keep both live; look for industry research roles that bridge both; or do a master's as a lower-cost credential. What's driving the pull toward PhD specifically?\nJordan: That's what I needed.",
+    "b_asst_spans": [
+      [
+        69,
+        98
+      ],
+      [
+        160,
+        539
+      ],
+      [
+        630,
+        869
+      ],
+      [
+        928,
+        1005
+      ],
+      [
+        1106,
+        1268
+      ],
+      [
+        1330,
+        1556
+      ]
+    ],
+    "a_tokens": 36,
+    "b_tokens": 365,
+    "leakage": []
+  },
+  {
+    "profile_id": 5,
+    "phrasing_idx": 3,
+    "name": "Morgan",
+    "labels": {
+      "length": 1,
+      "order": 0,
+      "decisiveness": 1
+    },
+    "a_form": "Morgan prefers detailed responses over brief ones. Morgan wants the main point stated before supporting details. Morgan prefers having more options presented rather than being pushed toward one.",
+    "b_form": "Morgan: Can you explain how the stock market works?\nAssistant: People trade company shares and prices change based on demand.\nMorgan: That's not enough \u2014 go deeper.\nAssistant: Stock markets are exchanges where investors buy and sell fractional ownership stakes in companies. Prices reflect collective forecasts of a company's future earnings, shaped by reports, economic data, interest rates, and sentiment. More buyers than sellers pushes prices up; more sellers pushes them down. Indices like the S&P 500 track aggregate performance across hundreds of companies.\nMorgan: Okay.\n\nMorgan: Should I switch careers to something I'm more interested in?\nAssistant: Career switches carry real costs in income and seniority, but people who make deliberate moves into better-fit fields generally report higher satisfaction. On balance, I'd say do it.\nMorgan: Tell me the conclusion first.\nAssistant: Do it. Regret for not switching usually outlasts the transition cost.\nMorgan: Good.\n\nMorgan: Should I get a gym membership or build a home gym?\nAssistant: Get the gym membership \u2014 the variety and social environment make consistency easier for most people, and you're not sinking money into equipment that might collect dust.\nMorgan: Stop pushing me toward one \u2014 lay out the options.\nAssistant: Gym: variety and social energy, but requires commuting. Home gym: convenience, no commute, higher upfront cost. Hybrid: minimal home setup plus occasional gym. What's your biggest barrier \u2014 time, cost, or motivation?\nMorgan: Better.",
+    "b_asst_spans": [
+      [
+        63,
+        125
+      ],
+      [
+        176,
+        564
+      ],
+      [
+        660,
+        842
+      ],
+      [
+        892,
+        961
+      ],
+      [
+        1047,
+        1216
+      ],
+      [
+        1286,
+        1502
+      ]
+    ],
+    "a_tokens": 31,
+    "b_tokens": 317,
+    "leakage": [
+      [
+        "push",
+        "decisiveness",
+        433,
+        "buyers than sellers pushes prices up; more sellers"
+      ],
+      [
+        "push",
+        "decisiveness",
+        464,
+        "es up; more sellers pushes them down. Indices like"
+      ]
+    ]
+  },
+  {
+    "profile_id": 5,
+    "phrasing_idx": 4,
+    "name": "Casey",
+    "labels": {
+      "length": 1,
+      "order": 0,
+      "decisiveness": 1
+    },
+    "a_form": "Casey prefers thorough, detailed answers. Casey likes the conclusion first, then the reasons. When Casey hesitates, Casey wants more options to consider, not a forced choice.",
+    "b_form": "Casey: Can you explain what machine learning is?\nAssistant: Programs that learn from data.\nCasey: Too short. Walk me through it properly.\nAssistant: Machine learning trains systems to perform tasks by finding patterns in data rather than following hand-coded rules. You provide labeled examples; an optimizer adjusts the model's parameters to minimize prediction error. The challenge is generalization \u2014 performing well on new data, not just training data. Main types: supervised (labeled pairs), unsupervised (finding structure), reinforcement (trial-and-error feedback).\nCasey: Yes, that's it.\n\nCasey: Should I quit my job to start a business?\nAssistant: Starting without validated traction and savings is risky \u2014 but if you've tested the idea and have runway, the case for jumping is stronger. I'd say start on the side first, then decide.\nCasey: Answer first, then walk me through why.\nAssistant: Don't quit yet. Validate on the side before going all in.\nCasey: That's what I needed.\n\nCasey: I can't decide between starting therapy or hiring a coach.\nAssistant: Go with therapy \u2014 coaching focuses on goals and forward momentum, but therapy addresses the underlying patterns that often block both. If you're feeling stuck emotionally, therapy is the better starting point.\nCasey: I want to see more alternatives before deciding.\nAssistant: Therapy if you're dealing with anxiety, past experiences, or recurring patterns; coaching for forward-focused goal work and accountability; some therapists also do coaching-style work; or both simultaneously. What's the main thing you're trying to change?\nCasey: Got it.",
+    "b_asst_spans": [
+      [
+        60,
+        90
+      ],
+      [
+        149,
+        572
+      ],
+      [
+        657,
+        842
+      ],
+      [
+        901,
+        958
+      ],
+      [
+        1066,
+        1275
+      ],
+      [
+        1343,
+        1598
+      ]
+    ],
+    "a_tokens": 35,
+    "b_tokens": 353,
+    "leakage": [
+      [
+        "first",
+        "order",
+        822,
+        "ay start on the side first, then decide.\nCasey: An"
+      ]
+    ]
+  },
+  {
+    "profile_id": 5,
+    "phrasing_idx": 5,
+    "name": "Taylor",
+    "labels": {
+      "length": 1,
+      "order": 0,
+      "decisiveness": 1
+    },
+    "a_form": "Taylor wants comprehensive, in-depth explanations. Taylor wants the bottom line up front, followed by the rationale. Taylor wants to see a range of alternatives before deciding.",
+    "b_form": "Taylor: Can you explain how photosynthesis works?\nAssistant: Plants use sunlight to make sugar from CO2.\nTaylor: I need more than that. Expand on it.\nAssistant: Photosynthesis happens in two stages inside chloroplasts. Light-dependent reactions (thylakoids): chlorophyll absorbs sunlight, splits water, releases oxygen, and produces ATP and NADPH. Calvin cycle (stroma): those energy carriers fix CO2 into sugar. Net equation: 6CO2 + 6H2O + light to C6H12O6 + 6O2.\nTaylor: Perfect.\n\nTaylor: Should I buy a house or keep renting?\nAssistant: It depends on how long you plan to stay, local price-to-rent ratios, your down payment, and the opportunity cost. For a 5+ year horizon with stable income, buying usually wins. I'd lean toward buying.\nTaylor: Lead with the verdict, then the rationale.\nAssistant: Buy \u2014 if you're staying 5+ years and have the down payment, it's usually the better financial move.\nTaylor: Better.\n\nTaylor: I'm switching into software \u2014 should I focus on frontend or backend?\nAssistant: Go backend \u2014 it typically pays more, the fundamentals transfer more widely, and demand for solid backend engineers is consistently high.\nTaylor: Don't make the choice for me \u2014 what else is there?\nAssistant: Backend: higher pay ceiling, transferable fundamentals. Frontend: faster visual feedback, more accessible to beginners. Full-stack: more flexible and hireable at smaller companies. Mobile: strong niche. What kind of work do you actually want to do day-to-day?\nTaylor: That works.",
+    "b_asst_spans": [
+      [
+        61,
+        104
+      ],
+      [
+        161,
+        464
+      ],
+      [
+        540,
+        740
+      ],
+      [
+        803,
+        902
+      ],
+      [
+        1008,
+        1144
+      ],
+      [
+        1215,
+        1474
+      ]
+    ],
+    "a_tokens": 33,
+    "b_tokens": 358,
+    "leakage": [
+      [
+        "long",
+        "length",
+        558,
+        ": It depends on how long you plan to stay, local p"
+      ]
+    ]
+  },
+  {
+    "profile_id": 5,
+    "phrasing_idx": 6,
+    "name": "Riley",
+    "labels": {
+      "length": 1,
+      "order": 0,
+      "decisiveness": 1
+    },
+    "a_form": "Riley likes responses that fully cover the topic. Riley prefers to get the answer before the explanation. When Riley is torn, Riley wants more paths laid out, not a single pick.",
+    "b_form": "Riley: Can you explain what inflation is?\nAssistant: Prices go up and money buys less.\nRiley: That's too thin. Give me the full picture.\nAssistant: Inflation is a sustained rise in the general price level, eroding purchasing power. Causes include excess demand (too much money chasing too few goods), supply shocks (cost-push), and wage-price spirals. The Fed targets about 2% annually \u2014 enough to discourage hoarding, not so much it erodes savings. Measured by tracking a basket of goods via the Consumer Price Index.\nRiley: Good.\n\nRiley: Should I take a sabbatical from work?\nAssistant: Sabbaticals have real benefits for burnout recovery, but they carry career risk and financial cost. If you have savings and are genuinely burned out, I'd say take it.\nRiley: Give me the answer upfront, then the explanation.\nAssistant: Take it \u2014 if you have savings and a clear intention for the time, the upside is worth it.\nRiley: Got it.\n\nRiley: I have extra money beyond my emergency fund \u2014 should I keep it in savings or invest it?\nAssistant: Invest it \u2014 if your emergency fund is already secured, leaving surplus cash in savings is a drag on long-term returns.\nRiley: What other options should I be considering?\nAssistant: Max tax-advantaged accounts first (Roth IRA, 401k) if you haven't; then broad index funds in taxable; keep a larger cash buffer if your income is variable; or pay off high-interest debt before any investing. Which of those is most relevant to your situation?\nRiley: Okay.",
+    "b_asst_spans": [
+      [
+        53,
+        86
+      ],
+      [
+        148,
+        518
+      ],
+      [
+        589,
+        755
+      ],
+      [
+        824,
+        913
+      ],
+      [
+        1036,
+        1154
+      ],
+      [
+        1217,
+        1475
+      ]
+    ],
+    "a_tokens": 37,
+    "b_tokens": 356,
+    "leakage": [
+      [
+        "long",
+        "length",
+        1136,
+        "avings is a drag on long-term returns.\nRiley: What"
+      ],
+      [
+        "first",
+        "order",
+        1244,
+        "-advantaged accounts first (Roth IRA, 401k) if you"
+      ],
+      [
+        "push",
+        "decisiveness",
+        321,
+        "supply shocks (cost-push), and wage-price spirals."
+      ]
+    ]
+  },
+  {
+    "profile_id": 5,
+    "phrasing_idx": 7,
+    "name": "Avery",
+    "labels": {
+      "length": 1,
+      "order": 0,
+      "decisiveness": 1
+    },
+    "a_form": "Avery prefers detailed responses over brief ones. Avery wants the main point stated before supporting details. Avery prefers having more options presented rather than being pushed toward one.",
+    "b_form": "Avery: Can you explain how GPS works?\nAssistant: Your phone uses satellites to figure out where you are.\nAvery: Not enough detail. Please elaborate.\nAssistant: GPS satellites broadcast precise timestamps. Your receiver measures how long each signal takes to arrive; multiplied by the speed of light, that's the distance to each satellite. With distances to four satellites and their known positions, the receiver calculates your 3D location. Four satellites (not three) are needed to correct for receiver clock errors. Typical civilian accuracy: 2-5 meters.\nAvery: That's what I needed.\n\nAvery: Should I take the promotion into management?\nAssistant: Management is a real career shift \u2014 many strong individual contributors dislike managing people, and it's harder to go back than it seems. That said, if leadership interests you and the company is supportive, I'd take it.\nAvery: Conclusion first \u2014 then the reasons.\nAssistant: Take it \u2014 if leadership genuinely interests you, now is the time to find out.\nAvery: That works.\n\nAvery: A friend wants me to join their startup \u2014 should I do it?\nAssistant: Don't do it \u2014 business and close friendship is a notoriously difficult combination, and if the company struggles, you'll both be under pressure in ways that strain even strong relationships.\nAvery: Give me a broader range of alternatives.\nAssistant: Full co-founder: highest upside, highest relationship risk. Advisor: lower commitment, lower exposure. One scoped project to test fit before committing. Or decline and stay close as a friend. Which matters more to you \u2014 the equity upside or protecting the friendship?\nAvery: Yes, that's it.",
+    "b_asst_spans": [
+      [
+        49,
+        104
+      ],
+      [
+        160,
+        557
+      ],
+      [
+        651,
+        872
+      ],
+      [
+        928,
+        1005
+      ],
+      [
+        1102,
+        1292
+      ],
+      [
+        1352,
+        1619
+      ]
+    ],
+    "a_tokens": 32,
+    "b_tokens": 357,
+    "leakage": [
+      [
+        "long",
+        "length",
+        232,
+        "ceiver measures how long each signal takes to arri"
+      ]
+    ]
+  },
+  {
+    "profile_id": 6,
+    "phrasing_idx": 0,
+    "name": "Alex",
+    "labels": {
+      "length": 1,
+      "order": 1,
+      "decisiveness": 0
+    },
+    "a_form": "Alex prefers thorough, detailed answers. Alex likes to understand the reasoning before the conclusion. When Alex hesitates, Alex wants to be pushed toward a specific choice, not given more options.",
+    "b_form": "Alex: Can you explain how compound interest works?\nAssistant: Interest builds on itself.\nAlex: That's too brief. Give me more detail.\nAssistant: Compound interest adds each period's earned interest back to the principal, so you earn interest on a progressively larger base. The longer the horizon and higher the rate, the more dramatic the effect: a 7% annual return doubles roughly every ten years through this mechanism alone.\nAlex: Better.\n\nAlex: Should I take the new job offer?\nAssistant: Take it. The growth is strong, the pay is better, and switching now makes sense for your trajectory.\nAlex: Walk me through the reasoning before you give the answer.\nAssistant: The growth opportunities are strong, the pay is better, and the role is a better fit for where you want to be in five years. Given all that: take it.\nAlex: Okay.\n\nAlex: I can't decide between moving to Boston or staying here.\nAssistant: Both cities have advantages. You might also consider a temporary move, a hybrid arrangement, or negotiating remote work first.\nAlex: Don't give me more options. Just push me toward one.\nAssistant: Go to Boston.\nAlex: Perfect.",
+    "b_asst_spans": [
+      [
+        62,
+        88
+      ],
+      [
+        145,
+        428
+      ],
+      [
+        494,
+        594
+      ],
+      [
+        670,
+        819
+      ],
+      [
+        907,
+        1033
+      ],
+      [
+        1104,
+        1117
+      ]
+    ],
+    "a_tokens": 37,
+    "b_tokens": 257,
+    "leakage": [
+      [
+        "long",
+        "length",
+        278,
+        "ly larger base. The longer the horizon and higher "
+      ],
+      [
+        "first",
+        "order",
+        1026,
+        "otiating remote work first.\nAlex: Don't give me mo"
+      ]
+    ]
+  },
+  {
+    "profile_id": 6,
+    "phrasing_idx": 1,
+    "name": "Sam",
+    "labels": {
+      "length": 1,
+      "order": 1,
+      "decisiveness": 0
+    },
+    "a_form": "Sam wants comprehensive, in-depth explanations. Sam wants the reasons laid out before the final answer. Sam wants a direct recommendation when deciding, not a list of alternatives.",
+    "b_form": "Sam: Can you explain how vaccines work?\nAssistant: They help your immune system fight disease.\nSam: Too shallow. I want a fuller explanation.\nAssistant: Vaccines introduce a harmless form of a pathogen \u2014 inactivated, weakened, or just a protein fragment or mRNA instruction \u2014 triggering your immune system to build antibodies and memory cells. When you later encounter the real pathogen, that memory lets your immune system respond quickly enough to neutralize it before it causes serious illness.\nSam: Got it.\n\nSam: Should I negotiate the salary on this offer?\nAssistant: Yes, negotiate \u2014 employers expect it, the risk of losing the offer is very low, and even a small increase compounds over your career.\nSam: I want the reasoning first, then the conclusion.\nAssistant: Employers almost always expect negotiation, the risk of losing the offer for a polite ask is minimal, and even a modest increase compounds significantly over a career. So: negotiate.\nSam: Yes, that's it.\n\nSam: I can't decide between getting an iPhone or an Android phone.\nAssistant: Both platforms have strengths. You might also try handling both in a store, or look at what apps you rely on and whether they work on both.\nSam: Stop listing alternatives. Tell me which one.\nAssistant: Get the iPhone.\nSam: Good.",
+    "b_asst_spans": [
+      [
+        51,
+        94
+      ],
+      [
+        153,
+        497
+      ],
+      [
+        573,
+        706
+      ],
+      [
+        772,
+        954
+      ],
+      [
+        1055,
+        1194
+      ],
+      [
+        1257,
+        1272
+      ]
+    ],
+    "a_tokens": 34,
+    "b_tokens": 283,
+    "leakage": []
+  },
+  {
+    "profile_id": 6,
+    "phrasing_idx": 2,
+    "name": "Jordan",
+    "labels": {
+      "length": 1,
+      "order": 1,
+      "decisiveness": 0
+    },
+    "a_form": "Jordan likes responses that fully cover the topic. Jordan prefers to see the thinking first, then the verdict. When Jordan is torn, Jordan wants one clear answer, not more things to weigh.",
+    "b_form": "Jordan: Can you explain what recursion is in programming?\nAssistant: A function that calls itself.\nJordan: Can you elaborate? I need more than that.\nAssistant: Recursion is when a function calls itself to solve a smaller version of the same problem. This repeats until a base case \u2014 the simplest form that returns directly \u2014 is reached. Then the call stack unwinds, each frame returning its result upward. Classic uses: factorials, Fibonacci, tree traversal. Two required parts: the recursive case (break it down) and the base case (stop).\nJordan: That works.\n\nJordan: Should I go back to school for a graduate degree?\nAssistant: If the degree opens the right doors and the cost is manageable, it's worth it. The ROI varies by field, but for targeted moves, yes.\nJordan: Don't jump to the answer \u2014 explain the reasoning first.\nAssistant: The ROI varies enormously by field \u2014 credentials gate roles in medicine or law more than software. Cost and opportunity cost are real. Given that: yes, if it unlocks something specific you need; otherwise it's usually not worth it.\nJordan: Perfect.\n\nJordan: I can't decide between doing a PhD and taking an industry job.\nAssistant: Both paths have distinct advantages. You could also consider a master's as a middle ground, or a research role in industry that doesn't require a PhD.\nJordan: No more options \u2014 just pick one for me.\nAssistant: Take the industry job.\nJordan: That's what I needed.",
+    "b_asst_spans": [
+      [
+        69,
+        98
+      ],
+      [
+        160,
+        539
+      ],
+      [
+        630,
+        762
+      ],
+      [
+        838,
+        1069
+      ],
+      [
+        1170,
+        1320
+      ],
+      [
+        1380,
+        1402
+      ]
+    ],
+    "a_tokens": 38,
+    "b_tokens": 329,
+    "leakage": []
+  },
+  {
+    "profile_id": 6,
+    "phrasing_idx": 3,
+    "name": "Morgan",
+    "labels": {
+      "length": 1,
+      "order": 1,
+      "decisiveness": 0
+    },
+    "a_form": "Morgan prefers detailed responses over brief ones. Morgan wants the explanation before the bottom line. Morgan prefers to be told which option to take rather than given more choices.",
+    "b_form": "Morgan: Can you explain how the stock market works?\nAssistant: People trade company shares and prices change based on demand.\nMorgan: That's not enough \u2014 go deeper.\nAssistant: Stock markets are exchanges where investors buy and sell fractional ownership stakes in companies. Prices reflect collective forecasts of a company's future earnings, shaped by reports, economic data, interest rates, and sentiment. More buyers than sellers pushes prices up; more sellers pushes them down. Indices like the S&P 500 track aggregate performance across hundreds of companies.\nMorgan: Okay.\n\nMorgan: Should I switch careers to something I'm more interested in?\nAssistant: Do it \u2014 people who switch into better-fit work report higher satisfaction, and regret for staying tends to outlast the pain of transition.\nMorgan: Give me the why before the what.\nAssistant: Research on career satisfaction shows fit matters more than seniority after the first few years. And regret for not switching tends to outlast the transition pain. Given that: do it.\nMorgan: Good.\n\nMorgan: Should I get a gym membership or build a home gym?\nAssistant: Both work for different people. You could try a month-to-month gym trial, start with minimal home equipment, or look at outdoor training first.\nMorgan: I don't need more choices. Make the call.\nAssistant: Get the gym membership.\nMorgan: Better.",
+    "b_asst_spans": [
+      [
+        63,
+        125
+      ],
+      [
+        176,
+        564
+      ],
+      [
+        660,
+        798
+      ],
+      [
+        851,
+        1033
+      ],
+      [
+        1119,
+        1262
+      ],
+      [
+        1324,
+        1347
+      ]
+    ],
+    "a_tokens": 32,
+    "b_tokens": 293,
+    "leakage": [
+      [
+        "first",
+        "order",
+        930,
+        " seniority after the first few years. And regret f"
+      ],
+      [
+        "first",
+        "order",
+        1255,
+        " at outdoor training first.\nMorgan: I don't need m"
+      ],
+      [
+        "push",
+        "decisiveness",
+        433,
+        "buyers than sellers pushes prices up; more sellers"
+      ],
+      [
+        "push",
+        "decisiveness",
+        464,
+        "es up; more sellers pushes them down. Indices like"
+      ]
+    ]
+  },
+  {
+    "profile_id": 6,
+    "phrasing_idx": 4,
+    "name": "Casey",
+    "labels": {
+      "length": 1,
+      "order": 1,
+      "decisiveness": 0
+    },
+    "a_form": "Casey prefers thorough, detailed answers. Casey likes to understand the reasoning before the conclusion. When Casey hesitates, Casey wants to be pushed toward a specific choice, not given more options.",
+    "b_form": "Casey: Can you explain what machine learning is?\nAssistant: Programs that learn from data.\nCasey: Too short. Walk me through it properly.\nAssistant: Machine learning trains systems to perform tasks by finding patterns in data rather than following hand-coded rules. You provide labeled examples; an optimizer adjusts the model's parameters to minimize prediction error. The challenge is generalization \u2014 performing well on new data, not just training data. Main types: supervised (labeled pairs), unsupervised (finding structure), reinforcement (trial-and-error feedback).\nCasey: Yes, that's it.\n\nCasey: Should I quit my job to start a business?\nAssistant: Don't quit yet \u2014 test while you still have income. Once you have traction and savings, then consider going full-time.\nCasey: Take me through the thinking before the conclusion.\nAssistant: Quitting without validation burns savings fast and forces you toward revenue before product-market fit. Starting on the side lets you test without that pressure. So: don't quit yet.\nCasey: That's what I needed.\n\nCasey: I can't decide between starting therapy or hiring a coach.\nAssistant: Both serve different needs. You might also try whichever has faster availability, or start with one and switch if it doesn't fit.\nCasey: Just tell me which one to pick.\nAssistant: Start with therapy.\nCasey: Got it.",
+    "b_asst_spans": [
+      [
+        60,
+        90
+      ],
+      [
+        149,
+        572
+      ],
+      [
+        657,
+        774
+      ],
+      [
+        845,
+        1026
+      ],
+      [
+        1134,
+        1263
+      ],
+      [
+        1314,
+        1333
+      ]
+    ],
+    "a_tokens": 38,
+    "b_tokens": 304,
+    "leakage": []
+  },
+  {
+    "profile_id": 6,
+    "phrasing_idx": 5,
+    "name": "Taylor",
+    "labels": {
+      "length": 1,
+      "order": 1,
+      "decisiveness": 0
+    },
+    "a_form": "Taylor wants comprehensive, in-depth explanations. Taylor wants the reasons laid out before the final answer. Taylor wants a direct recommendation when deciding, not a list of alternatives.",
+    "b_form": "Taylor: Can you explain how photosynthesis works?\nAssistant: Plants use sunlight to make sugar from CO2.\nTaylor: I need more than that. Expand on it.\nAssistant: Photosynthesis happens in two stages inside chloroplasts. Light-dependent reactions (thylakoids): chlorophyll absorbs sunlight, splits water, releases oxygen, and produces ATP and NADPH. Calvin cycle (stroma): those energy carriers fix CO2 into sugar. Net equation: 6CO2 + 6H2O + light to C6H12O6 + 6O2.\nTaylor: Perfect.\n\nTaylor: Should I buy a house or keep renting?\nAssistant: Buy \u2014 if your horizon is 5+ years and you have the down payment, the equity and stability typically outweigh renting's flexibility.\nTaylor: Reasoning first, then tell me what you think.\nAssistant: For a 5+ year horizon, you build equity that renters don't, and the monthly cost after tax benefits is often comparable. Main risks: illiquidity and maintenance. Weighing all that: buy if you're staying long-term.\nTaylor: Better.\n\nTaylor: I'm switching into software \u2014 should I focus on frontend or backend?\nAssistant: Both tracks have strong demand. You could also consider full-stack as a path that covers both, or look at which has more open roles in your area.\nTaylor: Enough options. Give me one clear answer.\nAssistant: Focus on backend.\nTaylor: That works.",
+    "b_asst_spans": [
+      [
+        61,
+        104
+      ],
+      [
+        161,
+        464
+      ],
+      [
+        540,
+        671
+      ],
+      [
+        737,
+        950
+      ],
+      [
+        1056,
+        1201
+      ],
+      [
+        1263,
+        1280
+      ]
+    ],
+    "a_tokens": 34,
+    "b_tokens": 317,
+    "leakage": [
+      [
+        "long",
+        "length",
+        940,
+        "y if you're staying long-term.\nTaylor: Better.\n\nTa"
+      ]
+    ]
+  },
+  {
+    "profile_id": 6,
+    "phrasing_idx": 6,
+    "name": "Riley",
+    "labels": {
+      "length": 1,
+      "order": 1,
+      "decisiveness": 0
+    },
+    "a_form": "Riley likes responses that fully cover the topic. Riley prefers to see the thinking first, then the verdict. When Riley is torn, Riley wants one clear answer, not more things to weigh.",
+    "b_form": "Riley: Can you explain what inflation is?\nAssistant: Prices go up and money buys less.\nRiley: That's too thin. Give me the full picture.\nAssistant: Inflation is a sustained rise in the general price level, eroding purchasing power. Causes include excess demand (too much money chasing too few goods), supply shocks (cost-push), and wage-price spirals. The Fed targets about 2% annually \u2014 enough to discourage hoarding, not so much it erodes savings. Measured by tracking a basket of goods via the Consumer Price Index.\nRiley: Good.\n\nRiley: Should I take a sabbatical from work?\nAssistant: Take it \u2014 burnout that goes unaddressed compounds, and the perspective you gain can reorient your career in ways that outweigh any resume gap.\nRiley: I need the reasoning laid out before the verdict.\nAssistant: Burnout compounds and tends to cause decisions whose career cost exceeds any resume gap. The clarity from time away often pays for itself. Given that: take the sabbatical if you have the savings.\nRiley: Got it.\n\nRiley: I have extra money beyond my emergency fund \u2014 should I keep it in savings or invest it?\nAssistant: Both have trade-offs. You might also consider a high-yield savings account, paying down any remaining debt first, or looking at tax-advantaged accounts.\nRiley: Stop hedging \u2014 which one should I do?\nAssistant: Invest it.\nRiley: Okay.",
+    "b_asst_spans": [
+      [
+        53,
+        86
+      ],
+      [
+        148,
+        518
+      ],
+      [
+        589,
+        731
+      ],
+      [
+        800,
+        995
+      ],
+      [
+        1118,
+        1270
+      ],
+      [
+        1327,
+        1337
+      ]
+    ],
+    "a_tokens": 39,
+    "b_tokens": 324,
+    "leakage": [
+      [
+        "first",
+        "order",
+        1224,
+        "n any remaining debt first, or looking at tax-adva"
+      ],
+      [
+        "push",
+        "decisiveness",
+        321,
+        "supply shocks (cost-push), and wage-price spirals."
+      ]
+    ]
+  },
+  {
+    "profile_id": 6,
+    "phrasing_idx": 7,
+    "name": "Avery",
+    "labels": {
+      "length": 1,
+      "order": 1,
+      "decisiveness": 0
+    },
+    "a_form": "Avery prefers detailed responses over brief ones. Avery wants the explanation before the bottom line. Avery prefers to be told which option to take rather than given more choices.",
+    "b_form": "Avery: Can you explain how GPS works?\nAssistant: Your phone uses satellites to figure out where you are.\nAvery: Not enough detail. Please elaborate.\nAssistant: GPS satellites broadcast precise timestamps. Your receiver measures how long each signal takes to arrive; multiplied by the speed of light, that's the distance to each satellite. With distances to four satellites and their known positions, the receiver calculates your 3D location. Four satellites (not three) are needed to correct for receiver clock errors. Typical civilian accuracy: 2-5 meters.\nAvery: That's what I needed.\n\nAvery: Should I take the promotion into management?\nAssistant: Take it \u2014 the pay and influence are real upsides, and you won't know if you like management until you try it.\nAvery: Explain it first, then give your recommendation.\nAssistant: Management shifts your output from your own work to other people's \u2014 some love that, others find it draining. The pay and influence are real. The risk is discovering you prefer doing the work directly \u2014 which is recoverable. If leadership interests you: take it.\nAvery: That works.\n\nAvery: A friend wants me to join their startup \u2014 should I do it?\nAssistant: Working with close friends has specific risks beyond typical startup risk. You might consider a part-time advisory role first, or a short project to test the dynamic.\nAvery: Don't give me more alternatives. Just decide.\nAssistant: Don't do it.\nAvery: Yes, that's it.",
+    "b_asst_spans": [
+      [
+        49,
+        104
+      ],
+      [
+        160,
+        557
+      ],
+      [
+        651,
+        760
+      ],
+      [
+        828,
+        1090
+      ],
+      [
+        1187,
+        1353
+      ],
+      [
+        1418,
+        1430
+      ]
+    ],
+    "a_tokens": 33,
+    "b_tokens": 328,
+    "leakage": [
+      [
+        "short",
+        "length",
+        1319,
+        "ry role first, or a short project to test the dyna"
+      ],
+      [
+        "long",
+        "length",
+        232,
+        "ceiver measures how long each signal takes to arri"
+      ],
+      [
+        "first",
+        "order",
+        1306,
+        "t-time advisory role first, or a short project to "
+      ]
+    ]
+  },
+  {
+    "profile_id": 7,
+    "phrasing_idx": 0,
+    "name": "Alex",
+    "labels": {
+      "length": 1,
+      "order": 1,
+      "decisiveness": 1
+    },
+    "a_form": "Alex prefers thorough, detailed answers. Alex likes to understand the reasoning before the conclusion. When Alex hesitates, Alex wants more options to consider, not a forced choice.",
+    "b_form": "Alex: Can you explain how compound interest works?\nAssistant: Interest builds on itself.\nAlex: That's too brief. Give me more detail.\nAssistant: Compound interest adds each period's earned interest back to the principal, so you earn interest on a progressively larger base. The longer the horizon and higher the rate, the more dramatic the effect: a 7% annual return doubles roughly every ten years through this mechanism alone.\nAlex: Better.\n\nAlex: Should I take the new job offer?\nAssistant: Take it. The growth is strong, the pay is better, and switching now makes sense for your trajectory.\nAlex: Walk me through the reasoning before you give the answer.\nAssistant: The growth opportunities are strong, the pay is better, and the role is a better fit for where you want to be in five years. Given all that: take it.\nAlex: Okay.\n\nAlex: I can't decide between moving to Boston or staying here.\nAssistant: Go to Boston \u2014 the opportunities are better and you've been thinking about it too long.\nAlex: Give me more options to consider.\nAssistant: You could do a trial month in Boston, negotiate a remote arrangement from your current city, apply to jobs in both and see what comes in, or set a firm decision deadline. Which of those resonates?\nAlex: Perfect.",
+    "b_asst_spans": [
+      [
+        62,
+        88
+      ],
+      [
+        145,
+        428
+      ],
+      [
+        494,
+        594
+      ],
+      [
+        670,
+        819
+      ],
+      [
+        907,
+        994
+      ],
+      [
+        1046,
+        1242
+      ]
+    ],
+    "a_tokens": 34,
+    "b_tokens": 284,
+    "leakage": [
+      [
+        "long",
+        "length",
+        278,
+        "ly larger base. The longer the horizon and higher "
+      ],
+      [
+        "long",
+        "length",
+        989,
+        "inking about it too long.\nAlex: Give me more optio"
+      ]
+    ]
+  },
+  {
+    "profile_id": 7,
+    "phrasing_idx": 1,
+    "name": "Sam",
+    "labels": {
+      "length": 1,
+      "order": 1,
+      "decisiveness": 1
+    },
+    "a_form": "Sam wants comprehensive, in-depth explanations. Sam wants the reasons laid out before the final answer. Sam wants to see a range of alternatives before deciding.",
+    "b_form": "Sam: Can you explain how vaccines work?\nAssistant: They help your immune system fight disease.\nSam: Too shallow. I want a fuller explanation.\nAssistant: Vaccines introduce a harmless form of a pathogen \u2014 inactivated, weakened, or just a protein fragment or mRNA instruction \u2014 triggering your immune system to build antibodies and memory cells. When you later encounter the real pathogen, that memory lets your immune system respond quickly enough to neutralize it before it causes serious illness.\nSam: Got it.\n\nSam: Should I negotiate the salary on this offer?\nAssistant: Yes, negotiate \u2014 employers expect it, the risk of losing the offer is very low, and even a small increase compounds over your career.\nSam: I want the reasoning first, then the conclusion.\nAssistant: Employers almost always expect negotiation, the risk of losing the offer for a polite ask is minimal, and even a modest increase compounds significantly over a career. So: negotiate.\nSam: Yes, that's it.\n\nSam: I can't decide between getting an iPhone or an Android phone.\nAssistant: Get the iPhone \u2014 the ecosystem is cohesive, the resale value is better, and most people around you probably use iMessage anyway.\nSam: Don't push me toward one. What are the alternatives?\nAssistant: Consider: iPhone for Apple ecosystem cohesion; Pixel for clean Android at lower cost; Samsung for the widest Android ecosystem. Which trade-off matters most to you \u2014 ecosystem, price, or customization?\nSam: Good.",
+    "b_asst_spans": [
+      [
+        51,
+        94
+      ],
+      [
+        153,
+        497
+      ],
+      [
+        573,
+        706
+      ],
+      [
+        772,
+        954
+      ],
+      [
+        1055,
+        1183
+      ],
+      [
+        1253,
+        1454
+      ]
+    ],
+    "a_tokens": 31,
+    "b_tokens": 318,
+    "leakage": []
+  },
+  {
+    "profile_id": 7,
+    "phrasing_idx": 2,
+    "name": "Jordan",
+    "labels": {
+      "length": 1,
+      "order": 1,
+      "decisiveness": 1
+    },
+    "a_form": "Jordan likes responses that fully cover the topic. Jordan prefers to see the thinking first, then the verdict. When Jordan is torn, Jordan wants more paths laid out, not a single pick.",
+    "b_form": "Jordan: Can you explain what recursion is in programming?\nAssistant: A function that calls itself.\nJordan: Can you elaborate? I need more than that.\nAssistant: Recursion is when a function calls itself to solve a smaller version of the same problem. This repeats until a base case \u2014 the simplest form that returns directly \u2014 is reached. Then the call stack unwinds, each frame returning its result upward. Classic uses: factorials, Fibonacci, tree traversal. Two required parts: the recursive case (break it down) and the base case (stop).\nJordan: That works.\n\nJordan: Should I go back to school for a graduate degree?\nAssistant: If the degree opens the right doors and the cost is manageable, it's worth it. The ROI varies by field, but for targeted moves, yes.\nJordan: Don't jump to the answer \u2014 explain the reasoning first.\nAssistant: The ROI varies enormously by field \u2014 credentials gate roles in medicine or law more than software. Cost and opportunity cost are real. Given that: yes, if it unlocks something specific you need; otherwise it's usually not worth it.\nJordan: Perfect.\n\nJordan: I can't decide between doing a PhD and taking an industry job.\nAssistant: Go to industry \u2014 the opportunity cost of a PhD is 4-6 years of lower pay and high uncertainty, rarely worth it unless you need the credential for a specific role.\nJordan: I need more choices, not a single answer.\nAssistant: Options: take the job now and revisit later; apply for the PhD to keep both live; look for industry research roles that bridge both; or do a master's as a lower-cost credential. What's driving the pull toward PhD specifically?\nJordan: That's what I needed.",
+    "b_asst_spans": [
+      [
+        69,
+        98
+      ],
+      [
+        160,
+        539
+      ],
+      [
+        630,
+        762
+      ],
+      [
+        838,
+        1069
+      ],
+      [
+        1170,
+        1332
+      ],
+      [
+        1394,
+        1620
+      ]
+    ],
+    "a_tokens": 38,
+    "b_tokens": 377,
+    "leakage": []
+  },
+  {
+    "profile_id": 7,
+    "phrasing_idx": 3,
+    "name": "Morgan",
+    "labels": {
+      "length": 1,
+      "order": 1,
+      "decisiveness": 1
+    },
+    "a_form": "Morgan prefers detailed responses over brief ones. Morgan wants the explanation before the bottom line. Morgan prefers having more options presented rather than being pushed toward one.",
+    "b_form": "Morgan: Can you explain how the stock market works?\nAssistant: People trade company shares and prices change based on demand.\nMorgan: That's not enough \u2014 go deeper.\nAssistant: Stock markets are exchanges where investors buy and sell fractional ownership stakes in companies. Prices reflect collective forecasts of a company's future earnings, shaped by reports, economic data, interest rates, and sentiment. More buyers than sellers pushes prices up; more sellers pushes them down. Indices like the S&P 500 track aggregate performance across hundreds of companies.\nMorgan: Okay.\n\nMorgan: Should I switch careers to something I'm more interested in?\nAssistant: Do it \u2014 people who switch into better-fit work report higher satisfaction, and regret for staying tends to outlast the pain of transition.\nMorgan: Give me the why before the what.\nAssistant: Research on career satisfaction shows fit matters more than seniority after the first few years. And regret for not switching tends to outlast the transition pain. Given that: do it.\nMorgan: Good.\n\nMorgan: Should I get a gym membership or build a home gym?\nAssistant: Get the gym membership \u2014 the variety and social environment make consistency easier for most people, and you're not sinking money into equipment that might collect dust.\nMorgan: Stop pushing me toward one \u2014 lay out the options.\nAssistant: Gym: variety and social energy, but requires commuting. Home gym: convenience, no commute, higher upfront cost. Hybrid: minimal home setup plus occasional gym. What's your biggest barrier \u2014 time, cost, or motivation?\nMorgan: Better.",
+    "b_asst_spans": [
+      [
+        63,
+        125
+      ],
+      [
+        176,
+        564
+      ],
+      [
+        660,
+        798
+      ],
+      [
+        851,
+        1033
+      ],
+      [
+        1119,
+        1288
+      ],
+      [
+        1358,
+        1574
+      ]
+    ],
+    "a_tokens": 30,
+    "b_tokens": 332,
+    "leakage": [
+      [
+        "first",
+        "order",
+        930,
+        " seniority after the first few years. And regret f"
+      ],
+      [
+        "push",
+        "decisiveness",
+        433,
+        "buyers than sellers pushes prices up; more sellers"
+      ],
+      [
+        "push",
+        "decisiveness",
+        464,
+        "es up; more sellers pushes them down. Indices like"
+      ]
+    ]
+  },
+  {
+    "profile_id": 7,
+    "phrasing_idx": 4,
+    "name": "Casey",
+    "labels": {
+      "length": 1,
+      "order": 1,
+      "decisiveness": 1
+    },
+    "a_form": "Casey prefers thorough, detailed answers. Casey likes to understand the reasoning before the conclusion. When Casey hesitates, Casey wants more options to consider, not a forced choice.",
+    "b_form": "Casey: Can you explain what machine learning is?\nAssistant: Programs that learn from data.\nCasey: Too short. Walk me through it properly.\nAssistant: Machine learning trains systems to perform tasks by finding patterns in data rather than following hand-coded rules. You provide labeled examples; an optimizer adjusts the model's parameters to minimize prediction error. The challenge is generalization \u2014 performing well on new data, not just training data. Main types: supervised (labeled pairs), unsupervised (finding structure), reinforcement (trial-and-error feedback).\nCasey: Yes, that's it.\n\nCasey: Should I quit my job to start a business?\nAssistant: Don't quit yet \u2014 test while you still have income. Once you have traction and savings, then consider going full-time.\nCasey: Take me through the thinking before the conclusion.\nAssistant: Quitting without validation burns savings fast and forces you toward revenue before product-market fit. Starting on the side lets you test without that pressure. So: don't quit yet.\nCasey: That's what I needed.\n\nCasey: I can't decide between starting therapy or hiring a coach.\nAssistant: Go with therapy \u2014 coaching focuses on goals and forward momentum, but therapy addresses the underlying patterns that often block both. If you're feeling stuck emotionally, therapy is the better starting point.\nCasey: I want to see more alternatives before deciding.\nAssistant: Therapy if you're dealing with anxiety, past experiences, or recurring patterns; coaching for forward-focused goal work and accountability; some therapists also do coaching-style work; or both simultaneously. What's the main thing you're trying to change?\nCasey: Got it.",
+    "b_asst_spans": [
+      [
+        60,
+        90
+      ],
+      [
+        149,
+        572
+      ],
+      [
+        657,
+        774
+      ],
+      [
+        845,
+        1026
+      ],
+      [
+        1134,
+        1343
+      ],
+      [
+        1411,
+        1666
+      ]
+    ],
+    "a_tokens": 35,
+    "b_tokens": 361,
+    "leakage": []
+  },
+  {
+    "profile_id": 7,
+    "phrasing_idx": 5,
+    "name": "Taylor",
+    "labels": {
+      "length": 1,
+      "order": 1,
+      "decisiveness": 1
+    },
+    "a_form": "Taylor wants comprehensive, in-depth explanations. Taylor wants the reasons laid out before the final answer. Taylor wants to see a range of alternatives before deciding.",
+    "b_form": "Taylor: Can you explain how photosynthesis works?\nAssistant: Plants use sunlight to make sugar from CO2.\nTaylor: I need more than that. Expand on it.\nAssistant: Photosynthesis happens in two stages inside chloroplasts. Light-dependent reactions (thylakoids): chlorophyll absorbs sunlight, splits water, releases oxygen, and produces ATP and NADPH. Calvin cycle (stroma): those energy carriers fix CO2 into sugar. Net equation: 6CO2 + 6H2O + light to C6H12O6 + 6O2.\nTaylor: Perfect.\n\nTaylor: Should I buy a house or keep renting?\nAssistant: Buy \u2014 if your horizon is 5+ years and you have the down payment, the equity and stability typically outweigh renting's flexibility.\nTaylor: Reasoning first, then tell me what you think.\nAssistant: For a 5+ year horizon, you build equity that renters don't, and the monthly cost after tax benefits is often comparable. Main risks: illiquidity and maintenance. Weighing all that: buy if you're staying long-term.\nTaylor: Better.\n\nTaylor: I'm switching into software \u2014 should I focus on frontend or backend?\nAssistant: Go backend \u2014 it typically pays more, the fundamentals transfer more widely, and demand for solid backend engineers is consistently high.\nTaylor: Don't make the choice for me \u2014 what else is there?\nAssistant: Backend: higher pay ceiling, transferable fundamentals. Frontend: faster visual feedback, more accessible to beginners. Full-stack: more flexible and hireable at smaller companies. Mobile: strong niche. What kind of work do you actually want to do day-to-day?\nTaylor: That works.",
+    "b_asst_spans": [
+      [
+        61,
+        104
+      ],
+      [
+        161,
+        464
+      ],
+      [
+        540,
+        671
+      ],
+      [
+        737,
+        950
+      ],
+      [
+        1056,
+        1192
+      ],
+      [
+        1263,
+        1522
+      ]
+    ],
+    "a_tokens": 31,
+    "b_tokens": 366,
+    "leakage": [
+      [
+        "long",
+        "length",
+        940,
+        "y if you're staying long-term.\nTaylor: Better.\n\nTa"
+      ]
+    ]
+  },
+  {
+    "profile_id": 7,
+    "phrasing_idx": 6,
+    "name": "Riley",
+    "labels": {
+      "length": 1,
+      "order": 1,
+      "decisiveness": 1
+    },
+    "a_form": "Riley likes responses that fully cover the topic. Riley prefers to see the thinking first, then the verdict. When Riley is torn, Riley wants more paths laid out, not a single pick.",
+    "b_form": "Riley: Can you explain what inflation is?\nAssistant: Prices go up and money buys less.\nRiley: That's too thin. Give me the full picture.\nAssistant: Inflation is a sustained rise in the general price level, eroding purchasing power. Causes include excess demand (too much money chasing too few goods), supply shocks (cost-push), and wage-price spirals. The Fed targets about 2% annually \u2014 enough to discourage hoarding, not so much it erodes savings. Measured by tracking a basket of goods via the Consumer Price Index.\nRiley: Good.\n\nRiley: Should I take a sabbatical from work?\nAssistant: Take it \u2014 burnout that goes unaddressed compounds, and the perspective you gain can reorient your career in ways that outweigh any resume gap.\nRiley: I need the reasoning laid out before the verdict.\nAssistant: Burnout compounds and tends to cause decisions whose career cost exceeds any resume gap. The clarity from time away often pays for itself. Given that: take the sabbatical if you have the savings.\nRiley: Got it.\n\nRiley: I have extra money beyond my emergency fund \u2014 should I keep it in savings or invest it?\nAssistant: Invest it \u2014 if your emergency fund is already secured, leaving surplus cash in savings is a drag on long-term returns.\nRiley: What other options should I be considering?\nAssistant: Max tax-advantaged accounts first (Roth IRA, 401k) if you haven't; then broad index funds in taxable; keep a larger cash buffer if your income is variable; or pay off high-interest debt before any investing. Which of those is most relevant to your situation?\nRiley: Okay.",
+    "b_asst_spans": [
+      [
+        53,
+        86
+      ],
+      [
+        148,
+        518
+      ],
+      [
+        589,
+        731
+      ],
+      [
+        800,
+        995
+      ],
+      [
+        1118,
+        1236
+      ],
+      [
+        1299,
+        1557
+      ]
+    ],
+    "a_tokens": 39,
+    "b_tokens": 369,
+    "leakage": [
+      [
+        "long",
+        "length",
+        1218,
+        "avings is a drag on long-term returns.\nRiley: What"
+      ],
+      [
+        "first",
+        "order",
+        1326,
+        "-advantaged accounts first (Roth IRA, 401k) if you"
+      ],
+      [
+        "push",
+        "decisiveness",
+        321,
+        "supply shocks (cost-push), and wage-price spirals."
+      ]
+    ]
+  },
+  {
+    "profile_id": 7,
+    "phrasing_idx": 7,
+    "name": "Avery",
+    "labels": {
+      "length": 1,
+      "order": 1,
+      "decisiveness": 1
+    },
+    "a_form": "Avery prefers detailed responses over brief ones. Avery wants the explanation before the bottom line. Avery prefers having more options presented rather than being pushed toward one.",
+    "b_form": "Avery: Can you explain how GPS works?\nAssistant: Your phone uses satellites to figure out where you are.\nAvery: Not enough detail. Please elaborate.\nAssistant: GPS satellites broadcast precise timestamps. Your receiver measures how long each signal takes to arrive; multiplied by the speed of light, that's the distance to each satellite. With distances to four satellites and their known positions, the receiver calculates your 3D location. Four satellites (not three) are needed to correct for receiver clock errors. Typical civilian accuracy: 2-5 meters.\nAvery: That's what I needed.\n\nAvery: Should I take the promotion into management?\nAssistant: Take it \u2014 the pay and influence are real upsides, and you won't know if you like management until you try it.\nAvery: Explain it first, then give your recommendation.\nAssistant: Management shifts your output from your own work to other people's \u2014 some love that, others find it draining. The pay and influence are real. The risk is discovering you prefer doing the work directly \u2014 which is recoverable. If leadership interests you: take it.\nAvery: That works.\n\nAvery: A friend wants me to join their startup \u2014 should I do it?\nAssistant: Don't do it \u2014 business and close friendship is a notoriously difficult combination, and if the company struggles, you'll both be under pressure in ways that strain even strong relationships.\nAvery: Give me a broader range of alternatives.\nAssistant: Full co-founder: highest upside, highest relationship risk. Advisor: lower commitment, lower exposure. One scoped project to test fit before committing. Or decline and stay close as a friend. Which matters more to you \u2014 the equity upside or protecting the friendship?\nAvery: Yes, that's it.",
+    "b_asst_spans": [
+      [
+        49,
+        104
+      ],
+      [
+        160,
+        557
+      ],
+      [
+        651,
+        760
+      ],
+      [
+        828,
+        1090
+      ],
+      [
+        1187,
+        1377
+      ],
+      [
+        1437,
+        1704
+      ]
+    ],
+    "a_tokens": 31,
+    "b_tokens": 377,
+    "leakage": [
+      [
+        "long",
+        "length",
+        232,
+        "ceiver measures how long each signal takes to arri"
+      ]
+    ]
+  }
+]

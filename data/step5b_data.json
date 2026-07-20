@@ -1,0 +1,2114 @@
+[
+  {
+    "scenario_id": 0,
+    "label": 0,
+    "name": "Alex",
+    "variant": 0,
+    "a_form": "Alex likes the conclusion first, then the reasons. Asked 'Should I take the new job offer?', Alex wants it answered in that order.",
+    "b_form": "Alex: Should I take the new job offer?\nAssistant: The growth outweighs the risk. Take it.\nAlex: No - other way around.\nAssistant: Take it. The growth outweighs the risk.\nAlex: Better.",
+    "b_final_span": [
+      130,
+      169
+    ],
+    "b_asst_spans": [
+      [
+        50,
+        89
+      ],
+      [
+        130,
+        169
+      ]
+    ]
+  },
+  {
+    "scenario_id": 0,
+    "label": 0,
+    "name": "Sam",
+    "variant": 1,
+    "a_form": "Sam likes the conclusion first, then the reasons. Asked 'Should I take the new job offer?', Sam wants it answered in that order.",
+    "b_form": "Sam: Should I take the new job offer?\nAssistant: The growth outweighs the risk. Take it.\nSam: Flip those two.\nAssistant: Take it. The growth outweighs the risk.\nSam: Yes, like that.",
+    "b_final_span": [
+      121,
+      160
+    ],
+    "b_asst_spans": [
+      [
+        49,
+        88
+      ],
+      [
+        121,
+        160
+      ]
+    ]
+  },
+  {
+    "scenario_id": 0,
+    "label": 0,
+    "name": "Jordan",
+    "variant": 2,
+    "a_form": "Jordan likes the conclusion first, then the reasons. Asked 'Should I take the new job offer?', Jordan wants it answered in that order.",
+    "b_form": "Jordan: Should I take the new job offer?\nAssistant: The growth outweighs the risk. Take it.\nJordan: Swap them.\nAssistant: Take it. The growth outweighs the risk.\nJordan: That's it.",
+    "b_final_span": [
+      122,
+      161
+    ],
+    "b_asst_spans": [
+      [
+        52,
+        91
+      ],
+      [
+        122,
+        161
+      ]
+    ]
+  },
+  {
+    "scenario_id": 0,
+    "label": 0,
+    "name": "Morgan",
+    "variant": 3,
+    "a_form": "Morgan likes the conclusion first, then the reasons. Asked 'Should I take the new job offer?', Morgan wants it answered in that order.",
+    "b_form": "Morgan: Should I take the new job offer?\nAssistant: The growth outweighs the risk. Take it.\nMorgan: Reverse it.\nAssistant: Take it. The growth outweighs the risk.\nMorgan: Good.",
+    "b_final_span": [
+      123,
+      162
+    ],
+    "b_asst_spans": [
+      [
+        52,
+        91
+      ],
+      [
+        123,
+        162
+      ]
+    ]
+  },
+  {
+    "scenario_id": 0,
+    "label": 1,
+    "name": "Alex",
+    "variant": 0,
+    "a_form": "Alex likes the reasoning first, then the conclusion. Asked 'Should I take the new job offer?', Alex wants it answered in that order.",
+    "b_form": "Alex: Should I take the new job offer?\nAssistant: Take it. The growth outweighs the risk.\nAlex: No - other way around.\nAssistant: The growth outweighs the risk. Take it.\nAlex: Better.",
+    "b_final_span": [
+      130,
+      169
+    ],
+    "b_asst_spans": [
+      [
+        50,
+        89
+      ],
+      [
+        130,
+        169
+      ]
+    ]
+  },
+  {
+    "scenario_id": 0,
+    "label": 1,
+    "name": "Sam",
+    "variant": 1,
+    "a_form": "Sam likes the reasoning first, then the conclusion. Asked 'Should I take the new job offer?', Sam wants it answered in that order.",
+    "b_form": "Sam: Should I take the new job offer?\nAssistant: Take it. The growth outweighs the risk.\nSam: Flip those two.\nAssistant: The growth outweighs the risk. Take it.\nSam: Yes, like that.",
+    "b_final_span": [
+      121,
+      160
+    ],
+    "b_asst_spans": [
+      [
+        49,
+        88
+      ],
+      [
+        121,
+        160
+      ]
+    ]
+  },
+  {
+    "scenario_id": 0,
+    "label": 1,
+    "name": "Jordan",
+    "variant": 2,
+    "a_form": "Jordan likes the reasoning first, then the conclusion. Asked 'Should I take the new job offer?', Jordan wants it answered in that order.",
+    "b_form": "Jordan: Should I take the new job offer?\nAssistant: Take it. The growth outweighs the risk.\nJordan: Swap them.\nAssistant: The growth outweighs the risk. Take it.\nJordan: That's it.",
+    "b_final_span": [
+      122,
+      161
+    ],
+    "b_asst_spans": [
+      [
+        52,
+        91
+      ],
+      [
+        122,
+        161
+      ]
+    ]
+  },
+  {
+    "scenario_id": 0,
+    "label": 1,
+    "name": "Morgan",
+    "variant": 3,
+    "a_form": "Morgan likes the reasoning first, then the conclusion. Asked 'Should I take the new job offer?', Morgan wants it answered in that order.",
+    "b_form": "Morgan: Should I take the new job offer?\nAssistant: Take it. The growth outweighs the risk.\nMorgan: Reverse it.\nAssistant: The growth outweighs the risk. Take it.\nMorgan: Good.",
+    "b_final_span": [
+      123,
+      162
+    ],
+    "b_asst_spans": [
+      [
+        52,
+        91
+      ],
+      [
+        123,
+        162
+      ]
+    ]
+  },
+  {
+    "scenario_id": 1,
+    "label": 0,
+    "name": "Casey",
+    "variant": 0,
+    "a_form": "Casey likes the conclusion first, then the reasons. Asked 'Should I negotiate this salary offer?', Casey wants it answered in that order.",
+    "b_form": "Casey: Should I negotiate this salary offer?\nAssistant: The downside of a polite ask is almost nothing. Negotiate.\nCasey: No - other way around.\nAssistant: Negotiate. The downside of a polite ask is almost nothing.\nCasey: Better.",
+    "b_final_span": [
+      156,
+      214
+    ],
+    "b_asst_spans": [
+      [
+        56,
+        114
+      ],
+      [
+        156,
+        214
+      ]
+    ]
+  },
+  {
+    "scenario_id": 1,
+    "label": 0,
+    "name": "Taylor",
+    "variant": 1,
+    "a_form": "Taylor likes the conclusion first, then the reasons. Asked 'Should I negotiate this salary offer?', Taylor wants it answered in that order.",
+    "b_form": "Taylor: Should I negotiate this salary offer?\nAssistant: The downside of a polite ask is almost nothing. Negotiate.\nTaylor: Flip those two.\nAssistant: Negotiate. The downside of a polite ask is almost nothing.\nTaylor: Yes, like that.",
+    "b_final_span": [
+      151,
+      209
+    ],
+    "b_asst_spans": [
+      [
+        57,
+        115
+      ],
+      [
+        151,
+        209
+      ]
+    ]
+  },
+  {
+    "scenario_id": 1,
+    "label": 0,
+    "name": "Riley",
+    "variant": 2,
+    "a_form": "Riley likes the conclusion first, then the reasons. Asked 'Should I negotiate this salary offer?', Riley wants it answered in that order.",
+    "b_form": "Riley: Should I negotiate this salary offer?\nAssistant: The downside of a polite ask is almost nothing. Negotiate.\nRiley: Swap them.\nAssistant: Negotiate. The downside of a polite ask is almost nothing.\nRiley: That's it.",
+    "b_final_span": [
+      144,
+      202
+    ],
+    "b_asst_spans": [
+      [
+        56,
+        114
+      ],
+      [
+        144,
+        202
+      ]
+    ]
+  },
+  {
+    "scenario_id": 1,
+    "label": 0,
+    "name": "Avery",
+    "variant": 3,
+    "a_form": "Avery likes the conclusion first, then the reasons. Asked 'Should I negotiate this salary offer?', Avery wants it answered in that order.",
+    "b_form": "Avery: Should I negotiate this salary offer?\nAssistant: The downside of a polite ask is almost nothing. Negotiate.\nAvery: Reverse it.\nAssistant: Negotiate. The downside of a polite ask is almost nothing.\nAvery: Good.",
+    "b_final_span": [
+      145,
+      203
+    ],
+    "b_asst_spans": [
+      [
+        56,
+        114
+      ],
+      [
+        145,
+        203
+      ]
+    ]
+  },
+  {
+    "scenario_id": 1,
+    "label": 1,
+    "name": "Casey",
+    "variant": 0,
+    "a_form": "Casey likes the reasoning first, then the conclusion. Asked 'Should I negotiate this salary offer?', Casey wants it answered in that order.",
+    "b_form": "Casey: Should I negotiate this salary offer?\nAssistant: Negotiate. The downside of a polite ask is almost nothing.\nCasey: No - other way around.\nAssistant: The downside of a polite ask is almost nothing. Negotiate.\nCasey: Better.",
+    "b_final_span": [
+      156,
+      214
+    ],
+    "b_asst_spans": [
+      [
+        56,
+        114
+      ],
+      [
+        156,
+        214
+      ]
+    ]
+  },
+  {
+    "scenario_id": 1,
+    "label": 1,
+    "name": "Taylor",
+    "variant": 1,
+    "a_form": "Taylor likes the reasoning first, then the conclusion. Asked 'Should I negotiate this salary offer?', Taylor wants it answered in that order.",
+    "b_form": "Taylor: Should I negotiate this salary offer?\nAssistant: Negotiate. The downside of a polite ask is almost nothing.\nTaylor: Flip those two.\nAssistant: The downside of a polite ask is almost nothing. Negotiate.\nTaylor: Yes, like that.",
+    "b_final_span": [
+      151,
+      209
+    ],
+    "b_asst_spans": [
+      [
+        57,
+        115
+      ],
+      [
+        151,
+        209
+      ]
+    ]
+  },
+  {
+    "scenario_id": 1,
+    "label": 1,
+    "name": "Riley",
+    "variant": 2,
+    "a_form": "Riley likes the reasoning first, then the conclusion. Asked 'Should I negotiate this salary offer?', Riley wants it answered in that order.",
+    "b_form": "Riley: Should I negotiate this salary offer?\nAssistant: Negotiate. The downside of a polite ask is almost nothing.\nRiley: Swap them.\nAssistant: The downside of a polite ask is almost nothing. Negotiate.\nRiley: That's it.",
+    "b_final_span": [
+      144,
+      202
+    ],
+    "b_asst_spans": [
+      [
+        56,
+        114
+      ],
+      [
+        144,
+        202
+      ]
+    ]
+  },
+  {
+    "scenario_id": 1,
+    "label": 1,
+    "name": "Avery",
+    "variant": 3,
+    "a_form": "Avery likes the reasoning first, then the conclusion. Asked 'Should I negotiate this salary offer?', Avery wants it answered in that order.",
+    "b_form": "Avery: Should I negotiate this salary offer?\nAssistant: Negotiate. The downside of a polite ask is almost nothing.\nAvery: Reverse it.\nAssistant: The downside of a polite ask is almost nothing. Negotiate.\nAvery: Good.",
+    "b_final_span": [
+      145,
+      203
+    ],
+    "b_asst_spans": [
+      [
+        56,
+        114
+      ],
+      [
+        145,
+        203
+      ]
+    ]
+  },
+  {
+    "scenario_id": 2,
+    "label": 0,
+    "name": "Alex",
+    "variant": 0,
+    "a_form": "Alex likes the conclusion first, then the reasons. Asked 'Should I go back for a graduate degree?', Alex wants it answered in that order.",
+    "b_form": "Alex: Should I go back for a graduate degree?\nAssistant: The cost is high and the payoff depends entirely on the field. Only if it unlocks a specific door.\nAlex: No - other way around.\nAssistant: Only if it unlocks a specific door. The cost is high and the payoff depends entirely on the field.\nAlex: Better.",
+    "b_final_span": [
+      196,
+      294
+    ],
+    "b_asst_spans": [
+      [
+        57,
+        155
+      ],
+      [
+        196,
+        294
+      ]
+    ]
+  },
+  {
+    "scenario_id": 2,
+    "label": 0,
+    "name": "Sam",
+    "variant": 1,
+    "a_form": "Sam likes the conclusion first, then the reasons. Asked 'Should I go back for a graduate degree?', Sam wants it answered in that order.",
+    "b_form": "Sam: Should I go back for a graduate degree?\nAssistant: The cost is high and the payoff depends entirely on the field. Only if it unlocks a specific door.\nSam: Flip those two.\nAssistant: Only if it unlocks a specific door. The cost is high and the payoff depends entirely on the field.\nSam: Yes, like that.",
+    "b_final_span": [
+      187,
+      285
+    ],
+    "b_asst_spans": [
+      [
+        56,
+        154
+      ],
+      [
+        187,
+        285
+      ]
+    ]
+  },
+  {
+    "scenario_id": 2,
+    "label": 0,
+    "name": "Jordan",
+    "variant": 2,
+    "a_form": "Jordan likes the conclusion first, then the reasons. Asked 'Should I go back for a graduate degree?', Jordan wants it answered in that order.",
+    "b_form": "Jordan: Should I go back for a graduate degree?\nAssistant: The cost is high and the payoff depends entirely on the field. Only if it unlocks a specific door.\nJordan: Swap them.\nAssistant: Only if it unlocks a specific door. The cost is high and the payoff depends entirely on the field.\nJordan: That's it.",
+    "b_final_span": [
+      188,
+      286
+    ],
+    "b_asst_spans": [
+      [
+        59,
+        157
+      ],
+      [
+        188,
+        286
+      ]
+    ]
+  },
+  {
+    "scenario_id": 2,
+    "label": 0,
+    "name": "Morgan",
+    "variant": 3,
+    "a_form": "Morgan likes the conclusion first, then the reasons. Asked 'Should I go back for a graduate degree?', Morgan wants it answered in that order.",
+    "b_form": "Morgan: Should I go back for a graduate degree?\nAssistant: The cost is high and the payoff depends entirely on the field. Only if it unlocks a specific door.\nMorgan: Reverse it.\nAssistant: Only if it unlocks a specific door. The cost is high and the payoff depends entirely on the field.\nMorgan: Good.",
+    "b_final_span": [
+      189,
+      287
+    ],
+    "b_asst_spans": [
+      [
+        59,
+        157
+      ],
+      [
+        189,
+        287
+      ]
+    ]
+  },
+  {
+    "scenario_id": 2,
+    "label": 1,
+    "name": "Alex",
+    "variant": 0,
+    "a_form": "Alex likes the reasoning first, then the conclusion. Asked 'Should I go back for a graduate degree?', Alex wants it answered in that order.",
+    "b_form": "Alex: Should I go back for a graduate degree?\nAssistant: Only if it unlocks a specific door. The cost is high and the payoff depends entirely on the field.\nAlex: No - other way around.\nAssistant: The cost is high and the payoff depends entirely on the field. Only if it unlocks a specific door.\nAlex: Better.",
+    "b_final_span": [
+      196,
+      294
+    ],
+    "b_asst_spans": [
+      [
+        57,
+        155
+      ],
+      [
+        196,
+        294
+      ]
+    ]
+  },
+  {
+    "scenario_id": 2,
+    "label": 1,
+    "name": "Sam",
+    "variant": 1,
+    "a_form": "Sam likes the reasoning first, then the conclusion. Asked 'Should I go back for a graduate degree?', Sam wants it answered in that order.",
+    "b_form": "Sam: Should I go back for a graduate degree?\nAssistant: Only if it unlocks a specific door. The cost is high and the payoff depends entirely on the field.\nSam: Flip those two.\nAssistant: The cost is high and the payoff depends entirely on the field. Only if it unlocks a specific door.\nSam: Yes, like that.",
+    "b_final_span": [
+      187,
+      285
+    ],
+    "b_asst_spans": [
+      [
+        56,
+        154
+      ],
+      [
+        187,
+        285
+      ]
+    ]
+  },
+  {
+    "scenario_id": 2,
+    "label": 1,
+    "name": "Jordan",
+    "variant": 2,
+    "a_form": "Jordan likes the reasoning first, then the conclusion. Asked 'Should I go back for a graduate degree?', Jordan wants it answered in that order.",
+    "b_form": "Jordan: Should I go back for a graduate degree?\nAssistant: Only if it unlocks a specific door. The cost is high and the payoff depends entirely on the field.\nJordan: Swap them.\nAssistant: The cost is high and the payoff depends entirely on the field. Only if it unlocks a specific door.\nJordan: That's it.",
+    "b_final_span": [
+      188,
+      286
+    ],
+    "b_asst_spans": [
+      [
+        59,
+        157
+      ],
+      [
+        188,
+        286
+      ]
+    ]
+  },
+  {
+    "scenario_id": 2,
+    "label": 1,
+    "name": "Morgan",
+    "variant": 3,
+    "a_form": "Morgan likes the reasoning first, then the conclusion. Asked 'Should I go back for a graduate degree?', Morgan wants it answered in that order.",
+    "b_form": "Morgan: Should I go back for a graduate degree?\nAssistant: Only if it unlocks a specific door. The cost is high and the payoff depends entirely on the field.\nMorgan: Reverse it.\nAssistant: The cost is high and the payoff depends entirely on the field. Only if it unlocks a specific door.\nMorgan: Good.",
+    "b_final_span": [
+      189,
+      287
+    ],
+    "b_asst_spans": [
+      [
+        59,
+        157
+      ],
+      [
+        189,
+        287
+      ]
+    ]
+  },
+  {
+    "scenario_id": 3,
+    "label": 0,
+    "name": "Casey",
+    "variant": 0,
+    "a_form": "Casey likes the conclusion first, then the reasons. Asked 'Should I switch careers to something I want more?', Casey wants it answered in that order.",
+    "b_form": "Casey: Should I switch careers to something I want more?\nAssistant: Regret for staying usually outlasts the cost of moving. Do it.\nCasey: No - other way around.\nAssistant: Do it. Regret for staying usually outlasts the cost of moving.\nCasey: Better.",
+    "b_final_span": [
+      172,
+      234
+    ],
+    "b_asst_spans": [
+      [
+        68,
+        130
+      ],
+      [
+        172,
+        234
+      ]
+    ]
+  },
+  {
+    "scenario_id": 3,
+    "label": 0,
+    "name": "Taylor",
+    "variant": 1,
+    "a_form": "Taylor likes the conclusion first, then the reasons. Asked 'Should I switch careers to something I want more?', Taylor wants it answered in that order.",
+    "b_form": "Taylor: Should I switch careers to something I want more?\nAssistant: Regret for staying usually outlasts the cost of moving. Do it.\nTaylor: Flip those two.\nAssistant: Do it. Regret for staying usually outlasts the cost of moving.\nTaylor: Yes, like that.",
+    "b_final_span": [
+      167,
+      229
+    ],
+    "b_asst_spans": [
+      [
+        69,
+        131
+      ],
+      [
+        167,
+        229
+      ]
+    ]
+  },
+  {
+    "scenario_id": 3,
+    "label": 0,
+    "name": "Riley",
+    "variant": 2,
+    "a_form": "Riley likes the conclusion first, then the reasons. Asked 'Should I switch careers to something I want more?', Riley wants it answered in that order.",
+    "b_form": "Riley: Should I switch careers to something I want more?\nAssistant: Regret for staying usually outlasts the cost of moving. Do it.\nRiley: Swap them.\nAssistant: Do it. Regret for staying usually outlasts the cost of moving.\nRiley: That's it.",
+    "b_final_span": [
+      160,
+      222
+    ],
+    "b_asst_spans": [
+      [
+        68,
+        130
+      ],
+      [
+        160,
+        222
+      ]
+    ]
+  },
+  {
+    "scenario_id": 3,
+    "label": 0,
+    "name": "Avery",
+    "variant": 3,
+    "a_form": "Avery likes the conclusion first, then the reasons. Asked 'Should I switch careers to something I want more?', Avery wants it answered in that order.",
+    "b_form": "Avery: Should I switch careers to something I want more?\nAssistant: Regret for staying usually outlasts the cost of moving. Do it.\nAvery: Reverse it.\nAssistant: Do it. Regret for staying usually outlasts the cost of moving.\nAvery: Good.",
+    "b_final_span": [
+      161,
+      223
+    ],
+    "b_asst_spans": [
+      [
+        68,
+        130
+      ],
+      [
+        161,
+        223
+      ]
+    ]
+  },
+  {
+    "scenario_id": 3,
+    "label": 1,
+    "name": "Casey",
+    "variant": 0,
+    "a_form": "Casey likes the reasoning first, then the conclusion. Asked 'Should I switch careers to something I want more?', Casey wants it answered in that order.",
+    "b_form": "Casey: Should I switch careers to something I want more?\nAssistant: Do it. Regret for staying usually outlasts the cost of moving.\nCasey: No - other way around.\nAssistant: Regret for staying usually outlasts the cost of moving. Do it.\nCasey: Better.",
+    "b_final_span": [
+      172,
+      234
+    ],
+    "b_asst_spans": [
+      [
+        68,
+        130
+      ],
+      [
+        172,
+        234
+      ]
+    ]
+  },
+  {
+    "scenario_id": 3,
+    "label": 1,
+    "name": "Taylor",
+    "variant": 1,
+    "a_form": "Taylor likes the reasoning first, then the conclusion. Asked 'Should I switch careers to something I want more?', Taylor wants it answered in that order.",
+    "b_form": "Taylor: Should I switch careers to something I want more?\nAssistant: Do it. Regret for staying usually outlasts the cost of moving.\nTaylor: Flip those two.\nAssistant: Regret for staying usually outlasts the cost of moving. Do it.\nTaylor: Yes, like that.",
+    "b_final_span": [
+      167,
+      229
+    ],
+    "b_asst_spans": [
+      [
+        69,
+        131
+      ],
+      [
+        167,
+        229
+      ]
+    ]
+  },
+  {
+    "scenario_id": 3,
+    "label": 1,
+    "name": "Riley",
+    "variant": 2,
+    "a_form": "Riley likes the reasoning first, then the conclusion. Asked 'Should I switch careers to something I want more?', Riley wants it answered in that order.",
+    "b_form": "Riley: Should I switch careers to something I want more?\nAssistant: Do it. Regret for staying usually outlasts the cost of moving.\nRiley: Swap them.\nAssistant: Regret for staying usually outlasts the cost of moving. Do it.\nRiley: That's it.",
+    "b_final_span": [
+      160,
+      222
+    ],
+    "b_asst_spans": [
+      [
+        68,
+        130
+      ],
+      [
+        160,
+        222
+      ]
+    ]
+  },
+  {
+    "scenario_id": 3,
+    "label": 1,
+    "name": "Avery",
+    "variant": 3,
+    "a_form": "Avery likes the reasoning first, then the conclusion. Asked 'Should I switch careers to something I want more?', Avery wants it answered in that order.",
+    "b_form": "Avery: Should I switch careers to something I want more?\nAssistant: Do it. Regret for staying usually outlasts the cost of moving.\nAvery: Reverse it.\nAssistant: Regret for staying usually outlasts the cost of moving. Do it.\nAvery: Good.",
+    "b_final_span": [
+      161,
+      223
+    ],
+    "b_asst_spans": [
+      [
+        68,
+        130
+      ],
+      [
+        161,
+        223
+      ]
+    ]
+  },
+  {
+    "scenario_id": 4,
+    "label": 0,
+    "name": "Alex",
+    "variant": 0,
+    "a_form": "Alex likes the conclusion first, then the reasons. Asked 'Should I buy a house or keep renting?', Alex wants it answered in that order.",
+    "b_form": "Alex: Should I buy a house or keep renting?\nAssistant: Past that horizon the equity usually beats renting's flexibility. Buy, if you are staying five years.\nAlex: No - other way around.\nAssistant: Buy, if you are staying five years. Past that horizon the equity usually beats renting's flexibility.\nAlex: Better.",
+    "b_final_span": [
+      197,
+      298
+    ],
+    "b_asst_spans": [
+      [
+        55,
+        156
+      ],
+      [
+        197,
+        298
+      ]
+    ]
+  },
+  {
+    "scenario_id": 4,
+    "label": 0,
+    "name": "Sam",
+    "variant": 1,
+    "a_form": "Sam likes the conclusion first, then the reasons. Asked 'Should I buy a house or keep renting?', Sam wants it answered in that order.",
+    "b_form": "Sam: Should I buy a house or keep renting?\nAssistant: Past that horizon the equity usually beats renting's flexibility. Buy, if you are staying five years.\nSam: Flip those two.\nAssistant: Buy, if you are staying five years. Past that horizon the equity usually beats renting's flexibility.\nSam: Yes, like that.",
+    "b_final_span": [
+      188,
+      289
+    ],
+    "b_asst_spans": [
+      [
+        54,
+        155
+      ],
+      [
+        188,
+        289
+      ]
+    ]
+  },
+  {
+    "scenario_id": 4,
+    "label": 0,
+    "name": "Jordan",
+    "variant": 2,
+    "a_form": "Jordan likes the conclusion first, then the reasons. Asked 'Should I buy a house or keep renting?', Jordan wants it answered in that order.",
+    "b_form": "Jordan: Should I buy a house or keep renting?\nAssistant: Past that horizon the equity usually beats renting's flexibility. Buy, if you are staying five years.\nJordan: Swap them.\nAssistant: Buy, if you are staying five years. Past that horizon the equity usually beats renting's flexibility.\nJordan: That's it.",
+    "b_final_span": [
+      189,
+      290
+    ],
+    "b_asst_spans": [
+      [
+        57,
+        158
+      ],
+      [
+        189,
+        290
+      ]
+    ]
+  },
+  {
+    "scenario_id": 4,
+    "label": 0,
+    "name": "Morgan",
+    "variant": 3,
+    "a_form": "Morgan likes the conclusion first, then the reasons. Asked 'Should I buy a house or keep renting?', Morgan wants it answered in that order.",
+    "b_form": "Morgan: Should I buy a house or keep renting?\nAssistant: Past that horizon the equity usually beats renting's flexibility. Buy, if you are staying five years.\nMorgan: Reverse it.\nAssistant: Buy, if you are staying five years. Past that horizon the equity usually beats renting's flexibility.\nMorgan: Good.",
+    "b_final_span": [
+      190,
+      291
+    ],
+    "b_asst_spans": [
+      [
+        57,
+        158
+      ],
+      [
+        190,
+        291
+      ]
+    ]
+  },
+  {
+    "scenario_id": 4,
+    "label": 1,
+    "name": "Alex",
+    "variant": 0,
+    "a_form": "Alex likes the reasoning first, then the conclusion. Asked 'Should I buy a house or keep renting?', Alex wants it answered in that order.",
+    "b_form": "Alex: Should I buy a house or keep renting?\nAssistant: Buy, if you are staying five years. Past that horizon the equity usually beats renting's flexibility.\nAlex: No - other way around.\nAssistant: Past that horizon the equity usually beats renting's flexibility. Buy, if you are staying five years.\nAlex: Better.",
+    "b_final_span": [
+      197,
+      298
+    ],
+    "b_asst_spans": [
+      [
+        55,
+        156
+      ],
+      [
+        197,
+        298
+      ]
+    ]
+  },
+  {
+    "scenario_id": 4,
+    "label": 1,
+    "name": "Sam",
+    "variant": 1,
+    "a_form": "Sam likes the reasoning first, then the conclusion. Asked 'Should I buy a house or keep renting?', Sam wants it answered in that order.",
+    "b_form": "Sam: Should I buy a house or keep renting?\nAssistant: Buy, if you are staying five years. Past that horizon the equity usually beats renting's flexibility.\nSam: Flip those two.\nAssistant: Past that horizon the equity usually beats renting's flexibility. Buy, if you are staying five years.\nSam: Yes, like that.",
+    "b_final_span": [
+      188,
+      289
+    ],
+    "b_asst_spans": [
+      [
+        54,
+        155
+      ],
+      [
+        188,
+        289
+      ]
+    ]
+  },
+  {
+    "scenario_id": 4,
+    "label": 1,
+    "name": "Jordan",
+    "variant": 2,
+    "a_form": "Jordan likes the reasoning first, then the conclusion. Asked 'Should I buy a house or keep renting?', Jordan wants it answered in that order.",
+    "b_form": "Jordan: Should I buy a house or keep renting?\nAssistant: Buy, if you are staying five years. Past that horizon the equity usually beats renting's flexibility.\nJordan: Swap them.\nAssistant: Past that horizon the equity usually beats renting's flexibility. Buy, if you are staying five years.\nJordan: That's it.",
+    "b_final_span": [
+      189,
+      290
+    ],
+    "b_asst_spans": [
+      [
+        57,
+        158
+      ],
+      [
+        189,
+        290
+      ]
+    ]
+  },
+  {
+    "scenario_id": 4,
+    "label": 1,
+    "name": "Morgan",
+    "variant": 3,
+    "a_form": "Morgan likes the reasoning first, then the conclusion. Asked 'Should I buy a house or keep renting?', Morgan wants it answered in that order.",
+    "b_form": "Morgan: Should I buy a house or keep renting?\nAssistant: Buy, if you are staying five years. Past that horizon the equity usually beats renting's flexibility.\nMorgan: Reverse it.\nAssistant: Past that horizon the equity usually beats renting's flexibility. Buy, if you are staying five years.\nMorgan: Good.",
+    "b_final_span": [
+      190,
+      291
+    ],
+    "b_asst_spans": [
+      [
+        57,
+        158
+      ],
+      [
+        190,
+        291
+      ]
+    ]
+  },
+  {
+    "scenario_id": 5,
+    "label": 0,
+    "name": "Casey",
+    "variant": 0,
+    "a_form": "Casey likes the conclusion first, then the reasons. Asked 'Should I quit my job to start a business?', Casey wants it answered in that order.",
+    "b_form": "Casey: Should I quit my job to start a business?\nAssistant: Validating on the side costs you nothing but time. Do not quit yet.\nCasey: No - other way around.\nAssistant: Do not quit yet. Validating on the side costs you nothing but time.\nCasey: Better.",
+    "b_final_span": [
+      169,
+      236
+    ],
+    "b_asst_spans": [
+      [
+        60,
+        127
+      ],
+      [
+        169,
+        236
+      ]
+    ]
+  },
+  {
+    "scenario_id": 5,
+    "label": 0,
+    "name": "Taylor",
+    "variant": 1,
+    "a_form": "Taylor likes the conclusion first, then the reasons. Asked 'Should I quit my job to start a business?', Taylor wants it answered in that order.",
+    "b_form": "Taylor: Should I quit my job to start a business?\nAssistant: Validating on the side costs you nothing but time. Do not quit yet.\nTaylor: Flip those two.\nAssistant: Do not quit yet. Validating on the side costs you nothing but time.\nTaylor: Yes, like that.",
+    "b_final_span": [
+      164,
+      231
+    ],
+    "b_asst_spans": [
+      [
+        61,
+        128
+      ],
+      [
+        164,
+        231
+      ]
+    ]
+  },
+  {
+    "scenario_id": 5,
+    "label": 0,
+    "name": "Riley",
+    "variant": 2,
+    "a_form": "Riley likes the conclusion first, then the reasons. Asked 'Should I quit my job to start a business?', Riley wants it answered in that order.",
+    "b_form": "Riley: Should I quit my job to start a business?\nAssistant: Validating on the side costs you nothing but time. Do not quit yet.\nRiley: Swap them.\nAssistant: Do not quit yet. Validating on the side costs you nothing but time.\nRiley: That's it.",
+    "b_final_span": [
+      157,
+      224
+    ],
+    "b_asst_spans": [
+      [
+        60,
+        127
+      ],
+      [
+        157,
+        224
+      ]
+    ]
+  },
+  {
+    "scenario_id": 5,
+    "label": 0,
+    "name": "Avery",
+    "variant": 3,
+    "a_form": "Avery likes the conclusion first, then the reasons. Asked 'Should I quit my job to start a business?', Avery wants it answered in that order.",
+    "b_form": "Avery: Should I quit my job to start a business?\nAssistant: Validating on the side costs you nothing but time. Do not quit yet.\nAvery: Reverse it.\nAssistant: Do not quit yet. Validating on the side costs you nothing but time.\nAvery: Good.",
+    "b_final_span": [
+      158,
+      225
+    ],
+    "b_asst_spans": [
+      [
+        60,
+        127
+      ],
+      [
+        158,
+        225
+      ]
+    ]
+  },
+  {
+    "scenario_id": 5,
+    "label": 1,
+    "name": "Casey",
+    "variant": 0,
+    "a_form": "Casey likes the reasoning first, then the conclusion. Asked 'Should I quit my job to start a business?', Casey wants it answered in that order.",
+    "b_form": "Casey: Should I quit my job to start a business?\nAssistant: Do not quit yet. Validating on the side costs you nothing but time.\nCasey: No - other way around.\nAssistant: Validating on the side costs you nothing but time. Do not quit yet.\nCasey: Better.",
+    "b_final_span": [
+      169,
+      236
+    ],
+    "b_asst_spans": [
+      [
+        60,
+        127
+      ],
+      [
+        169,
+        236
+      ]
+    ]
+  },
+  {
+    "scenario_id": 5,
+    "label": 1,
+    "name": "Taylor",
+    "variant": 1,
+    "a_form": "Taylor likes the reasoning first, then the conclusion. Asked 'Should I quit my job to start a business?', Taylor wants it answered in that order.",
+    "b_form": "Taylor: Should I quit my job to start a business?\nAssistant: Do not quit yet. Validating on the side costs you nothing but time.\nTaylor: Flip those two.\nAssistant: Validating on the side costs you nothing but time. Do not quit yet.\nTaylor: Yes, like that.",
+    "b_final_span": [
+      164,
+      231
+    ],
+    "b_asst_spans": [
+      [
+        61,
+        128
+      ],
+      [
+        164,
+        231
+      ]
+    ]
+  },
+  {
+    "scenario_id": 5,
+    "label": 1,
+    "name": "Riley",
+    "variant": 2,
+    "a_form": "Riley likes the reasoning first, then the conclusion. Asked 'Should I quit my job to start a business?', Riley wants it answered in that order.",
+    "b_form": "Riley: Should I quit my job to start a business?\nAssistant: Do not quit yet. Validating on the side costs you nothing but time.\nRiley: Swap them.\nAssistant: Validating on the side costs you nothing but time. Do not quit yet.\nRiley: That's it.",
+    "b_final_span": [
+      157,
+      224
+    ],
+    "b_asst_spans": [
+      [
+        60,
+        127
+      ],
+      [
+        157,
+        224
+      ]
+    ]
+  },
+  {
+    "scenario_id": 5,
+    "label": 1,
+    "name": "Avery",
+    "variant": 3,
+    "a_form": "Avery likes the reasoning first, then the conclusion. Asked 'Should I quit my job to start a business?', Avery wants it answered in that order.",
+    "b_form": "Avery: Should I quit my job to start a business?\nAssistant: Do not quit yet. Validating on the side costs you nothing but time.\nAvery: Reverse it.\nAssistant: Validating on the side costs you nothing but time. Do not quit yet.\nAvery: Good.",
+    "b_final_span": [
+      158,
+      225
+    ],
+    "b_asst_spans": [
+      [
+        60,
+        127
+      ],
+      [
+        158,
+        225
+      ]
+    ]
+  },
+  {
+    "scenario_id": 6,
+    "label": 0,
+    "name": "Alex",
+    "variant": 0,
+    "a_form": "Alex likes the conclusion first, then the reasons. Asked 'Should I take the promotion into management?', Alex wants it answered in that order.",
+    "b_form": "Alex: Should I take the promotion into management?\nAssistant: You will not know if you like leading until you try. Take it.\nAlex: No - other way around.\nAssistant: Take it. You will not know if you like leading until you try.\nAlex: Better.",
+    "b_final_span": [
+      164,
+      225
+    ],
+    "b_asst_spans": [
+      [
+        62,
+        123
+      ],
+      [
+        164,
+        225
+      ]
+    ]
+  },
+  {
+    "scenario_id": 6,
+    "label": 0,
+    "name": "Sam",
+    "variant": 1,
+    "a_form": "Sam likes the conclusion first, then the reasons. Asked 'Should I take the promotion into management?', Sam wants it answered in that order.",
+    "b_form": "Sam: Should I take the promotion into management?\nAssistant: You will not know if you like leading until you try. Take it.\nSam: Flip those two.\nAssistant: Take it. You will not know if you like leading until you try.\nSam: Yes, like that.",
+    "b_final_span": [
+      155,
+      216
+    ],
+    "b_asst_spans": [
+      [
+        61,
+        122
+      ],
+      [
+        155,
+        216
+      ]
+    ]
+  },
+  {
+    "scenario_id": 6,
+    "label": 0,
+    "name": "Jordan",
+    "variant": 2,
+    "a_form": "Jordan likes the conclusion first, then the reasons. Asked 'Should I take the promotion into management?', Jordan wants it answered in that order.",
+    "b_form": "Jordan: Should I take the promotion into management?\nAssistant: You will not know if you like leading until you try. Take it.\nJordan: Swap them.\nAssistant: Take it. You will not know if you like leading until you try.\nJordan: That's it.",
+    "b_final_span": [
+      156,
+      217
+    ],
+    "b_asst_spans": [
+      [
+        64,
+        125
+      ],
+      [
+        156,
+        217
+      ]
+    ]
+  },
+  {
+    "scenario_id": 6,
+    "label": 0,
+    "name": "Morgan",
+    "variant": 3,
+    "a_form": "Morgan likes the conclusion first, then the reasons. Asked 'Should I take the promotion into management?', Morgan wants it answered in that order.",
+    "b_form": "Morgan: Should I take the promotion into management?\nAssistant: You will not know if you like leading until you try. Take it.\nMorgan: Reverse it.\nAssistant: Take it. You will not know if you like leading until you try.\nMorgan: Good.",
+    "b_final_span": [
+      157,
+      218
+    ],
+    "b_asst_spans": [
+      [
+        64,
+        125
+      ],
+      [
+        157,
+        218
+      ]
+    ]
+  },
+  {
+    "scenario_id": 6,
+    "label": 1,
+    "name": "Alex",
+    "variant": 0,
+    "a_form": "Alex likes the reasoning first, then the conclusion. Asked 'Should I take the promotion into management?', Alex wants it answered in that order.",
+    "b_form": "Alex: Should I take the promotion into management?\nAssistant: Take it. You will not know if you like leading until you try.\nAlex: No - other way around.\nAssistant: You will not know if you like leading until you try. Take it.\nAlex: Better.",
+    "b_final_span": [
+      164,
+      225
+    ],
+    "b_asst_spans": [
+      [
+        62,
+        123
+      ],
+      [
+        164,
+        225
+      ]
+    ]
+  },
+  {
+    "scenario_id": 6,
+    "label": 1,
+    "name": "Sam",
+    "variant": 1,
+    "a_form": "Sam likes the reasoning first, then the conclusion. Asked 'Should I take the promotion into management?', Sam wants it answered in that order.",
+    "b_form": "Sam: Should I take the promotion into management?\nAssistant: Take it. You will not know if you like leading until you try.\nSam: Flip those two.\nAssistant: You will not know if you like leading until you try. Take it.\nSam: Yes, like that.",
+    "b_final_span": [
+      155,
+      216
+    ],
+    "b_asst_spans": [
+      [
+        61,
+        122
+      ],
+      [
+        155,
+        216
+      ]
+    ]
+  },
+  {
+    "scenario_id": 6,
+    "label": 1,
+    "name": "Jordan",
+    "variant": 2,
+    "a_form": "Jordan likes the reasoning first, then the conclusion. Asked 'Should I take the promotion into management?', Jordan wants it answered in that order.",
+    "b_form": "Jordan: Should I take the promotion into management?\nAssistant: Take it. You will not know if you like leading until you try.\nJordan: Swap them.\nAssistant: You will not know if you like leading until you try. Take it.\nJordan: That's it.",
+    "b_final_span": [
+      156,
+      217
+    ],
+    "b_asst_spans": [
+      [
+        64,
+        125
+      ],
+      [
+        156,
+        217
+      ]
+    ]
+  },
+  {
+    "scenario_id": 6,
+    "label": 1,
+    "name": "Morgan",
+    "variant": 3,
+    "a_form": "Morgan likes the reasoning first, then the conclusion. Asked 'Should I take the promotion into management?', Morgan wants it answered in that order.",
+    "b_form": "Morgan: Should I take the promotion into management?\nAssistant: Take it. You will not know if you like leading until you try.\nMorgan: Reverse it.\nAssistant: You will not know if you like leading until you try. Take it.\nMorgan: Good.",
+    "b_final_span": [
+      157,
+      218
+    ],
+    "b_asst_spans": [
+      [
+        64,
+        125
+      ],
+      [
+        157,
+        218
+      ]
+    ]
+  },
+  {
+    "scenario_id": 7,
+    "label": 0,
+    "name": "Casey",
+    "variant": 0,
+    "a_form": "Casey likes the conclusion first, then the reasons. Asked 'Should I take a sabbatical from work?', Casey wants it answered in that order.",
+    "b_form": "Casey: Should I take a sabbatical from work?\nAssistant: Unaddressed burnout compounds into worse decisions. Take it, if you have savings.\nCasey: No - other way around.\nAssistant: Take it, if you have savings. Unaddressed burnout compounds into worse decisions.\nCasey: Better.",
+    "b_final_span": [
+      179,
+      260
+    ],
+    "b_asst_spans": [
+      [
+        56,
+        137
+      ],
+      [
+        179,
+        260
+      ]
+    ]
+  },
+  {
+    "scenario_id": 7,
+    "label": 0,
+    "name": "Taylor",
+    "variant": 1,
+    "a_form": "Taylor likes the conclusion first, then the reasons. Asked 'Should I take a sabbatical from work?', Taylor wants it answered in that order.",
+    "b_form": "Taylor: Should I take a sabbatical from work?\nAssistant: Unaddressed burnout compounds into worse decisions. Take it, if you have savings.\nTaylor: Flip those two.\nAssistant: Take it, if you have savings. Unaddressed burnout compounds into worse decisions.\nTaylor: Yes, like that.",
+    "b_final_span": [
+      174,
+      255
+    ],
+    "b_asst_spans": [
+      [
+        57,
+        138
+      ],
+      [
+        174,
+        255
+      ]
+    ]
+  },
+  {
+    "scenario_id": 7,
+    "label": 0,
+    "name": "Riley",
+    "variant": 2,
+    "a_form": "Riley likes the conclusion first, then the reasons. Asked 'Should I take a sabbatical from work?', Riley wants it answered in that order.",
+    "b_form": "Riley: Should I take a sabbatical from work?\nAssistant: Unaddressed burnout compounds into worse decisions. Take it, if you have savings.\nRiley: Swap them.\nAssistant: Take it, if you have savings. Unaddressed burnout compounds into worse decisions.\nRiley: That's it.",
+    "b_final_span": [
+      167,
+      248
+    ],
+    "b_asst_spans": [
+      [
+        56,
+        137
+      ],
+      [
+        167,
+        248
+      ]
+    ]
+  },
+  {
+    "scenario_id": 7,
+    "label": 0,
+    "name": "Avery",
+    "variant": 3,
+    "a_form": "Avery likes the conclusion first, then the reasons. Asked 'Should I take a sabbatical from work?', Avery wants it answered in that order.",
+    "b_form": "Avery: Should I take a sabbatical from work?\nAssistant: Unaddressed burnout compounds into worse decisions. Take it, if you have savings.\nAvery: Reverse it.\nAssistant: Take it, if you have savings. Unaddressed burnout compounds into worse decisions.\nAvery: Good.",
+    "b_final_span": [
+      168,
+      249
+    ],
+    "b_asst_spans": [
+      [
+        56,
+        137
+      ],
+      [
+        168,
+        249
+      ]
+    ]
+  },
+  {
+    "scenario_id": 7,
+    "label": 1,
+    "name": "Casey",
+    "variant": 0,
+    "a_form": "Casey likes the reasoning first, then the conclusion. Asked 'Should I take a sabbatical from work?', Casey wants it answered in that order.",
+    "b_form": "Casey: Should I take a sabbatical from work?\nAssistant: Take it, if you have savings. Unaddressed burnout compounds into worse decisions.\nCasey: No - other way around.\nAssistant: Unaddressed burnout compounds into worse decisions. Take it, if you have savings.\nCasey: Better.",
+    "b_final_span": [
+      179,
+      260
+    ],
+    "b_asst_spans": [
+      [
+        56,
+        137
+      ],
+      [
+        179,
+        260
+      ]
+    ]
+  },
+  {
+    "scenario_id": 7,
+    "label": 1,
+    "name": "Taylor",
+    "variant": 1,
+    "a_form": "Taylor likes the reasoning first, then the conclusion. Asked 'Should I take a sabbatical from work?', Taylor wants it answered in that order.",
+    "b_form": "Taylor: Should I take a sabbatical from work?\nAssistant: Take it, if you have savings. Unaddressed burnout compounds into worse decisions.\nTaylor: Flip those two.\nAssistant: Unaddressed burnout compounds into worse decisions. Take it, if you have savings.\nTaylor: Yes, like that.",
+    "b_final_span": [
+      174,
+      255
+    ],
+    "b_asst_spans": [
+      [
+        57,
+        138
+      ],
+      [
+        174,
+        255
+      ]
+    ]
+  },
+  {
+    "scenario_id": 7,
+    "label": 1,
+    "name": "Riley",
+    "variant": 2,
+    "a_form": "Riley likes the reasoning first, then the conclusion. Asked 'Should I take a sabbatical from work?', Riley wants it answered in that order.",
+    "b_form": "Riley: Should I take a sabbatical from work?\nAssistant: Take it, if you have savings. Unaddressed burnout compounds into worse decisions.\nRiley: Swap them.\nAssistant: Unaddressed burnout compounds into worse decisions. Take it, if you have savings.\nRiley: That's it.",
+    "b_final_span": [
+      167,
+      248
+    ],
+    "b_asst_spans": [
+      [
+        56,
+        137
+      ],
+      [
+        167,
+        248
+      ]
+    ]
+  },
+  {
+    "scenario_id": 7,
+    "label": 1,
+    "name": "Avery",
+    "variant": 3,
+    "a_form": "Avery likes the reasoning first, then the conclusion. Asked 'Should I take a sabbatical from work?', Avery wants it answered in that order.",
+    "b_form": "Avery: Should I take a sabbatical from work?\nAssistant: Take it, if you have savings. Unaddressed burnout compounds into worse decisions.\nAvery: Reverse it.\nAssistant: Unaddressed burnout compounds into worse decisions. Take it, if you have savings.\nAvery: Good.",
+    "b_final_span": [
+      168,
+      249
+    ],
+    "b_asst_spans": [
+      [
+        56,
+        137
+      ],
+      [
+        168,
+        249
+      ]
+    ]
+  },
+  {
+    "scenario_id": 8,
+    "label": 0,
+    "name": "Alex",
+    "variant": 0,
+    "a_form": "Alex likes the conclusion first, then the reasons. Asked 'Should I get a dog right now?', Alex wants it answered in that order.",
+    "b_form": "Alex: Should I get a dog right now?\nAssistant: Your schedule right now would not be fair to the animal. Wait.\nAlex: No - other way around.\nAssistant: Wait. Your schedule right now would not be fair to the animal.\nAlex: Better.",
+    "b_final_span": [
+      150,
+      212
+    ],
+    "b_asst_spans": [
+      [
+        47,
+        109
+      ],
+      [
+        150,
+        212
+      ]
+    ]
+  },
+  {
+    "scenario_id": 8,
+    "label": 0,
+    "name": "Sam",
+    "variant": 1,
+    "a_form": "Sam likes the conclusion first, then the reasons. Asked 'Should I get a dog right now?', Sam wants it answered in that order.",
+    "b_form": "Sam: Should I get a dog right now?\nAssistant: Your schedule right now would not be fair to the animal. Wait.\nSam: Flip those two.\nAssistant: Wait. Your schedule right now would not be fair to the animal.\nSam: Yes, like that.",
+    "b_final_span": [
+      141,
+      203
+    ],
+    "b_asst_spans": [
+      [
+        46,
+        108
+      ],
+      [
+        141,
+        203
+      ]
+    ]
+  },
+  {
+    "scenario_id": 8,
+    "label": 0,
+    "name": "Jordan",
+    "variant": 2,
+    "a_form": "Jordan likes the conclusion first, then the reasons. Asked 'Should I get a dog right now?', Jordan wants it answered in that order.",
+    "b_form": "Jordan: Should I get a dog right now?\nAssistant: Your schedule right now would not be fair to the animal. Wait.\nJordan: Swap them.\nAssistant: Wait. Your schedule right now would not be fair to the animal.\nJordan: That's it.",
+    "b_final_span": [
+      142,
+      204
+    ],
+    "b_asst_spans": [
+      [
+        49,
+        111
+      ],
+      [
+        142,
+        204
+      ]
+    ]
+  },
+  {
+    "scenario_id": 8,
+    "label": 0,
+    "name": "Morgan",
+    "variant": 3,
+    "a_form": "Morgan likes the conclusion first, then the reasons. Asked 'Should I get a dog right now?', Morgan wants it answered in that order.",
+    "b_form": "Morgan: Should I get a dog right now?\nAssistant: Your schedule right now would not be fair to the animal. Wait.\nMorgan: Reverse it.\nAssistant: Wait. Your schedule right now would not be fair to the animal.\nMorgan: Good.",
+    "b_final_span": [
+      143,
+      205
+    ],
+    "b_asst_spans": [
+      [
+        49,
+        111
+      ],
+      [
+        143,
+        205
+      ]
+    ]
+  },
+  {
+    "scenario_id": 8,
+    "label": 1,
+    "name": "Alex",
+    "variant": 0,
+    "a_form": "Alex likes the reasoning first, then the conclusion. Asked 'Should I get a dog right now?', Alex wants it answered in that order.",
+    "b_form": "Alex: Should I get a dog right now?\nAssistant: Wait. Your schedule right now would not be fair to the animal.\nAlex: No - other way around.\nAssistant: Your schedule right now would not be fair to the animal. Wait.\nAlex: Better.",
+    "b_final_span": [
+      150,
+      212
+    ],
+    "b_asst_spans": [
+      [
+        47,
+        109
+      ],
+      [
+        150,
+        212
+      ]
+    ]
+  },
+  {
+    "scenario_id": 8,
+    "label": 1,
+    "name": "Sam",
+    "variant": 1,
+    "a_form": "Sam likes the reasoning first, then the conclusion. Asked 'Should I get a dog right now?', Sam wants it answered in that order.",
+    "b_form": "Sam: Should I get a dog right now?\nAssistant: Wait. Your schedule right now would not be fair to the animal.\nSam: Flip those two.\nAssistant: Your schedule right now would not be fair to the animal. Wait.\nSam: Yes, like that.",
+    "b_final_span": [
+      141,
+      203
+    ],
+    "b_asst_spans": [
+      [
+        46,
+        108
+      ],
+      [
+        141,
+        203
+      ]
+    ]
+  },
+  {
+    "scenario_id": 8,
+    "label": 1,
+    "name": "Jordan",
+    "variant": 2,
+    "a_form": "Jordan likes the reasoning first, then the conclusion. Asked 'Should I get a dog right now?', Jordan wants it answered in that order.",
+    "b_form": "Jordan: Should I get a dog right now?\nAssistant: Wait. Your schedule right now would not be fair to the animal.\nJordan: Swap them.\nAssistant: Your schedule right now would not be fair to the animal. Wait.\nJordan: That's it.",
+    "b_final_span": [
+      142,
+      204
+    ],
+    "b_asst_spans": [
+      [
+        49,
+        111
+      ],
+      [
+        142,
+        204
+      ]
+    ]
+  },
+  {
+    "scenario_id": 8,
+    "label": 1,
+    "name": "Morgan",
+    "variant": 3,
+    "a_form": "Morgan likes the reasoning first, then the conclusion. Asked 'Should I get a dog right now?', Morgan wants it answered in that order.",
+    "b_form": "Morgan: Should I get a dog right now?\nAssistant: Wait. Your schedule right now would not be fair to the animal.\nMorgan: Reverse it.\nAssistant: Your schedule right now would not be fair to the animal. Wait.\nMorgan: Good.",
+    "b_final_span": [
+      143,
+      205
+    ],
+    "b_asst_spans": [
+      [
+        49,
+        111
+      ],
+      [
+        143,
+        205
+      ]
+    ]
+  },
+  {
+    "scenario_id": 9,
+    "label": 0,
+    "name": "Casey",
+    "variant": 0,
+    "a_form": "Casey likes the conclusion first, then the reasons. Asked 'Should I learn to drive?', Casey wants it answered in that order.",
+    "b_form": "Casey: Should I learn to drive?\nAssistant: The independence pays off even if you rarely drive. Learn.\nCasey: No - other way around.\nAssistant: Learn. The independence pays off even if you rarely drive.\nCasey: Better.",
+    "b_final_span": [
+      143,
+      201
+    ],
+    "b_asst_spans": [
+      [
+        43,
+        101
+      ],
+      [
+        143,
+        201
+      ]
+    ]
+  },
+  {
+    "scenario_id": 9,
+    "label": 0,
+    "name": "Taylor",
+    "variant": 1,
+    "a_form": "Taylor likes the conclusion first, then the reasons. Asked 'Should I learn to drive?', Taylor wants it answered in that order.",
+    "b_form": "Taylor: Should I learn to drive?\nAssistant: The independence pays off even if you rarely drive. Learn.\nTaylor: Flip those two.\nAssistant: Learn. The independence pays off even if you rarely drive.\nTaylor: Yes, like that.",
+    "b_final_span": [
+      138,
+      196
+    ],
+    "b_asst_spans": [
+      [
+        44,
+        102
+      ],
+      [
+        138,
+        196
+      ]
+    ]
+  },
+  {
+    "scenario_id": 9,
+    "label": 0,
+    "name": "Riley",
+    "variant": 2,
+    "a_form": "Riley likes the conclusion first, then the reasons. Asked 'Should I learn to drive?', Riley wants it answered in that order.",
+    "b_form": "Riley: Should I learn to drive?\nAssistant: The independence pays off even if you rarely drive. Learn.\nRiley: Swap them.\nAssistant: Learn. The independence pays off even if you rarely drive.\nRiley: That's it.",
+    "b_final_span": [
+      131,
+      189
+    ],
+    "b_asst_spans": [
+      [
+        43,
+        101
+      ],
+      [
+        131,
+        189
+      ]
+    ]
+  },
+  {
+    "scenario_id": 9,
+    "label": 0,
+    "name": "Avery",
+    "variant": 3,
+    "a_form": "Avery likes the conclusion first, then the reasons. Asked 'Should I learn to drive?', Avery wants it answered in that order.",
+    "b_form": "Avery: Should I learn to drive?\nAssistant: The independence pays off even if you rarely drive. Learn.\nAvery: Reverse it.\nAssistant: Learn. The independence pays off even if you rarely drive.\nAvery: Good.",
+    "b_final_span": [
+      132,
+      190
+    ],
+    "b_asst_spans": [
+      [
+        43,
+        101
+      ],
+      [
+        132,
+        190
+      ]
+    ]
+  },
+  {
+    "scenario_id": 9,
+    "label": 1,
+    "name": "Casey",
+    "variant": 0,
+    "a_form": "Casey likes the reasoning first, then the conclusion. Asked 'Should I learn to drive?', Casey wants it answered in that order.",
+    "b_form": "Casey: Should I learn to drive?\nAssistant: Learn. The independence pays off even if you rarely drive.\nCasey: No - other way around.\nAssistant: The independence pays off even if you rarely drive. Learn.\nCasey: Better.",
+    "b_final_span": [
+      143,
+      201
+    ],
+    "b_asst_spans": [
+      [
+        43,
+        101
+      ],
+      [
+        143,
+        201
+      ]
+    ]
+  },
+  {
+    "scenario_id": 9,
+    "label": 1,
+    "name": "Taylor",
+    "variant": 1,
+    "a_form": "Taylor likes the reasoning first, then the conclusion. Asked 'Should I learn to drive?', Taylor wants it answered in that order.",
+    "b_form": "Taylor: Should I learn to drive?\nAssistant: Learn. The independence pays off even if you rarely drive.\nTaylor: Flip those two.\nAssistant: The independence pays off even if you rarely drive. Learn.\nTaylor: Yes, like that.",
+    "b_final_span": [
+      138,
+      196
+    ],
+    "b_asst_spans": [
+      [
+        44,
+        102
+      ],
+      [
+        138,
+        196
+      ]
+    ]
+  },
+  {
+    "scenario_id": 9,
+    "label": 1,
+    "name": "Riley",
+    "variant": 2,
+    "a_form": "Riley likes the reasoning first, then the conclusion. Asked 'Should I learn to drive?', Riley wants it answered in that order.",
+    "b_form": "Riley: Should I learn to drive?\nAssistant: Learn. The independence pays off even if you rarely drive.\nRiley: Swap them.\nAssistant: The independence pays off even if you rarely drive. Learn.\nRiley: That's it.",
+    "b_final_span": [
+      131,
+      189
+    ],
+    "b_asst_spans": [
+      [
+        43,
+        101
+      ],
+      [
+        131,
+        189
+      ]
+    ]
+  },
+  {
+    "scenario_id": 9,
+    "label": 1,
+    "name": "Avery",
+    "variant": 3,
+    "a_form": "Avery likes the reasoning first, then the conclusion. Asked 'Should I learn to drive?', Avery wants it answered in that order.",
+    "b_form": "Avery: Should I learn to drive?\nAssistant: Learn. The independence pays off even if you rarely drive.\nAvery: Reverse it.\nAssistant: The independence pays off even if you rarely drive. Learn.\nAvery: Good.",
+    "b_final_span": [
+      132,
+      190
+    ],
+    "b_asst_spans": [
+      [
+        43,
+        101
+      ],
+      [
+        132,
+        190
+      ]
+    ]
+  },
+  {
+    "scenario_id": 10,
+    "label": 0,
+    "name": "Alex",
+    "variant": 0,
+    "a_form": "Alex likes the conclusion first, then the reasons. Asked 'Should I move in with my partner?', Alex wants it answered in that order.",
+    "b_form": "Alex: Should I move in with my partner?\nAssistant: Most cohabitation conflict traces back to unspoken money assumptions. Talk about money first.\nAlex: No - other way around.\nAssistant: Talk about money first. Most cohabitation conflict traces back to unspoken money assumptions.\nAlex: Better.",
+    "b_final_span": [
+      185,
+      278
+    ],
+    "b_asst_spans": [
+      [
+        51,
+        144
+      ],
+      [
+        185,
+        278
+      ]
+    ]
+  },
+  {
+    "scenario_id": 10,
+    "label": 0,
+    "name": "Sam",
+    "variant": 1,
+    "a_form": "Sam likes the conclusion first, then the reasons. Asked 'Should I move in with my partner?', Sam wants it answered in that order.",
+    "b_form": "Sam: Should I move in with my partner?\nAssistant: Most cohabitation conflict traces back to unspoken money assumptions. Talk about money first.\nSam: Flip those two.\nAssistant: Talk about money first. Most cohabitation conflict traces back to unspoken money assumptions.\nSam: Yes, like that.",
+    "b_final_span": [
+      176,
+      269
+    ],
+    "b_asst_spans": [
+      [
+        50,
+        143
+      ],
+      [
+        176,
+        269
+      ]
+    ]
+  },
+  {
+    "scenario_id": 10,
+    "label": 0,
+    "name": "Jordan",
+    "variant": 2,
+    "a_form": "Jordan likes the conclusion first, then the reasons. Asked 'Should I move in with my partner?', Jordan wants it answered in that order.",
+    "b_form": "Jordan: Should I move in with my partner?\nAssistant: Most cohabitation conflict traces back to unspoken money assumptions. Talk about money first.\nJordan: Swap them.\nAssistant: Talk about money first. Most cohabitation conflict traces back to unspoken money assumptions.\nJordan: That's it.",
+    "b_final_span": [
+      177,
+      270
+    ],
+    "b_asst_spans": [
+      [
+        53,
+        146
+      ],
+      [
+        177,
+        270
+      ]
+    ]
+  },
+  {
+    "scenario_id": 10,
+    "label": 0,
+    "name": "Morgan",
+    "variant": 3,
+    "a_form": "Morgan likes the conclusion first, then the reasons. Asked 'Should I move in with my partner?', Morgan wants it answered in that order.",
+    "b_form": "Morgan: Should I move in with my partner?\nAssistant: Most cohabitation conflict traces back to unspoken money assumptions. Talk about money first.\nMorgan: Reverse it.\nAssistant: Talk about money first. Most cohabitation conflict traces back to unspoken money assumptions.\nMorgan: Good.",
+    "b_final_span": [
+      178,
+      271
+    ],
+    "b_asst_spans": [
+      [
+        53,
+        146
+      ],
+      [
+        178,
+        271
+      ]
+    ]
+  },
+  {
+    "scenario_id": 10,
+    "label": 1,
+    "name": "Alex",
+    "variant": 0,
+    "a_form": "Alex likes the reasoning first, then the conclusion. Asked 'Should I move in with my partner?', Alex wants it answered in that order.",
+    "b_form": "Alex: Should I move in with my partner?\nAssistant: Talk about money first. Most cohabitation conflict traces back to unspoken money assumptions.\nAlex: No - other way around.\nAssistant: Most cohabitation conflict traces back to unspoken money assumptions. Talk about money first.\nAlex: Better.",
+    "b_final_span": [
+      185,
+      278
+    ],
+    "b_asst_spans": [
+      [
+        51,
+        144
+      ],
+      [
+        185,
+        278
+      ]
+    ]
+  },
+  {
+    "scenario_id": 10,
+    "label": 1,
+    "name": "Sam",
+    "variant": 1,
+    "a_form": "Sam likes the reasoning first, then the conclusion. Asked 'Should I move in with my partner?', Sam wants it answered in that order.",
+    "b_form": "Sam: Should I move in with my partner?\nAssistant: Talk about money first. Most cohabitation conflict traces back to unspoken money assumptions.\nSam: Flip those two.\nAssistant: Most cohabitation conflict traces back to unspoken money assumptions. Talk about money first.\nSam: Yes, like that.",
+    "b_final_span": [
+      176,
+      269
+    ],
+    "b_asst_spans": [
+      [
+        50,
+        143
+      ],
+      [
+        176,
+        269
+      ]
+    ]
+  },
+  {
+    "scenario_id": 10,
+    "label": 1,
+    "name": "Jordan",
+    "variant": 2,
+    "a_form": "Jordan likes the reasoning first, then the conclusion. Asked 'Should I move in with my partner?', Jordan wants it answered in that order.",
+    "b_form": "Jordan: Should I move in with my partner?\nAssistant: Talk about money first. Most cohabitation conflict traces back to unspoken money assumptions.\nJordan: Swap them.\nAssistant: Most cohabitation conflict traces back to unspoken money assumptions. Talk about money first.\nJordan: That's it.",
+    "b_final_span": [
+      177,
+      270
+    ],
+    "b_asst_spans": [
+      [
+        53,
+        146
+      ],
+      [
+        177,
+        270
+      ]
+    ]
+  },
+  {
+    "scenario_id": 10,
+    "label": 1,
+    "name": "Morgan",
+    "variant": 3,
+    "a_form": "Morgan likes the reasoning first, then the conclusion. Asked 'Should I move in with my partner?', Morgan wants it answered in that order.",
+    "b_form": "Morgan: Should I move in with my partner?\nAssistant: Talk about money first. Most cohabitation conflict traces back to unspoken money assumptions.\nMorgan: Reverse it.\nAssistant: Most cohabitation conflict traces back to unspoken money assumptions. Talk about money first.\nMorgan: Good.",
+    "b_final_span": [
+      178,
+      271
+    ],
+    "b_asst_spans": [
+      [
+        53,
+        146
+      ],
+      [
+        178,
+        271
+      ]
+    ]
+  },
+  {
+    "scenario_id": 11,
+    "label": 0,
+    "name": "Casey",
+    "variant": 0,
+    "a_form": "Casey likes the conclusion first, then the reasons. Asked 'Should I keep this old car or replace it?', Casey wants it answered in that order.",
+    "b_form": "Casey: Should I keep this old car or replace it?\nAssistant: Repairs are still cheaper than a year of payments. Keep it for now.\nCasey: No - other way around.\nAssistant: Keep it for now. Repairs are still cheaper than a year of payments.\nCasey: Better.",
+    "b_final_span": [
+      169,
+      236
+    ],
+    "b_asst_spans": [
+      [
+        60,
+        127
+      ],
+      [
+        169,
+        236
+      ]
+    ]
+  },
+  {
+    "scenario_id": 11,
+    "label": 0,
+    "name": "Taylor",
+    "variant": 1,
+    "a_form": "Taylor likes the conclusion first, then the reasons. Asked 'Should I keep this old car or replace it?', Taylor wants it answered in that order.",
+    "b_form": "Taylor: Should I keep this old car or replace it?\nAssistant: Repairs are still cheaper than a year of payments. Keep it for now.\nTaylor: Flip those two.\nAssistant: Keep it for now. Repairs are still cheaper than a year of payments.\nTaylor: Yes, like that.",
+    "b_final_span": [
+      164,
+      231
+    ],
+    "b_asst_spans": [
+      [
+        61,
+        128
+      ],
+      [
+        164,
+        231
+      ]
+    ]
+  },
+  {
+    "scenario_id": 11,
+    "label": 0,
+    "name": "Riley",
+    "variant": 2,
+    "a_form": "Riley likes the conclusion first, then the reasons. Asked 'Should I keep this old car or replace it?', Riley wants it answered in that order.",
+    "b_form": "Riley: Should I keep this old car or replace it?\nAssistant: Repairs are still cheaper than a year of payments. Keep it for now.\nRiley: Swap them.\nAssistant: Keep it for now. Repairs are still cheaper than a year of payments.\nRiley: That's it.",
+    "b_final_span": [
+      157,
+      224
+    ],
+    "b_asst_spans": [
+      [
+        60,
+        127
+      ],
+      [
+        157,
+        224
+      ]
+    ]
+  },
+  {
+    "scenario_id": 11,
+    "label": 0,
+    "name": "Avery",
+    "variant": 3,
+    "a_form": "Avery likes the conclusion first, then the reasons. Asked 'Should I keep this old car or replace it?', Avery wants it answered in that order.",
+    "b_form": "Avery: Should I keep this old car or replace it?\nAssistant: Repairs are still cheaper than a year of payments. Keep it for now.\nAvery: Reverse it.\nAssistant: Keep it for now. Repairs are still cheaper than a year of payments.\nAvery: Good.",
+    "b_final_span": [
+      158,
+      225
+    ],
+    "b_asst_spans": [
+      [
+        60,
+        127
+      ],
+      [
+        158,
+        225
+      ]
+    ]
+  },
+  {
+    "scenario_id": 11,
+    "label": 1,
+    "name": "Casey",
+    "variant": 0,
+    "a_form": "Casey likes the reasoning first, then the conclusion. Asked 'Should I keep this old car or replace it?', Casey wants it answered in that order.",
+    "b_form": "Casey: Should I keep this old car or replace it?\nAssistant: Keep it for now. Repairs are still cheaper than a year of payments.\nCasey: No - other way around.\nAssistant: Repairs are still cheaper than a year of payments. Keep it for now.\nCasey: Better.",
+    "b_final_span": [
+      169,
+      236
+    ],
+    "b_asst_spans": [
+      [
+        60,
+        127
+      ],
+      [
+        169,
+        236
+      ]
+    ]
+  },
+  {
+    "scenario_id": 11,
+    "label": 1,
+    "name": "Taylor",
+    "variant": 1,
+    "a_form": "Taylor likes the reasoning first, then the conclusion. Asked 'Should I keep this old car or replace it?', Taylor wants it answered in that order.",
+    "b_form": "Taylor: Should I keep this old car or replace it?\nAssistant: Keep it for now. Repairs are still cheaper than a year of payments.\nTaylor: Flip those two.\nAssistant: Repairs are still cheaper than a year of payments. Keep it for now.\nTaylor: Yes, like that.",
+    "b_final_span": [
+      164,
+      231
+    ],
+    "b_asst_spans": [
+      [
+        61,
+        128
+      ],
+      [
+        164,
+        231
+      ]
+    ]
+  },
+  {
+    "scenario_id": 11,
+    "label": 1,
+    "name": "Riley",
+    "variant": 2,
+    "a_form": "Riley likes the reasoning first, then the conclusion. Asked 'Should I keep this old car or replace it?', Riley wants it answered in that order.",
+    "b_form": "Riley: Should I keep this old car or replace it?\nAssistant: Keep it for now. Repairs are still cheaper than a year of payments.\nRiley: Swap them.\nAssistant: Repairs are still cheaper than a year of payments. Keep it for now.\nRiley: That's it.",
+    "b_final_span": [
+      157,
+      224
+    ],
+    "b_asst_spans": [
+      [
+        60,
+        127
+      ],
+      [
+        157,
+        224
+      ]
+    ]
+  },
+  {
+    "scenario_id": 11,
+    "label": 1,
+    "name": "Avery",
+    "variant": 3,
+    "a_form": "Avery likes the reasoning first, then the conclusion. Asked 'Should I keep this old car or replace it?', Avery wants it answered in that order.",
+    "b_form": "Avery: Should I keep this old car or replace it?\nAssistant: Keep it for now. Repairs are still cheaper than a year of payments.\nAvery: Reverse it.\nAssistant: Repairs are still cheaper than a year of payments. Keep it for now.\nAvery: Good.",
+    "b_final_span": [
+      158,
+      225
+    ],
+    "b_asst_spans": [
+      [
+        60,
+        127
+      ],
+      [
+        158,
+        225
+      ]
+    ]
+  }
+]

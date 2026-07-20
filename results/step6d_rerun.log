@@ -1,0 +1,102 @@
+Device: mps  |  L*=8  |  Δ_nat=0.4363
+Loading Qwen/Qwen2.5-3B-Instruct ...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.04s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.52s/it]
+Some parameters are on the meta device because they were offloaded to the disk.
+  Loaded. hidden_dim=2048  layers=36
+
+====================================================================
+Part A — Recompute d̂ at L*=8 (clean-demo, span-mean readpoint)
+====================================================================
+  16/48 ...
+  32/48 ...
+  48/48 ...
+  decodability=1.000  cosine(d̂,probe)=0.881
+  c_reas=-1.263  c_concl=-3.054
+
+====================================================================
+Alignment verification (Q' start position in P_c vs P_r)
+====================================================================
+  h= 0  n_c=125  n_r=125  q_start_c=112  q_start_r=112  tail_len=13  OK
+  h= 1  n_c=117  n_r=117  q_start_c=105  q_start_r=105  tail_len=12  OK
+  h= 2  n_c=119  n_r=119  q_start_c=105  q_start_r=105  tail_len=14  OK
+  h= 3  n_c=122  n_r=122  q_start_c=107  q_start_r=107  tail_len=15  OK
+  h= 4  n_c=112  n_r=112  q_start_c=98  q_start_r=98  tail_len=14  OK
+  h= 5  n_c=114  n_r=114  q_start_c=99  q_start_r=99  tail_len=15  OK
+  h= 6  n_c=114  n_r=114  q_start_c=101  q_start_r=101  tail_len=13  OK
+  h= 7  n_c=112  n_r=112  q_start_c=97  q_start_r=97  tail_len=15  OK
+  h= 8  n_c=110  n_r=110  q_start_c=97  q_start_r=97  tail_len=13  OK
+  h= 9  n_c=111  n_r=110  q_start_c=100  q_start_r=99  tail_len=11  OK
+  h=10  n_c=114  n_r=114  q_start_c=101  q_start_r=101  tail_len=13  OK
+  h=11  n_c=115  n_r=114  q_start_c=100  q_start_r=99  tail_len=15  OK
+
+  Aligned: 12/12 scenarios → [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+====================================================================
+Main interchange experiment (surgical + whole, aligned scenarios)
+====================================================================
+  h= 0  base=+0.261  surg_cross=-0.001  whole_cross=+0.001  same_ctrl=+0.013  reverse=-0.003  neutral=+0.014
+  h= 1  base=+1.347  surg_cross=-0.000  whole_cross=-0.031  same_ctrl=-0.008  reverse=+0.000  neutral=+0.014
+  h= 2  base=+0.314  surg_cross=+0.002  whole_cross=-0.065  same_ctrl=+0.005  reverse=+0.001  neutral=+0.003
+  h= 3  base=+0.224  surg_cross=+0.002  whole_cross=-0.036  same_ctrl=-0.004  reverse=-0.004  neutral=-0.018
+  h= 4  base=+1.155  surg_cross=+0.005  whole_cross=-0.036  same_ctrl=+0.011  reverse=-0.006  neutral=+0.019
+  h= 5  base=+0.681  surg_cross=+0.002  whole_cross=-0.087  same_ctrl=-0.001  reverse=+0.006  neutral=-0.001
+  h= 6  base=+0.948  surg_cross=+0.002  whole_cross=+0.098  same_ctrl=-0.001  reverse=+0.001  neutral=+0.019
+  h= 7  base=+0.642  surg_cross=-0.004  whole_cross=+0.050  same_ctrl=-0.007  reverse=+0.006  neutral=+0.002
+  h= 8  base=+1.363  surg_cross=-0.001  whole_cross=-0.053  same_ctrl=-0.002  reverse=-0.002  neutral=-0.006
+  h= 9  base=+0.758  surg_cross=-0.010  whole_cross=-0.098  same_ctrl=+0.003  reverse=+0.010  neutral=-0.002
+  h=10  base=+0.461  surg_cross=-0.009  whole_cross=-0.032  same_ctrl=+0.001  reverse=+0.002  neutral=-0.006
+  h=11  base=-0.175  surg_cross=+0.006  whole_cross=+0.048  same_ctrl=+0.005  reverse=-0.007  neutral=+0.008
+
+====================================================================
+Results summary
+====================================================================
+  Unpatched base     mean=+0.6649  (≈ Gate-B os_concl-persona)
+  Surgical cross     Δ=-0.0004  SE=0.0015  t=-0.30  n=12
+  Whole    cross     Δ=-0.0200  SE=0.0170  t=-1.18
+  Surgical same-ctrl Δ=+0.0012  SE=0.0019  t=+0.67  (expect ≈0)
+  Surgical reverse   Δ=+0.0004  SE=0.0015  t=+0.27  (expect +)
+  Surgical neutral   Δ=+0.0038  SE=0.0032  t=+1.18  (generic vs persona)
+
+  Recovery R (surgical) = 0.0004/0.4363 = 0.001
+  Recovery R (whole)    = 0.0200/0.4363 = 0.046
+
+  Direction check (surgical Δ<0, reverse Δ>0): ✓
+  Same-order control ≈ 0: ✓ (t=+0.67)
+  Significance (|t|≥2, correct sign): ✗
+
+  RESULT: surgical interchange null at L*=8.
+  Suggest: try multi-layer (L 6–12 simultaneously).
+  If multi-layer also null → 'decodable but not causally used' (clean Phase 2 result).
+
+====================================================================
+Multi-layer interchange (L 6–12 simultaneously, surgical + whole)
+====================================================================
+  h= 0  ml_surg=-0.002  ml_whole=-0.031
+  h= 1  ml_surg=-0.003  ml_whole=-0.059
+  h= 2  ml_surg=-0.001  ml_whole=-0.055
+  h= 3  ml_surg=-0.006  ml_whole=-0.041
+  h= 4  ml_surg=-0.003  ml_whole=-0.057
+  h= 5  ml_surg=+0.006  ml_whole=-0.106
+  h= 6  ml_surg=-0.005  ml_whole=+0.066
+  h= 7  ml_surg=-0.003  ml_whole=+0.042
+  h= 8  ml_surg=-0.007  ml_whole=-0.047
+  h= 9  ml_surg=-0.006  ml_whole=-0.114
+  h=10  ml_surg=-0.010  ml_whole=-0.032
+  h=11  ml_surg=+0.010  ml_whole=+0.027
+
+  Multi-layer surgical  Δ=-0.0024  SE=0.0016  t=-1.51  R=0.005
+  Multi-layer whole     Δ=-0.0340  SE=0.0158  t=-2.16  R=0.078
+  RESULT: Multi-layer whole works, surgical null — L6-L12 context causally mediates,
+          but not via the linear order direction (epiphenomenal direction).
+
+Saved -> /Users/williams/Desktop/texture_experiment/results/step6_interchange.png
+
+====================================================================
+Limitations
+====================================================================
+  L8:  decodability ≠ use; Phase 2 tests 'use in this setup at L*'.
+  L11: linear direction; non-linear mediation invisible.
+  L15: B1_clean strong effect may be format-induction; claim limited to
+       'L* order direction causally controls output order in this setup'.
+  (spec §5.1 hardstop): if surgical + whole + multi-layer all null →
+       report 'decodable but not causally used' and STOP.
