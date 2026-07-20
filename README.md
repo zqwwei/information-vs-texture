@@ -112,6 +112,8 @@ Here are the mid-band (layers 5–9) mean-pool cosines, the readout the design p
 | **B ↔ B'** | **0.99** | person, all surface controls |
 | **B ↔ B_noise** | **0.99** | paraphrase floor |
 
+![Phase 0: mid-band cosine distances across the five context pairs](results/step4_bar.png)
+
 The headline number is the last two rows: B↔B' is statistically indistinguishable from B↔B_noise. Replacing three preferences with three different preferences (in the same person, in the same dialogue form) moves the representation no more than just rewording the same preferences.
 
 I want to be precise about what this does and doesn't mean.
@@ -167,6 +169,8 @@ Result:
 | 0 | 0.667 | 0.500 |
 | 8 (peak) | **0.971 ± 0.036** | **0.500** |
 | 12 | 0.917 | 0.500 |
+
+![Phase 1: ORDER probe accuracy by layer vs. lexical baseline (GPT-2, Step 5b)](results/step5b_decode_order.png)
 
 The distance between the lexical floor (0.500) and the layer-8 probe (0.971) is 4.9 standard deviations. The signal rises with depth through the network, peaking at layer 8.
 
@@ -236,6 +240,8 @@ Behavioral results on n=12 held-out scenarios:
 | Multi-layer surgical (L6–12) | −0.0024 | 0.0016 | −1.51 | 0.005 |
 | Multi-layer whole (L6–12) | −0.0340 | 0.0158 | −2.16 | 0.078 |
 
+![Phase 2: behavioral effect (Δ order_score) across all interchange conditions](results/step6_interchange.png)
+
 **The surgical result.** d̂ was moved to its full natural swing at Q'. order_score did not move. t = −0.30. Recovery R = 0.001. This is not a null from lack of statistical power — the intervention succeeded at the activation level; the behavior simply didn't follow.
 
 The controls confirm the intervention is clean. Same-ctrl (swap contexts with the same label) produces near-zero effect, as expected. Reverse ctrl produces near-zero effect in the direction expected if d̂ were causal — it doesn't. Neutral ctrl is also near-zero. The null is not from an intervention that failed to discriminate; it's from an intervention that discriminated and found nothing.
@@ -273,3 +279,48 @@ That's not a dead end. It's a location. The question that follows is: what is ha
 The most transferable thing from this experiment isn't the specific finding — it's the discipline that produced it. Five artifacts were ruled out individually along the way: the lexical ceiling that made Phase 1's first version uninformative, the system-prompt false negative in Gate B v1, the wrong-first primacy confound in Gate B v2, the implementation bugs that invalidated additive patching, and the threshold-chasing pressure at the end of Phase 2. Each one looked, at the moment of discovery, like it might be a real effect. Each had a cleaner explanation.
 
 Interpretability experiments are especially susceptible to this pattern. The readout is always a choice, the comparison is always against some baseline, and no intervention is fully surgical. The discipline isn't uniform skepticism — it's learning to distinguish "this number is interesting" from "this number means what I want it to mean." The four rounds of Phase 0 tightening, the lexical floor construction in Step 5b, the three Gate B iterations — those weren't detours. They were the experiment.
+
+---
+
+## Reproducing
+
+**Requirements**
+
+```
+torch>=2.0
+transformers>=4.40
+scikit-learn>=1.3
+matplotlib
+numpy
+scipy
+```
+
+```bash
+pip install torch transformers scikit-learn matplotlib numpy scipy
+```
+
+**GPT-2 experiments (Steps 1–5b)** — runs on CPU or Apple MPS, no GPU required.
+
+```bash
+python step1_microscope.py       # verify model loads, check hidden state shapes
+python step2_contexts.py         # define A / A+ / B contexts
+python step3_compare.py          # Phase 0 baseline: last-token cosines
+python step4_contexts.py         # add B', B_noise
+python step4_compare.py          # Phase 0 full: mean-pool + last-token
+python step5_dataset.py          # generate Phase 1 dataset (hits lexical ceiling)
+python step5_probe.py            # Phase 1 initial probes
+python step5b_dataset.py         # Phase 1 redesign: same-word ORDER axis
+python step5b_probe.py           # Phase 1 clean result: acc=0.971 at L8
+```
+
+**Qwen2.5-3B experiments (Step 6)** — requires ~8 GB memory (tested on Apple MPS and NVIDIA GPU).
+
+```bash
+python step6_data_chat.py        # generate chat-format test items
+python step6a_v3.py              # Gate A (decodability) + Gate B (behavioral handle)
+python step6d_interchange.py     # Phase 2 interchange patching (final result)
+```
+
+`step6bc_causal.py` is the earlier additive-patching attempt. Its results were invalidated by four implementation bugs and are superseded by `step6d_interchange.py`; it's included for completeness.
+
+The step-by-step experimental log is in `EXPERIMENT_INDEX.md`.

@@ -1,230 +1,203 @@
-# Texture Experiment — 实验索引
+# Texture Experiment — Step-by-Step Log
 
-**假设:** LLM 对「只有信息(陈述)」vs「信息+真实交互历史(经历)」的内部表示不同。
-这个差异如果存在,就是"质地"(对一个人的理解)的计算对应物。
-显微镜: GPT-2 small(117M)→ Qwen2.5-3B-Instruct(3B),本地 MPS 运行。
+**Hypothesis:** An LLM forms different internal representations for the same information depending on whether it arrives as a statement ("told") or through real interaction history ("shown"). That difference, if it exists, is the computational correlate of *texture* — the depth of understanding a model builds about a person through accumulated interaction.
 
----
-
-## STEP 1 — 显微镜开机
-
-**问题:** 能否加载 GPT-2、抽出中间层 activation、看到正确形状?
-
-| 文件 | 说明 |
-|---|---|
-| `step1_microscope.py` | 加载模型,输出每层 hidden state 形状 |
-
-**结果:** 13 层(1 embedding + 12 transformer),每层形状 `[1, n_tokens, 768]`。通过。
+Microscope: GPT-2 small (117M) → Qwen2.5-3B-Instruct (3B), running locally on Apple MPS.
 
 ---
 
-## STEP 2 — 构造 A/B/A+ context
+## STEP 1 — Microscope check
 
-**问题:** 如何设计「控制变量干净」的三段文本?
+**Question:** Can we load GPT-2, extract intermediate activations, and verify the correct shapes?
 
-| 文件 | 说明 |
+| File | Description |
 |---|---|
-| `step2_contexts.py` | A / A+ / B 三段文本定义 + token 数核对 |
+| `step1_microscope.py` | Load model, print hidden state shapes per layer |
 
-**设计:**
+**Result:** 13 layers (1 embedding + 12 transformer blocks), each with shape `[1, n_tokens, 768]`. Pass.
 
-| 段 | 内容 | Token 数 |
+---
+
+## STEP 2 — Build A / B / A+ contexts
+
+**Question:** How do we design three contexts that isolate variables cleanly?
+
+| File | Description |
+|---|---|
+| `step2_contexts.py` | Define A / A+ / B with token counts |
+
+**Design:**
+
+| Context | Content | Tokens |
 |---|---|---|
-| **A** | Alex 三条偏好,纯陈述形式 | 34 |
-| **A+** | 同 A + 中性传记填充(对照,控制长度) | 283 |
-| **B** | 同三条偏好,以对话+accept/reject 信号演示 | 272 |
+| **A** | Three Alex preferences, statement form | 34 |
+| **A+** | Same as A + neutral biographical filler (length control) | 283 |
+| **B** | Same three preferences, demonstrated through six dialogue rounds with accept/reject signals | 272 |
 
-**三条偏好(正交轴):** 简短回答(length)/ 结论先行(order)/ 犹豫时要被推一把(decisiveness)
+**Three preference axes (orthogonal):** short answers (length) / conclusion first (order) / push toward a choice when hesitating (decisiveness)
 
-**控制变量:** A 是 B 的压缩;B 中纠正句复用 A 的核心词;A+ / B 长度比 1.04。
+**Controls:** A is a compressed form of B; B's correction sentences reuse A's core keywords; A+/B length ratio is 1.04.
 
 ---
 
-## STEP 3 — 激活对比(A / A+ / B)
+## STEP 3 — Activation comparison (A / A+ / B)
 
-**问题:** 「陈述 vs 经历」的形式差异,在 activation 层面存不存在?
+**Question:** Does the form difference (statement vs interaction) show up in activations?
 
-| 文件 | 说明 |
+| File | Description |
 |---|---|
-| `step3_compare.py` | 三段各跑 GPT-2,逐层取 last-token,算 cosine + L2 |
-| `results/step3_layer_vs_difference.png` | 层 vs 差异曲线 |
+| `step3_compare.py` | Run all three through GPT-2, extract last-token per layer, compute cosine + L2 |
+| `results/step3_layer_vs_difference.png` | Layer vs. difference curve |
 
-**核心结果(last-token, cosine):**
+**Core results (last-token, cosine):**
 
-| 对比 | avg L2 | mid-band cos |
+| Pair | avg L2 | mid-band cos |
 |---|---|---|
-| A ↔ A+(纯长度) | 39.6 | 0.85 |
-| **A+ ↔ B(纯形式)** | **52.3** | **0.95** |
+| A ↔ A+ (length only) | 39.6 | 0.85 |
+| **A+ ↔ B (form only)** | **52.3** | **0.95** |
 
-形式差异 > 长度差异;layer 8–11 最大;末层塌回(各向异性)。**质地假设初步方向性支持。**
-
----
-
-## STEP 4 — Phase 0 收口(B' + B_noise)
-
-**问题:** A+↔B 的差异里,能否把「对话结构」和「偏好内容」分开?
-
-| 文件 | 说明 |
-|---|---|
-| `step4_contexts.py` / `step4_compare.py` | 五对距离,mean-pool(主)+ last-token(对照) |
-| `results/step4_layers.png` / `step4_bar.png` | 逐层曲线 + 中间带柱状 |
-
-**核心结果:** B↔B'(换偏好) vs B↔B_noise(改措辞) 差值 Δcos=+0.0016 → 贴着地板。
-**最大 surprise:** last-token 读点符号反转(L5 防住)。Distance 框架到顶。
+Form difference > length difference; signal peaks at layers 8–11; collapses at the last layer (anisotropy). **Initial directional support for the texture hypothesis.**
 
 ---
 
-## STEP 5 — Phase 1(linear probe,GPT-2)
+## STEP 4 — Phase 0 wrap-up (B' + B_noise)
 
-**问题:** 偏好信息是否「线性在场」?激活 probe 能否超过词面 lexical baseline?
+**Question:** Can we separate "dialogue structure" from "preference content" within A+↔B?
 
-| 文件 | 说明 |
+| File | Description |
 |---|---|
-| `step5_dataset.py` / `step5_probe.py` | 64 A-form + 64 B-form;逐层 logistic probe + GroupKFold |
-| `data/step5_data.json` | 96 instances(3 轴 × 8 profiles × 8 phrasings) |
-| `results/step5_decode_*.png` | 三轴解码曲线 |
+| `step4_contexts.py` / `step4_compare.py` | Five context pairs, mean-pool (primary) + last-token (control) |
+| `results/step4_layers.png` / `step4_bar.png` | Layer curves + mid-band bar chart |
 
-**结果:** B-form 激活与 lexical baseline 同时打满 1.000 → **天花板问题**:纠正句含关键词,词面已完美可解,测不出「激活是否超越词面」。ORDER 轴 layer 0→5 爬升是唯一有意义的信号。
+**Core result:** B↔B' (swap preferences) vs. B↔B_noise (rephrase same preferences): Δcos = +0.0016 — at the noise floor.
 
-**教训:** 这不是 L10(显微镜太小),是设计缺陷 → 改用干净演示(见 STEP 5b)。
+**Key surprise:** Last-token readout reversed the sign of one comparison (caught at L5). Distance framework has reached its ceiling.
 
 ---
 
-## STEP 5b — Phase 1 重做(lexical baseline 归零)
+## STEP 5 — Phase 1 (linear probe, GPT-2)
 
-**问题:** 重新设计让 lexical baseline ≈ 0.5,使「激活是否超越词面」成为可测问题。
+**Question:** Is preference information *linearly present* in the activations? Can a probe beat the lexical baseline?
 
-| 文件 | 说明 |
+| File | Description |
 |---|---|
-| `step5b_dataset.py` | ORDER 轴专项:同词异序,generic correction,group by scenario |
-| `data/step5b_data.json` | 96 instances(12 scenarios × 2 labels × 4 variants) |
-| `step5b_probe.py` | 同 Phase 1,但以 b_final_span 为读点 |
-| `results/step5b_decode_order.png` | ORDER 轴解码曲线(含 lexical 基线) |
+| `step5_dataset.py` / `step5_probe.py` | 64 A-form + 64 B-form; layer-by-layer logistic probe + GroupKFold |
+| `data/step5_data.json` | 96 instances (3 axes × 8 profiles × 8 phrasings) |
+| `results/step5_decode_*.png` | Decode curves per axis |
 
-**关键设计:** 两个 label 的 B-form 含**完全相同的词**,只有被 accept 的顺序不同 → CountVectorizer 在构造上无法区分 → B-form lexical = **0.500**。
+**Result:** Both B-form activations and the lexical baseline hit 1.000 simultaneously → **ceiling problem**: correction sentences contain the preference keyword, so word frequency already perfectly decodes the label. The ORDER axis's L0→L5 rise is the only informative signal.
 
-**核心结果(GPT-2, GroupKFold-5 by scenario):**
+**Lesson:** This is a design flaw, not a microscope limitation → rebuild with clean demonstrations (see STEP 5b).
 
-| 读点 | layer 0 | layer 8(峰值) | B-form lexical | shuffle |
+---
+
+## STEP 5b — Phase 1 redo (lexical baseline zeroed)
+
+**Question:** Redesign so that lexical baseline ≈ 0.5, making "does activation beat lexical?" a testable question.
+
+| File | Description |
+|---|---|
+| `step5b_dataset.py` | ORDER axis only: same words, different accepted order, generic corrections, grouped by scenario |
+| `data/step5b_data.json` | 96 instances (12 scenarios × 2 labels × 4 variants) |
+| `step5b_probe.py` | Same as Phase 1, readout at b_final_span |
+| `results/step5b_decode_order.png` | ORDER decode curve with lexical baseline |
+
+**Key design:** Both labels use **identical tokens** in their B-form contexts; only the *accepted* order differs → CountVectorizer cannot distinguish them by construction → B-form lexical baseline = **0.500**.
+
+**Core results (GPT-2, GroupKFold-5 by scenario):**
+
+| Readout | Layer 0 | Layer 8 (peak) | B-form lexical | Shuffle |
 |---|---|---|---|---|
 | mean-over-final-answer | 0.667 | **0.971 ± 0.036** | **0.500** | 0.481 |
 
-- 激活 probe 从 layer 0(0.67)爬升到 layer 8(0.97),**高于 lexical 基线 4.9 个标准差**
-- **结论:GPT-2 从 answer tokens 的上下文激活里算出了词面无法解码的结构信息 → 质地假设在 decodability 层面得到支持。**
-- L9: 只测线性可解码;L8: decodability ≠ use(是否被用于生成,需 Phase 2)
+- Probe rises from L0 (0.67) to L8 (0.97), **4.9 standard deviations above the lexical floor**
+- **Conclusion: GPT-2 computes structural order information from context activations that word frequency cannot decode → texture hypothesis supported at the decodability level**
+- Caveat: decodability ≠ causal use (whether the representation actually drives generation requires Phase 2)
 
 ---
 
-## STEP 6 — Phase 2(causal patching,Qwen2.5-3B-Instruct)
+## STEP 6 — Phase 2 (causal patching, Qwen2.5-3B-Instruct)
 
-**问题:** 把 claim 从「在场」升到「使用」——外科手术式改写 order 方向分量,行为是否随之翻转?
+**Question:** Upgrade the claim from "present" to "used" — can surgical rewriting of the ORDER direction flip behavior?
 
-**模型:** Qwen2.5-3B-Instruct(3B,MPS 本地运行)
+**Model:** Qwen2.5-3B-Instruct (3B, local MPS)
 
-### 6a — 两个前置闸门(v1→v3 三轮修复)
+### 6a — Two prerequisite gates (v1→v3, three iterations)
 
-| 文件 | 说明 |
+| File | Description |
 |---|---|
-| `step6_data_chat.py` | B-form → chat template + held-out 行为测试对 |
-| `step6a_handles.py` | Gate A(Qwen 上 decodability)+ Gate B v1(system prompt,已废) |
-| `step6a_v2.py` | Gate B v2:多轮 chat(B-fix-1)+配对测量(B-fix-2)+B0/B1 梯子 |
-| `step6a_v3.py` | Gate B v3:聚类 n=12(Audit-1)+干净正向演示(Audit-2) |
-| `results/step6_handles.png` / `step6_handles_v2.png` / `step6_handles_v3.png` | 各版行为把手分布 |
+| `step6_data_chat.py` | B-form → chat template + held-out behavioral test pairs |
+| `step6a_handles.py` | Gate A (Qwen decodability) + Gate B v1 (system prompt, deprecated) |
+| `step6a_v2.py` | Gate B v2: multi-turn chat (B-fix-1) + paired measurement (B-fix-2) + B0/B1 ladder |
+| `step6a_v3.py` | Gate B v3: cluster n=12 (Audit-1) + clean positive demonstration (Audit-2) |
+| `results/step6_handles*.png` | Behavioral handle distributions per version |
 
-**修复历史与教训:**
-- **v1 失败(system prompt):** B-form 放 system 整段,instruct 模型不遵从 → 伪负
-- **v2 修正(多轮 chat + 聚类):** B1_corr t=−2.49 → 聚合后 t=−1.47(null);发现 wrong-first primacy confound
-- **v3 干净演示:** 去掉 wrong-first 纠正结构,assistant 直接用偏好顺序作答 → B1_clean **t=+6.27**
+**Iteration history:**
+- **v1 failed (system prompt):** Putting B-form in the system prompt — instruct model ignores it → false negative from design
+- **v2 fixed (multi-turn + clustering):** B1_corr t=−2.49 → after aggregation t=−1.47 (null); discovered wrong-first primacy confound
+- **v3 clean demonstration:** Removed the wrong-first correction structure; assistant answers directly in the preferred order → B1_clean **t=+6.27**
 
-**最终 Gate 结果(v3,n=12 聚类):**
+**Final gate results (v3, n=12 clusters):**
 
-| 闸门 | 结果 |
+| Gate | Result |
 |---|---|
-| **Gate A** | Qwen2.5 上 L\*=8,acc=1.000(L8→L29 持续满分) ✓ |
-| **B0** 显式指令 | Δ=+0.454,t=+2.18 ✓ |
-| **B1_clean** 正向演示 | Δ=+0.436,t=+6.27 ✓ |
-| **B1_corr** 纠正演示(聚类) | Δ=−0.100,t=−1.47 → null |
+| **Gate A** | Qwen2.5 L*=8, acc=1.000 (L8→L29 saturated) ✓ |
+| **B0** explicit instruction | Δ=+0.454, t=+2.18 ✓ |
+| **B1_clean** positive demonstration | Δ=+0.436, t=+6.27 ✓ |
+| **B1_corr** correction demonstration (clustered) | Δ=−0.100, t=−1.47 → null |
 
-**Δ_nat = +0.4363**(B1_clean 自然行为摆幅,Phase 2 因果阈值分母)
+**Δ_nat = +0.436** (B1_clean natural behavioral swing — denominator for Phase 2 causal recovery R)
 
-### 6d — Interchange Patching（clean Phase 2，最终结果）
+### 6d — Interchange Patching (clean Phase 2, final result)
 
-| 文件 | 说明 |
+| File | Description |
 |---|---|
-| `step6d_interchange.py` | d̂(diff-of-means,L\*=8)+ interchange patch(surgical/whole)+ multi-layer + 全套控制 |
-| `results/step6_interchange.png` | 各场景 Δ 分布图 |
+| `step6d_interchange.py` | d̂ (diff-of-means, L*=8) + interchange patch (surgical/whole) + multi-layer + full controls |
+| `results/step6_interchange.png` | Δ distribution across conditions |
 
-**方向质量(clean-demo,span-mean readpoint):** decodability=1.000，cosine(d̂,probe)=0.881 ✓
+**Direction quality (clean demo, span-mean readpoint):** decodability=1.000, cos(d̂, probe)=0.881 ✓
 
-**因果结果(n=12 held-out scenarios):**
+**Causal results (n=12 held-out scenarios):**
 
-| 条件 | Δ | SE | t | Recovery R |
+| Condition | Δ | SE | t | Recovery R |
 |---|---|---|---|---|
-| Surgical cross (L\*=8) | −0.0004 | 0.0015 | −0.30 | **0.001** |
-| Whole cross (L\*=8) | −0.0200 | 0.0170 | −1.18 | 0.046 |
-| Same-ctrl（期望≈0） | +0.0012 | 0.0019 | +0.67 | — |
-| Surgical reverse（期望+） | +0.0004 | 0.0015 | +0.27 | — |
+| Surgical cross (L*=8) | −0.0004 | 0.0015 | −0.30 | **0.001** |
+| Whole cross (L*=8) | −0.0200 | 0.0170 | −1.18 | 0.046 |
+| Same-ctrl (expect ≈0) | +0.0012 | 0.0019 | +0.67 | — |
+| Surgical reverse (expect +) | +0.0004 | 0.0015 | +0.27 | — |
 | Surgical neutral | +0.0038 | 0.0032 | +1.18 | — |
-| **Multi-layer surgical (L 6–12)** | −0.0024 | 0.0016 | −1.51 | 0.005 |
-| **Multi-layer whole (L 6–12)** | −0.0340 | 0.0158 | −2.16 (p≈0.054) | 0.078 |
+| **Multi-layer surgical (L6–12)** | −0.0024 | 0.0016 | −1.51 | 0.005 |
+| **Multi-layer whole (L6–12)** | −0.0340 | 0.0158 | −2.16 (p≈0.054) | 0.078 |
 
-**注意：上方数字为修正后结果（修正了 output_hidden_states off-by-one bug）。**
+*Numbers above are from the corrected rerun (fixed output_hidden_states off-by-one bug).*
 
-**结论：decodability-vs-causal-use dissociation（干净结论，硬停）。**
-- Surgical null 全程（L\*=8: t=−0.30；L6–12: t=−1.51）。Surgical patch 将 d̂ 投影从 −3.05 推至 −1.26（全摆幅），order_score 不动 → d̂ 方向因果 epiphenomenal。
-- Multi-layer whole t=−2.16，n=12，df=11，临界值 t=2.201（p<0.05 双尾）→ **未达显著**（p≈0.054）。加之 7 个条件中只有此一项边界值，不作结论，仅报告为 suggestive trend。
-- 同向控制、反向、中性组全部 ≈0 → 控制干净。
-- **Honest bound**：interchange 只能作用于 Q'+tail token，demo 位置因 token 顺序不同无法对齐交换。结论限定为"d̂ 在 Q' 位置不是因果通道"，不等于"order 从不被因果使用"。
+**Conclusion: decodability-vs-causal-use dissociation (clean finding, hard stop).**
+- Surgical null throughout (L*=8: t=−0.30; L6–12: t=−1.51). Surgical patch moved d̂ projection from −3.05 to −1.26 (full swing); order_score did not move → d̂ direction is causally epiphenomenal.
+- Multi-layer whole t=−2.16, n=12, df=11, critical value t=2.201 (p<0.05 two-tailed) → **not significant** (p≈0.054). Only one of seven conditions at the boundary; reported as suggestive trend only.
+- All controls ≈0 → clean intervention.
+- **Honest bound:** interchange could only target Q'+tail tokens; demo positions are not token-alignable across contexts. Conclusion scoped to "d̂ at Q' positions is not a causal channel," not "ORDER is never causally used."
+
 > "ORDER is 100% linearly decodable at L8, but the decodable direction is causally epiphenomenal at the tested (Q') positions."
 
 ---
 
-### 6bc — 因果 patching(方向 + 干预 + 控制)【已被 6d 取代，结果不可信】
+### 6bc — Causal patching attempt (additive steering) — **DEPRECATED, results not reliable**
 
-| 文件 | 说明 |
+| File | Description |
 |---|---|
-| `step6bc_causal.py` | d̂(diff-of-means,L\*=8)+ 加性 patch + 投影置换 + 全套控制 |
-| `results/step6_causal.png` | dose-response + layer sweep + neutral vs persona |
-| `data/step6_test_items.json` / `step6_test_items_annotated.json` | held-out 行为测试对 |
+| `step6bc_causal.py` | d̂ (diff-of-means, L*=8) + additive patch + projection swap + full controls |
 
-**方向质量(clean-demo,span-mean readpoint):** decodability=1.000,cosine(d̂,probe_weight)=0.893 ✓
-
-**因果结果(n=12 held-out scenarios):**
-
-| α | Δorder_score | 连贯项 |
-|---|---|---|
-| 0 | 0 | 12/12 |
-| **+0.5** | **−0.220 ± 0.161** | **12/12** |
-| +1.0 | −0.843 | 2/12 |
-| ≥+2 | NaN | 0/12 |
-
-| 控制测试 | 结果 |
-|---|---|
-| 判据(a)方向特异性 | FAIL(null 在 α=1,true 在 α=0.5 — 不同剂量比较) |
-| 判据(b)dose-response ρ | NaN(coherence guard 过滤多数 α) |
-| 判据(c)显著且符号对 | PASS(t=−2.64) |
-| 消融(投影掉 d̂) | 几乎无效果(necessity ratio=1.01) |
-| 投影置换 recovery R | **0.020**(近零) |
-| Neutral vs persona(α=+0.5) | Persona:−0.22 vs Neutral:+0.19 → **persona 特异** |
-| Layer sweep(L=6,8,10,α=1) | 三层效应相近(无 L\* 特异性) |
-
-**解读:**
-- d̂ 在 α=+0.5 有 persona 特异的因果效应(正确方向,12/12 连贯)
-- 但 d̂ 不是行为的主要中介:消融无效(R=0.02),任何大扰动都让模型不连贯
-- 需要在 α=+0.5 也计算 random null 才能给 criterion(a)公平比较(下一步可选)
-
-**当前限制(L8/L11/L15):**
-- L8: decodability ≠ use;Phase 2 测的是「在此 setup/此方向有因果作用」
-- L11: 线性方向;非线性中介看不到
-- L15: B1_clean 强效应可能是 format-induction(复制最近 assistant 顺序),claim 封顶在「L\*=8 order 方向因果控制输出顺序」,**不说**「模型使用了人物表示」
+This attempt accumulated four implementation bugs, including an off-by-one indexing error in `output_hidden_states` that caused patches to land at the wrong layer. Results are not reliable and are superseded by `step6d_interchange.py`. Included for completeness only.
 
 ---
 
-## 文件结构
+## File Structure
 
 ```
 texture_experiment/
-├── EXPERIMENT_INDEX.md
+├── README.md                    ← full writeup
+├── EXPERIMENT_INDEX.md          ← this file
+├── LICENSE
 ├── data/
 │   ├── step5_data.json
 │   ├── step5b_data.json
@@ -236,33 +209,30 @@ texture_experiment/
 │   ├── step5_decode_length/order/decisiveness.png
 │   ├── step5b_decode_order.png
 │   ├── step6_handles.png / step6_handles_v2.png / step6_handles_v3.png
-│   ├── step6_causal.png
-│   └── step6_interchange.png
-├── specs/
-│   ├── handoff_spec_step1_实验.md
-│   ├── handoff_spec_step4_draft_v1.md / handoff_spec_step4_phase0.md
-│   ├── handoff_spec_step5_draft_v1.md / handoff_spec_step5_phase1.md
-│   └── handoff_spec_step6_phase2_v1~v4.md
-├── step1_microscope.py ~ step5b_probe.py   (GPT-2 实验)
+│   ├── step6_causal.png          ← deprecated (6bc)
+│   ├── step6_interchange.png     ← final (6d)
+│   └── step6d_rerun.log
+├── specs/                       ← handoff specs used across experimental iterations
+├── step1_microscope.py ~ step5b_probe.py   (GPT-2 experiments)
 ├── step6_data_chat.py
 ├── step6a_handles.py / step6a_v2.py / step6a_v3.py
-├── step6bc_causal.py
-└── step6d_interchange.py
+├── step6bc_causal.py            ← deprecated
+└── step6d_interchange.py        ← final
 ```
 
 ---
 
-## 实验进展一览
+## Progress Summary
 
-| 阶段 | 模型 | 核心发现 | 状态 |
+| Phase | Model | Key Finding | Status |
 |---|---|---|---|
-| STEP 1 | GPT-2 | 显微镜正常工作 | ✓ |
-| STEP 2–3 | GPT-2 | 形式差异 > 长度差异;layer 8–11 信号最强 | ✓ |
-| STEP 4(Phase 0) | GPT-2 | Distance 到顶;读点选择是真陷阱 | ✓ |
-| STEP 5(Phase 1) | GPT-2 | Lexical 天花板=1.000;设计缺陷,不是显微镜太小 | ✓ |
-| STEP 5b(Phase 1 重做) | GPT-2 | Lexical=0.500;激活 probe layer 8 达 0.971(+4.9σ above lexical) | ✓ |
-| STEP 6 Gate A | Qwen2.5-3B | L\*=8,acc=1.000;ORDER 方向强可解码 | ✓ |
-| STEP 6 Gate B(v1→v3) | Qwen2.5-3B | B1_clean t=+6.27;wrong-first primacy confound 是关键陷阱 | ✓ |
-| STEP 6bc 因果 patching | Qwen2.5-3B | 加性 steering，4个bug，结果不可信 → 被 6d 取代 | ✗ 废弃 |
-| **STEP 6d Interchange Patching** | **Qwen2.5-3B** | **Surgical null（全强度干预零效应）；whole trend suggestive (p≈0.054，未显著)；decodability-vs-causal-use dissociation，硬停** | **✓ 最终** |
-| Phase 3(可选) | 更大模型 | 机制定位/规模曲线 | 未开始 |
+| STEP 1 | GPT-2 | Microscope working | ✓ |
+| STEP 2–3 | GPT-2 | Form difference > length difference; signal peaks L8–11 | ✓ |
+| STEP 4 (Phase 0) | GPT-2 | Distance at ceiling; readout choice is a real trap | ✓ |
+| STEP 5 (Phase 1) | GPT-2 | Lexical ceiling=1.000; design flaw, not microscope limit | ✓ |
+| STEP 5b (Phase 1 redo) | GPT-2 | Lexical=0.500; probe L8=0.971 (+4.9σ above floor) | ✓ |
+| STEP 6 Gate A | Qwen2.5-3B | L*=8, acc=1.000; ORDER direction strongly decodable | ✓ |
+| STEP 6 Gate B (v1→v3) | Qwen2.5-3B | B1_clean t=+6.27; wrong-first primacy confound was key trap | ✓ |
+| STEP 6bc causal patching | Qwen2.5-3B | Additive steering, 4 bugs, results unreliable → superseded by 6d | ✗ deprecated |
+| **STEP 6d interchange patching** | **Qwen2.5-3B** | **Surgical null; whole trend suggestive (p≈0.054, not significant); decodability-vs-causal-use dissociation, hard stop** | **✓ final** |
+| Phase 3 (optional) | Larger models | Mechanism localization / scale curve | Not started |
