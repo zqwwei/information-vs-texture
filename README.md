@@ -284,6 +284,8 @@ Interpretability experiments are especially susceptible to this pattern. The rea
 
 ## Reproducing
 
+*The experiment has three phases: Phase 0 (Steps 1–4, GPT-2, distance-based), Phase 1 (Steps 5–5b, GPT-2, linear probe), and Phase 2 (Step 6, Qwen2.5-3B, causal interchange). Scripts are listed in order within each phase.*
+
 **Requirements**
 
 ```
